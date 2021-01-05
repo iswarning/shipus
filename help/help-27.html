@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html
+  lang="vi-VN"
+  class="js_active vc_desktop vc_transform vc_transform js rgba backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csstransitions fontface"
+  style="--scroll-y: 0px"
+>
+<head>
+
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+/>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' />
+
+<link
+  rel="stylesheet"
+  href="https://basso.vn/theme/basso/statics/libraries/g5plus/css/style.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://basso.vn/theme/basso/statics/css/style.min.css?v=1609743493"
+/>
+<link
+  rel="stylesheet"
+  href="https://basso.vn/theme/basso/statics/css/responsive.min.css?v=1609743493"
+/>
+<link rel='stylesheet' href='./help.css' />
+<link rel='stylesheet' href='../dist//css/modal.css' />
+<link rel="stylesheet" href="../dist/css/vendors.css" />
+<link rel="stylesheet" href="../dist/css/app.css" />
+<link rel="stylesheet" href="../dist/css/about.css" />
+
+
+</head>
+<body>
+<div class="sidebar__right">
+      <div id="overlay"></div>
+      <div id="menu--mobile">
+        <div class="d-flex justify-content-end">
+          <button
+            class="navbar-toggler p-3"
+            type="button"
+            id="close-menu-mobile"
+          >
+            <i class="las la-times"></i>
+          </button>
+        </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/"
+              >Homepage <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/about.html">Về shipus</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#collapseId"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Hướng dẫn <i class="las la-angle-down"></i>
+            </a>
+            <div
+              class="collapse"
+              id="collapseId"
+              aria-labelledby="navbar1Dropdown"
+            >
+              <a class="dropdown-item" href="/buy-steps.html"
+                >Quy trình mua hàng hộ</a
+              >
+              <a class="dropdown-item" href="/tran-steps.html"
+                >Quy trình vận chuyển</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/price-list.html">bảng giá dịch vụ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+      <div id="cart--mobile">
+        <div class="float-right">
+          <button class="navbar-toggler" type="button" id="close-cart-mobile">
+            <i class="las la-times"></i>
+          </button>
+        </div>
+        <div class="form--box">
+          <div class="form__title">GIỎ HÀNG</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <article class="product">
+                  <svg
+                    style="align-self: flex-start"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0015 1.44873H14.0126V2.12366H15.4611V1.35425C15.4613 0.607544 14.8541 0 14.1078 0H9.90625C9.15991 0 8.55273 0.607544 8.55273 1.35425V2.12366H10.0015V1.44873Z"
+                      fill="#ED1A1F"
+                    />
+                    <path
+                      d="M18.8072 7.86328H5.20835C4.83573 7.86328 4.5424 8.18115 4.57243 8.55267L5.70933 22.6108C5.77269 23.3956 6.42729 24 7.21373 24H16.8017C17.5881 24 18.2427 23.3956 18.3061 22.6106L19.443 8.55267C19.4732 8.18115 19.1799 7.86328 18.8072 7.86328ZM8.50114 22.5005C8.48594 22.5015 8.47074 22.502 8.45573 22.502C8.07597 22.502 7.75718 22.2063 7.73356 21.8221L7.0211 10.2812C6.99656 9.88184 7.30033 9.53815 7.6995 9.51361C8.09739 9.48944 8.44255 9.79248 8.46708 10.192L9.17936 21.733C9.20408 22.1323 8.90031 22.4758 8.50114 22.5005ZM12.7402 21.7776C12.7402 22.1776 12.4159 22.5018 12.0158 22.5018C11.6158 22.5018 11.2915 22.1776 11.2915 21.7776V10.2365C11.2915 9.83643 11.6158 9.51215 12.0158 9.51215C12.4158 9.51215 12.7402 9.83643 12.7402 10.2365V21.7776ZM16.9945 10.2792L16.3142 21.8201C16.2917 22.205 15.9724 22.5018 15.5919 22.5018C15.5776 22.5018 15.5632 22.5015 15.5487 22.5007C15.1493 22.4771 14.8446 22.1343 14.8683 21.735L15.5483 10.1938C15.5718 9.79449 15.9134 9.48981 16.3139 9.51343C16.7132 9.53687 17.0179 9.87982 16.9945 10.2792Z"
+                      fill="#ED1A1F"
+                    />
+                    <path
+                      d="M21.3116 5.62781L20.8359 4.20178C20.7105 3.82587 20.3586 3.57227 19.9621 3.57227H4.05228C3.65604 3.57227 3.30393 3.82587 3.17869 4.20178L2.70298 5.62781C2.61124 5.90283 2.73063 6.18335 2.95347 6.32324C3.04429 6.38019 3.15177 6.41443 3.26987 6.41443H20.7447C20.8628 6.41443 20.9705 6.38019 21.0611 6.32306C21.284 6.18317 21.4034 5.90265 21.3116 5.62781Z"
+                      fill="#ED1A1F"
+                    />
+                  </svg>
+                  <div class="product__info">
+                    <h6>Blazer</h6>
+                    <div class="product__price">350.000 VND</div>
+                    <ul class="product__des">
+                      <li><span>Size : </span><span>M</span></li>
+                      <li><span>Color :</span><span>Blue</span></li>
+                    </ul>
+                  </div>
+                  <div class="product__size">1</div>
+                </article>
+                <article class="product">
+                  <svg
+                    style="align-self: flex-start"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0015 1.44873H14.0126V2.12366H15.4611V1.35425C15.4613 0.607544 14.8541 0 14.1078 0H9.90625C9.15991 0 8.55273 0.607544 8.55273 1.35425V2.12366H10.0015V1.44873Z"
+                      fill="#ED1A1F"
+                    />
+                    <path
+                      d="M18.8072 7.86328H5.20835C4.83573 7.86328 4.5424 8.18115 4.57243 8.55267L5.70933 22.6108C5.77269 23.3956 6.42729 24 7.21373 24H16.8017C17.5881 24 18.2427 23.3956 18.3061 22.6106L19.443 8.55267C19.4732 8.18115 19.1799 7.86328 18.8072 7.86328ZM8.50114 22.5005C8.48594 22.5015 8.47074 22.502 8.45573 22.502C8.07597 22.502 7.75718 22.2063 7.73356 21.8221L7.0211 10.2812C6.99656 9.88184 7.30033 9.53815 7.6995 9.51361C8.09739 9.48944 8.44255 9.79248 8.46708 10.192L9.17936 21.733C9.20408 22.1323 8.90031 22.4758 8.50114 22.5005ZM12.7402 21.7776C12.7402 22.1776 12.4159 22.5018 12.0158 22.5018C11.6158 22.5018 11.2915 22.1776 11.2915 21.7776V10.2365C11.2915 9.83643 11.6158 9.51215 12.0158 9.51215C12.4158 9.51215 12.7402 9.83643 12.7402 10.2365V21.7776ZM16.9945 10.2792L16.3142 21.8201C16.2917 22.205 15.9724 22.5018 15.5919 22.5018C15.5776 22.5018 15.5632 22.5015 15.5487 22.5007C15.1493 22.4771 14.8446 22.1343 14.8683 21.735L15.5483 10.1938C15.5718 9.79449 15.9134 9.48981 16.3139 9.51343C16.7132 9.53687 17.0179 9.87982 16.9945 10.2792Z"
+                      fill="#ED1A1F"
+                    />
+                    <path
+                      d="M21.3116 5.62781L20.8359 4.20178C20.7105 3.82587 20.3586 3.57227 19.9621 3.57227H4.05228C3.65604 3.57227 3.30393 3.82587 3.17869 4.20178L2.70298 5.62781C2.61124 5.90283 2.73063 6.18335 2.95347 6.32324C3.04429 6.38019 3.15177 6.41443 3.26987 6.41443H20.7447C20.8628 6.41443 20.9705 6.38019 21.0611 6.32306C21.284 6.18317 21.4034 5.90265 21.3116 5.62781Z"
+                      fill="#ED1A1F"
+                    />
+                  </svg>
+                  <div class="product__info">
+                    <h6>Blazer</h6>
+                    <div class="product__price">350.000 VND</div>
+                    <ul class="product__des">
+                      <li><span>Size : </span><span>M</span></li>
+                      <li><span>Color :</span><span>Blue</span></li>
+                    </ul>
+                  </div>
+                  <div class="product__size">1</div>
+                </article>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 py-2 d-flex justify-content-between">
+                <span>Tổng tiền</span>
+                <b class="text-danger">350.000 Đ</b>
+              </div>
+              <div class="col-12 pt-3">
+                <div class="form-group">
+                  <a
+                    href="./create-order.html#step-2"
+                    class="btn btn-block btn-form step-next"
+                    >Thanh toán</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row header--main">
+          <div class="header__left col-12 col-lg-2 col-xl-2">
+            <h1 class="m-0 text-center">
+              <img
+                class="header__logo"
+                src="../dist/images/LogoShipus.png"
+                alt=""
+              />
+            </h1>
+            <div class="header__mobile d-block d-lg-none mr-2">
+              <button class="navbar-toggler" type="button">
+                <i class="las la-headset"></i>
+              </button>
+              <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal-login">
+                <i class="las la-user"></i>
+              </button>
+              <button class="navbar-toggler" type="button" id="btn-cart-mobile">
+                <i class="las la-shopping-cart"></i>
+              </button>
+              <button class="navbar-toggler" type="button" id="btn-menu-mobile">
+                <i class="las la-bars"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="header__center d-none d-lg-flex justify-content-center col-12 col-lg-8 col-xl-8"
+          >
+            <nav class="navbar navbar-expand-lg">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/"
+                      >Homepage <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/about.html">Về shipus</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="javascript:void(0)"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Hướng dẫn <i class="las la-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/buy-steps.html"
+                        >Quy trình mua hàng hộ</a
+                      >
+                      <a class="dropdown-item" href="/tran-steps.html"
+                        >Quy trình vận chuyển</a
+                      >
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/price-list.html"
+                      >bảng giá dịch vụ</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/create-order.html"
+                      >Mua hàng hộ</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="header__right d-none d-lg-flex col-12 col-lg-2 col-xl-2">
+            <ul
+              class="navbar-nav d-flex flex-row align-items-center justify-content-end"
+            >
+              <li class="nav-item active">
+                <a class="nav-link" href="./help-27.html"
+                  ><i class="las la-headset"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login"
+                  ><i class="las la-user"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:openCart()"
+                  ><i class="las la-shopping-cart"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="help-page">
+      <div class="w">
+        <div class="container">
+          <h2 class="h2-title">TRỢ GIÚP</h2>
+          <div class="row" style='font-size: 14px;'>
+            <div class="col-md-4 col-lg-3 shadow p-3 mb-5 bg-white rounded">
+                <ul class="help-nav">
+                  <li class="parent">TIN TỨC</li>
+                  <li class="active">
+                    <a href="./help-27.html">Khuyến mãi lớn</a>
+                  </li>
+                  <li >
+                    <a href="./help-28.html">Thông báo </a>
+                  </li>
+                </ul>
+  
+                <ul class="help-nav">
+                  <li class="parent">TRỢ GIÚP</li>
+                  <li class="">
+                    <a href="./help-19.html">Quy trình đặt hàng</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-20.html">Chí phí và thời gian giao hàng</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-21.html">Dịch vụ giá trị gia tăng</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-23.html">Các điều khoản và điều kiện</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-24.html">Các điều khoản về lỗi sản phẩm</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-39.html">Các mặt hàng cấm</a>
+                  </li>
+                </ul>
+  
+                <ul class="help-nav">
+                  <li class="parent">CÂU HỎI THƯỜNG GẶP</li>
+                  <li class="">
+                    <a href="./help-29.html">Câu hỏi tổng quan</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-30.html">Về tài khoản</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-31.html">Về cách thức thanh toán</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-32.html">Về đơn hàng</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-35.html">Khiếu nại và sau bán hàng</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-40.html">Chính sách bảo mật</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-33.html">Về kho và vận chuyển quốc tê</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-34.html">Về giao hàng tới tay</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-36.html">Về gói lại hàng</a>
+                  </li>
+                </ul>
+              </div>
+            <div class="col-md-8 col-lg-9">
+              <div class="accordion shadow p-3 mb-5 bg-white rounded" id="accordionPayment">
+                <div class="card">
+                  <div
+                    class="card-header p-0"
+                    id="heading-5932444d-2480-2fc1-f26f-a22524988693"
+                  >
+                    <div
+                      class="custom-control custom-radio custom-control-inline d-block p-0 collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapse-5932444d-2480-2fc1-f26f-a22524988693"
+                      aria-expanded="false"
+                      aria-controls="collapse-5932444d-2480-2fc1-f26f-a22524988693"
+                    >
+                      <input
+                        type="radio"
+                        id="headship-5932444d-2480-2fc1-f26f-a22524988693"
+                        name="headship"
+                        class="custom-control-input"
+                        checked=""
+                      />
+                      <label
+                        class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                        for="headship-5932444d-2480-2fc1-f26f-a22524988693"
+                      >
+                        Mua hàng Amazon, Ebay không thuế tại Basso
+                      </label>
+                    </div>
+                  </div>
+
+                  <div
+                    id="collapse-5932444d-2480-2fc1-f26f-a22524988693"
+                    class="collapse show"
+                    aria-labelledby="heading-5932444d-2480-2fc1-f26f-a22524988693"
+                    data-parent="#accordionPayment"
+                    style=""
+                    aria-expanded="false"
+                  >
+                    <div class="card-body">
+                      <p>
+                        <b
+                          >Miễn phí 100% thuế nội bang Mỹ khi mua hàng Amazon
+                          tại Basso</b
+                        >
+                      </p>
+
+                      <p>
+                        Amazon, Ebay là thiên đường shopping với những sản phẩm
+                        chất lượng cao và giá rẻ. Tuy nhiên, vì là hàng Mỹ nên
+                        chúng không chỉ phải chịu thuế quốc gia (Thuế Liên bang)
+                        mà còn phải chịu cả thuế của từng tiểu bang. Dù giá vẫn
+                        rẻ hơn so với các mặt hàng trong nước, nhưng mức giá độn
+                        thêm thuế vẫn khiến người Việt tốn một khoản tiền không
+                        đáng có. Tại các dịch vụ đặt hàng thông thường, bạn sẽ
+                        phải chi trả thêm cho khoản thuế này.
+                      </p>
+
+                      <p>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img
+                          alt=""
+                          src="https://static.weshop.com.vn/upload/g/2/i/l/x/x/p/0/9/d/1200x628-2.jpg"
+                        />
+                      </p>
+
+                      <p><strong>Miễn phí 100% Thuế tại Basso</strong></p>
+
+                      <p>
+                        Tại Basso, chúng tôi hân hoan mang đến dịch vụ miễn phí
+                        100% thuế bang Mỹ, áp dụng với mọi sản phẩm tại Amazon.
+                        Chính sách này là kết quả nỗ lực đến từ toàn đội ngũ
+                        nhân viên công ty nhằm mang tới dịch vụ tốt nhất với giá
+                        rẻ nhất dành cho Quý Khách.
+                      </p>
+
+                      <p>
+                        <img
+                          alt=""
+                          src="https://www.facebook.com/images/emoji.php/v9/f51/1/16/2714.png"
+                        />&nbsp;Từ 28/8/2015, khi mua bất cứ sản phẩm Amazon,
+                        Ebay trên Basso&nbsp;quý khách sẽ không phải trả thêm
+                        thuế bang nội địa Mỹ. No Tax
+                      </p>
+
+                      <p>
+                        <img
+                          alt=""
+                          src="https://www.facebook.com/images/emoji.php/v9/f51/1/16/2714.png"
+                        />&nbsp;Sở hữu hàng chính hãng Amazon, Ebay&nbsp;chuẩn
+                        USA với GIÁ ĐÃ MỀM NAY CÒN MỀM HƠN. Còn chần chừ gì mà
+                        không nhanh tay đặt hàng với Basso ngay hôm nay.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header p-0"
+                    id="heading-06349652-c414-7a39-dbe1-65cf55e60271"
+                  >
+                    <div
+                      class="custom-control custom-radio custom-control-inline d-block p-0 collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapse-06349652-c414-7a39-dbe1-65cf55e60271"
+                      aria-expanded="false"
+                      aria-controls="collapse-06349652-c414-7a39-dbe1-65cf55e60271"
+                    >
+                      <input
+                        type="radio"
+                        id="headship-06349652-c414-7a39-dbe1-65cf55e60271"
+                        name="headship"
+                        class="custom-control-input"
+                      />
+                      <label
+                        class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                        for="headship-06349652-c414-7a39-dbe1-65cf55e60271"
+                      >
+                        Đồng hồ, kính, túi xách sale up to 85% từ Jomashop
+                      </label>
+                    </div>
+                  </div>
+
+                  <div
+                    id="collapse-06349652-c414-7a39-dbe1-65cf55e60271"
+                    class="collapse"
+                    aria-labelledby="heading-06349652-c414-7a39-dbe1-65cf55e60271"
+                    data-parent="#accordionPayment"
+                    style="height: 0px"
+                    aria-expanded="false"
+                  >
+                    <div class="card-body">
+                      <p>HOT DEAL SALE ĐỒNG HỒ:</p>
+
+                      <p>
+                        Link sale up to 50% đồng hồ Fossil:
+                        <a
+                          data-lynx-mode="hover"
+                          data-lynx-uri="https://l.facebook.com/l.php?u=http%3A%2F%2Fbit.ly%2F2XIgVcT%3Ffbclid%3DIwAR3mJPMDN7zsbJIIehUIQloM4deMlAIp15NjFOagZtIscKwn9XRrNaKc3wc&amp;h=AT2QM56c3A5TzaymUr_J0fkhQRAjoSrAbYLAI6lSsX3iCUc_2SBIRRXUIWYwVLLx8bRNfupBJRrbisu0poFVMnrZ-9vazvXNh86w7QWvXakn4OmqHJBhtrqsikbhTwBgGdgbmA"
+                          href="http://bit.ly/2XIgVcT?fbclid=IwAR3mJPMDN7zsbJIIehUIQloM4deMlAIp15NjFOagZtIscKwn9XRrNaKc3wc"
+                          rel="nofollow noopener"
+                          target="_blank"
+                          >http://bit.ly/2XIgVcT</a
+                        ><br />
+                        <br />
+                        Link sale up to 70% đồng hồ Frederique Constant:
+                        <a
+                          data-lynx-mode="hover"
+                          data-lynx-uri="https://l.facebook.com/l.php?u=http%3A%2F%2Fbit.ly%2F2GBW2tW%3Ffbclid%3DIwAR1EsSR8tPsvsyCRN62LuibnMGnKTYbp_kcj-VoBFQoc3gtjCj9UW59mXUk&amp;h=AT2QM56c3A5TzaymUr_J0fkhQRAjoSrAbYLAI6lSsX3iCUc_2SBIRRXUIWYwVLLx8bRNfupBJRrbisu0poFVMnrZ-9vazvXNh86w7QWvXakn4OmqHJBhtrqsikbhTwBgGdgbmA"
+                          href="http://bit.ly/2GBW2tW?fbclid=IwAR1EsSR8tPsvsyCRN62LuibnMGnKTYbp_kcj-VoBFQoc3gtjCj9UW59mXUk"
+                          rel="nofollow noopener"
+                          target="_blank"
+                          >http://bit.ly/2GBW2tW</a
+                        ><br />
+                        <br />
+                        Link sale up to up to 65% đồng hồ Tissot:
+                        <a
+                          data-lynx-mode="hover"
+                          href="https://l.facebook.com/l.php?u=http%3A%2F%2Fbit.ly%2F2UUhbaY%3Ffbclid%3DIwAR2RaQos2MO9d0Gk408pbKHlAJ-39tYtNDNKGBVKs303HZiDZ2-ebV0hsms&amp;h=AT2QM56c3A5TzaymUr_J0fkhQRAjoSrAbYLAI6lSsX3iCUc_2SBIRRXUIWYwVLLx8bRNfupBJRrbisu0poFVMnrZ-9vazvXNh86w7QWvXakn4OmqHJBhtrqsikbhTwBgGdgbmA"
+                          rel="nofollow noopener"
+                          target="_blank"
+                          >http://bit.ly/2UUhbaY</a
+                        >
+                      </p>
+
+                      <p>
+                        Link sale up to up to 85% đồng hồ Invicta:&nbsp;<a
+                          href="http://bit.ly/2UzpZi1"
+                          >http://bit.ly/2UzpZi1</a
+                        >&nbsp;
+                      </p>
+
+                      <p>
+                        Link sale up to up to 40% đồng hồ Hublot:&nbsp;<a
+                          href="http://bit.ly/2IQXEBI"
+                          >http://bit.ly/2IQXEBI</a
+                        ><br />
+                        <br />
+                        HOT DEAL SALE KÍNH:<br />
+                        Link sale kính MarJacobs đồng giá 39.99$:
+                        <a
+                          data-lynx-mode="hover"
+                          href="https://l.facebook.com/l.php?u=http%3A%2F%2Fbit.ly%2F2IPSjdV%3Ffbclid%3DIwAR3-f_IyT3R0IeFIS5tbyiwxaLoU0R7ArQC2GOTw_54RNOpVi_FZGHl2nQQ&amp;h=AT2QM56c3A5TzaymUr_J0fkhQRAjoSrAbYLAI6lSsX3iCUc_2SBIRRXUIWYwVLLx8bRNfupBJRrbisu0poFVMnrZ-9vazvXNh86w7QWvXakn4OmqHJBhtrqsikbhTwBgGdgbmA"
+                          rel="nofollow noopener"
+                          target="_blank"
+                          >http://bit.ly/2IPSjdV</a
+                        ><br />
+                        <br />
+                        Link sale kính Rayban đồng giá 64.99$ và 99.99$:
+                        <a
+                          data-lynx-mode="hover"
+                          href="https://l.facebook.com/l.php?u=http%3A%2F%2Fbit.ly%2F2Vj186I%3Ffbclid%3DIwAR2DLXN_3zQhWDeTKytFt5art1X1OcUpVbWPbIpEY-k7alAHqtUqDvec4Yk&amp;h=AT2QM56c3A5TzaymUr_J0fkhQRAjoSrAbYLAI6lSsX3iCUc_2SBIRRXUIWYwVLLx8bRNfupBJRrbisu0poFVMnrZ-9vazvXNh86w7QWvXakn4OmqHJBhtrqsikbhTwBgGdgbmA"
+                          rel="nofollow noopener"
+                          target="_blank"
+                          >http://bit.ly/2Vj186I</a
+                        ><br />
+                        <br />
+                        Link sale kính Montblanc đồng giá 99.99$:
+                        <a
+                          data-lynx-mode="hover"
+                          data-lynx-uri="https://l.facebook.com/l.php?u=http%3A%2F%2Fbit.ly%2F2UuAGm9%3Ffbclid%3DIwAR3QjygtFlmCtWc0raitPCxIJv4fuCFIPaf5gHlb133mGbcIU2gLXajTrXk&amp;h=AT2QM56c3A5TzaymUr_J0fkhQRAjoSrAbYLAI6lSsX3iCUc_2SBIRRXUIWYwVLLx8bRNfupBJRrbisu0poFVMnrZ-9vazvXNh86w7QWvXakn4OmqHJBhtrqsikbhTwBgGdgbmA"
+                          href="http://bit.ly/2UuAGm9?fbclid=IwAR3QjygtFlmCtWc0raitPCxIJv4fuCFIPaf5gHlb133mGbcIU2gLXajTrXk"
+                          rel="nofollow noopener"
+                          target="_blank"
+                          >http://bit.ly/2UuAGm9</a
+                        >
+                      </p>
+
+                      <p>HOT DEAL SALE TÚI:&nbsp;</p>
+
+                      <p>
+                        Link sale túi Burberry:&nbsp;<a
+                          href="http://bit.ly/2V0unfj"
+                          >http://bit.ly/2V0unfj</a
+                        >
+                      </p>
+
+                      <p>
+                        Link sale túi Valentino: h<a
+                          href="http://ttp://bit.ly/2XMDYmP"
+                          >ttp://bit.ly/2XMDYmP</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div
+                    class="card-header p-0"
+                    id="heading-4afc3b9d-f0ef-63ee-32f7-62bbdab590d8"
+                  >
+                    <div
+                      class="custom-control custom-radio custom-control-inline d-block p-0"
+                      data-toggle="collapse"
+                      data-target="#collapse-4afc3b9d-f0ef-63ee-32f7-62bbdab590d8"
+                      aria-expanded="false"
+                      aria-controls="collapse-4afc3b9d-f0ef-63ee-32f7-62bbdab590d8"
+                    >
+                      <input
+                        type="radio"
+                        id="headship-4afc3b9d-f0ef-63ee-32f7-62bbdab590d8"
+                        name="headship"
+                        class="custom-control-input"
+                      />
+                      <label
+                        class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                        for="headship-4afc3b9d-f0ef-63ee-32f7-62bbdab590d8"
+                      >
+                        Quần áo, giày và phụ kiện thể thao sale up 70% từ
+                        SportDirect
+                      </label>
+                    </div>
+                  </div>
+
+                  <div
+                    id="collapse-4afc3b9d-f0ef-63ee-32f7-62bbdab590d8"
+                    class="collapse"
+                    aria-labelledby="heading-4afc3b9d-f0ef-63ee-32f7-62bbdab590d8"
+                    data-parent="#accordionPayment"
+                  >
+                    <div class="card-body">
+                      <p>Link sale dành cho Nam:</p>
+
+                      <p>
+                        MEN TRAINER UP TO 65% OFF:&nbsp;<a
+                          href="http://bit.ly/2vjBY9r&nbsp;"
+                          >http://bit.ly/2vjBY9r&nbsp;</a
+                        >
+                      </p>
+
+                      <p>
+                        MEN JACKET AND COATS UP TO 70% OFF:&nbsp;<a
+                          href="http://bit.ly/2IKFp1w"
+                          >http://bit.ly/2IKFp1w</a
+                        >
+                      </p>
+
+                      <p>
+                        MEN HOODIE UP TO 70% OFF:&nbsp;<a
+                          href="http://bit.ly/2IVkRm5"
+                          >http://bit.ly/2IVkRm5</a
+                        >
+                      </p>
+
+                      <p>
+                        MEN T-SHIRTS UP TO 70% OFF:&nbsp;<a
+                          href="http://bit.ly/2DwsWKy"
+                          >http://bit.ly/2DwsWKy</a
+                        >
+                      </p>
+
+                      <p>
+                        MEN TRACK SUIT UP TO 75% OFF:&nbsp;<a
+                          href="http://bit.ly/2IEt9Qh"
+                          >http://bit.ly/2IEt9Qh</a
+                        >
+                      </p>
+
+                      <p>Link sale dành cho Nữ:&nbsp;</p>
+
+                      <p>
+                        LADIES&nbsp;TRAINER UP TO 75% OFF:&nbsp;<a
+                          href="http://bit.ly/2VoggQ9"
+                          >http://bit.ly/2VoggQ9</a
+                        >
+                      </p>
+
+                      <p>
+                        LADIES JACKET AND COATS UP TO 70% OFF:&nbsp;<a
+                          href="http://bit.ly/2Pra4Bo"
+                          >http://bit.ly/2Pra4Bo</a
+                        >
+                      </p>
+
+                      <p>
+                        LADIES HOODIE UP TO 70% OFF:&nbsp;<a
+                          href="http://bit.ly/2W3sudT"
+                          >http://bit.ly/2W3sudT</a
+                        >
+                      </p>
+
+                      <p>
+                        LADIES BOTTOMS UP TO 80% OFF:&nbsp;<a
+                          href="http://bit.ly/2XLHU7f"
+                          >http://bit.ly/2XLHU7f</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__bottom">
+        <div class="overlay"></div>
+        <div class="contact">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-12 col-md-4 overlay-content footer__logo mb-5 mb-md-0"
+              >
+                <img
+                  src="../dist/images/LogoShipus_footer.png"
+                  alt=""
+                  style="width: 35%"
+                />
+                <div
+                  class="fb-page"
+                  data-href="https://www.facebook.com/shipus19"
+                  data-tabs=""
+                  data-width=""
+                  data-height=""
+                  data-small-header="false"
+                  data-adapt-container-width="true"
+                  data-hide-cover="false"
+                  data-show-facepile="true"
+                >
+                  <blockquote
+                    cite="https://www.facebook.com/shipus19"
+                    class="fb-xfbml-parse-ignore"
+                  >
+                    <a href="https://www.facebook.com/shipus19"
+                      >Shipus - Mua hàng Mỹ</a
+                    >
+                  </blockquote>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 overlay-content">
+                <div class="footer__title">Hỗ trợ</div>
+  
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="javascript:void(0)">Về SHIPUS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)"
+                      >Quy trình đặt hàng</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)"
+                      >Các điều khoản và điều kiện</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)"
+                      >Chính sách bảo hành, hỗ trợ bảo hành</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)"
+                      >Các mặt hàng cấm</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)"
+                      >Chính sách bảo mật</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 overlay-content">
+                <div class="footer__title">Liên hệ</div>
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link d-flex" href="javascript:void(0)">
+                      <i class="las la-map-marker"></i>
+  
+                      <p>
+                        <b>Văn Phòng Hà Nội</b>
+                        <br />
+                        493 Nguyễn Văn Cừ, Long Biên, Hà Nội
+                      </p>
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link d-flex" href="javascript:void(0)">
+                      <i class="las la-map-marker"></i>
+                      <p>
+                        <b>Văn Phòng Hồ Chí Minh</b>
+                        <br />
+                        60 Lê Trung Nghĩa, P12, Q Tân Bình, Hồ Chí Minh
+                      </p>
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link d-flex text-blue"
+                      href="javascript:void(0)"
+                    >
+                      <i class="las la-phone"></i>
+                      <span>Hotline: 0965 687 790</span>
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link d-flex text-blue"
+                      href="javascript:void(0)"
+                    >
+                      <i class="las la-envelope"></i>
+                      <span>Email: info@shipus.vn</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copy-right">
+          <div class="overlay-content p-2 text-center text-white">
+            <p>SHIPUS.VN - một sản phẩm của CÔNG TY TNHH THƯƠNG MẠI HOÀI ĐỨC</p>
+            <p>
+              Giấy chứng nhận Đăng ký doanh nghiệp số 03099136630 được cấp bởi Sở
+              Kế Hoạch và Đầu tư thành phố Hồ Chí Minh
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+<div class="modal" tabindex="-1" role="dialog" id="modal-login" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Đăng nhập</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="login-form">
+                  <form method="get" action="" data-bind="submit: login">
+                      <div class="alert alert-danger" data-bind="visible: error_msg() !== undefined, text: error_msg" style="display: none;"></div>
+                      <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Email đăng nhập" data-bind="value: email">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                          </div>
+                      </div>
+                      <div class="input-group">
+                          <input type="password" class="form-control" placeholder="Mật khẩu" data-bind="value: pass">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-key"></i></div>
+                          </div>
+                      </div>
+                      <div class="input-group">
+                          <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="remember">
+                              <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
+                          </div>
+                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                      </div>
+                      <div class="input-group">
+                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                      </div>
+                      <div class="input-group">
+                          Bạn chưa có tài khoản? &nbsp;
+                          <a href="#" class='register' onclick="showModalRegister()">Đăng ký</a>
+                      </div>
+                      
+                  </form>
+              </div>
+      <ul class="social-logins">
+        <li class="social-login-google"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></li>
+        <!--<li class="social-login-zalo"><a href="" class="aforget">Đăng nhập với Zalo</a></li>-->
+      </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="modal" role="dialog" tabindex="-1" id="modal-register" aria-hidden="true" style="display: none;">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">ĐĂNG KÝ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeRegister()">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="p-3">
+              <div style='padding: 0 20px;'>
+<div class="form-group">
+                    <label class="d-block">
+                        Họ tên
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: name" style="display: none;"></span></label>
+                    <input type="text" required="" class="form-control" data-bind="value: name"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Địa chỉ email
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: email" style="display: none;"></span></label>
+                    <input type="email" required="" class="form-control" autocomplete="off" data-bind="value: email"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Điện thoại
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: phone" style="display: none;"></span></label>
+                    <input type="text" required="" class="form-control" data-bind="value: phone" autocomplete="off"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Mật khẩu
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: pass" autocomplete="off" style="display: none;"></span></label>
+                    <input type="password" class="form-control" autocomplete="off" required="" data-bind="value: pass"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Xác nhận mật khẩu
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: re_pass" style="display: none;"></span></label>
+                    <input type="password" class="form-control" autocomplete="off" required="" data-bind="value: re_pass"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <button class="btn button btn-block" id='registerBtn' data-bind="click: $root.register">
+                        Đăng ký
+                    </button>
+                </div>
+                <div class="input-group">
+                    Bạn đã có tài khoản? &nbsp;
+                    <a href="#" onClick='showModalLogin()'>Đăng nhập</a>&nbsp; hoặc
+                </div>
+              </div>
+                
+                <!-- <div class="social-login-google" style="padding-top:5px;"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></div> -->
+                <ul class="social-logins mt-3">
+                    <li class="social-login-google"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src='../dist/js/modal.js'></script>
+
+<script src="../dist/js/vendors.js"></script>
+<script src="../dist/js/scripts.js"></script>
+    
+</html>

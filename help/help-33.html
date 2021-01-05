@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html
+  lang="vi-VN"
+  class="js_active vc_desktop vc_transform vc_transform js rgba backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csstransitions fontface"
+  style="--scroll-y: 0px"
+>
+ 
+<head>
+
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+/>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' />
+
+<link
+  rel="stylesheet"
+  href="https://basso.vn/theme/basso/statics/libraries/g5plus/css/style.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://basso.vn/theme/basso/statics/css/style.min.css?v=1609743493"
+/>
+<link
+  rel="stylesheet"
+  href="https://basso.vn/theme/basso/statics/css/responsive.min.css?v=1609743493"
+/>
+<link rel='stylesheet' href='./help.css' />
+<link rel='stylesheet' href='../dist//css/modal.css' />
+<link rel="stylesheet" href="../dist/css/vendors.css" />
+<link rel="stylesheet" href="../dist/css/app.css" />
+<link rel="stylesheet" href="../dist/css/about.css" />
+
+
+</head>
+
+<body>
+<div class="sidebar__right">
+    <div id="overlay"></div>
+    <div id="menu--mobile">
+      <div class="d-flex justify-content-end">
+        <button class="navbar-toggler p-3" type="button" id="close-menu-mobile">
+          <i class="las la-times"></i>
+        </button>
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            >Homepage <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/about.html">Về shipus</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            data-toggle="collapse"
+            href="#collapseId"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Hướng dẫn <i class="las la-angle-down"></i>
+          </a>
+          <div
+            class="collapse"
+            id="collapseId"
+            aria-labelledby="navbar1Dropdown"
+          >
+            <a class="dropdown-item" href="/buy-steps.html"
+              >Quy trình mua hàng hộ</a
+            >
+            <a class="dropdown-item" href="/tran-steps.html"
+              >Quy trình vận chuyển</a
+            >
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/price-list.html">bảng giá dịch vụ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+        </li>
+      </ul>
+    </div>
+    <div id="cart--mobile">
+      <div class="float-right">
+        <button class="navbar-toggler" type="button" id="close-cart-mobile">
+          <i class="las la-times"></i>
+        </button>
+      </div>
+      <div class="form--box">
+        <div class="form__title">GIỎ HÀNG</div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <article class="product">
+                <svg
+                  style="align-self: flex-start"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0015 1.44873H14.0126V2.12366H15.4611V1.35425C15.4613 0.607544 14.8541 0 14.1078 0H9.90625C9.15991 0 8.55273 0.607544 8.55273 1.35425V2.12366H10.0015V1.44873Z"
+                    fill="#ED1A1F"
+                  />
+                  <path
+                    d="M18.8072 7.86328H5.20835C4.83573 7.86328 4.5424 8.18115 4.57243 8.55267L5.70933 22.6108C5.77269 23.3956 6.42729 24 7.21373 24H16.8017C17.5881 24 18.2427 23.3956 18.3061 22.6106L19.443 8.55267C19.4732 8.18115 19.1799 7.86328 18.8072 7.86328ZM8.50114 22.5005C8.48594 22.5015 8.47074 22.502 8.45573 22.502C8.07597 22.502 7.75718 22.2063 7.73356 21.8221L7.0211 10.2812C6.99656 9.88184 7.30033 9.53815 7.6995 9.51361C8.09739 9.48944 8.44255 9.79248 8.46708 10.192L9.17936 21.733C9.20408 22.1323 8.90031 22.4758 8.50114 22.5005ZM12.7402 21.7776C12.7402 22.1776 12.4159 22.5018 12.0158 22.5018C11.6158 22.5018 11.2915 22.1776 11.2915 21.7776V10.2365C11.2915 9.83643 11.6158 9.51215 12.0158 9.51215C12.4158 9.51215 12.7402 9.83643 12.7402 10.2365V21.7776ZM16.9945 10.2792L16.3142 21.8201C16.2917 22.205 15.9724 22.5018 15.5919 22.5018C15.5776 22.5018 15.5632 22.5015 15.5487 22.5007C15.1493 22.4771 14.8446 22.1343 14.8683 21.735L15.5483 10.1938C15.5718 9.79449 15.9134 9.48981 16.3139 9.51343C16.7132 9.53687 17.0179 9.87982 16.9945 10.2792Z"
+                    fill="#ED1A1F"
+                  />
+                  <path
+                    d="M21.3116 5.62781L20.8359 4.20178C20.7105 3.82587 20.3586 3.57227 19.9621 3.57227H4.05228C3.65604 3.57227 3.30393 3.82587 3.17869 4.20178L2.70298 5.62781C2.61124 5.90283 2.73063 6.18335 2.95347 6.32324C3.04429 6.38019 3.15177 6.41443 3.26987 6.41443H20.7447C20.8628 6.41443 20.9705 6.38019 21.0611 6.32306C21.284 6.18317 21.4034 5.90265 21.3116 5.62781Z"
+                    fill="#ED1A1F"
+                  />
+                </svg>
+                <div class="product__info">
+                  <h6>Blazer</h6>
+                  <div class="product__price">350.000 VND</div>
+                  <ul class="product__des">
+                    <li><span>Size : </span><span>M</span></li>
+                    <li><span>Color :</span><span>Blue</span></li>
+                  </ul>
+                </div>
+                <div class="product__size">1</div>
+              </article>
+              <article class="product">
+                <svg
+                  style="align-self: flex-start"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0015 1.44873H14.0126V2.12366H15.4611V1.35425C15.4613 0.607544 14.8541 0 14.1078 0H9.90625C9.15991 0 8.55273 0.607544 8.55273 1.35425V2.12366H10.0015V1.44873Z"
+                    fill="#ED1A1F"
+                  />
+                  <path
+                    d="M18.8072 7.86328H5.20835C4.83573 7.86328 4.5424 8.18115 4.57243 8.55267L5.70933 22.6108C5.77269 23.3956 6.42729 24 7.21373 24H16.8017C17.5881 24 18.2427 23.3956 18.3061 22.6106L19.443 8.55267C19.4732 8.18115 19.1799 7.86328 18.8072 7.86328ZM8.50114 22.5005C8.48594 22.5015 8.47074 22.502 8.45573 22.502C8.07597 22.502 7.75718 22.2063 7.73356 21.8221L7.0211 10.2812C6.99656 9.88184 7.30033 9.53815 7.6995 9.51361C8.09739 9.48944 8.44255 9.79248 8.46708 10.192L9.17936 21.733C9.20408 22.1323 8.90031 22.4758 8.50114 22.5005ZM12.7402 21.7776C12.7402 22.1776 12.4159 22.5018 12.0158 22.5018C11.6158 22.5018 11.2915 22.1776 11.2915 21.7776V10.2365C11.2915 9.83643 11.6158 9.51215 12.0158 9.51215C12.4158 9.51215 12.7402 9.83643 12.7402 10.2365V21.7776ZM16.9945 10.2792L16.3142 21.8201C16.2917 22.205 15.9724 22.5018 15.5919 22.5018C15.5776 22.5018 15.5632 22.5015 15.5487 22.5007C15.1493 22.4771 14.8446 22.1343 14.8683 21.735L15.5483 10.1938C15.5718 9.79449 15.9134 9.48981 16.3139 9.51343C16.7132 9.53687 17.0179 9.87982 16.9945 10.2792Z"
+                    fill="#ED1A1F"
+                  />
+                  <path
+                    d="M21.3116 5.62781L20.8359 4.20178C20.7105 3.82587 20.3586 3.57227 19.9621 3.57227H4.05228C3.65604 3.57227 3.30393 3.82587 3.17869 4.20178L2.70298 5.62781C2.61124 5.90283 2.73063 6.18335 2.95347 6.32324C3.04429 6.38019 3.15177 6.41443 3.26987 6.41443H20.7447C20.8628 6.41443 20.9705 6.38019 21.0611 6.32306C21.284 6.18317 21.4034 5.90265 21.3116 5.62781Z"
+                    fill="#ED1A1F"
+                  />
+                </svg>
+                <div class="product__info">
+                  <h6>Blazer</h6>
+                  <div class="product__price">350.000 VND</div>
+                  <ul class="product__des">
+                    <li><span>Size : </span><span>M</span></li>
+                    <li><span>Color :</span><span>Blue</span></li>
+                  </ul>
+                </div>
+                <div class="product__size">1</div>
+              </article>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 py-2 d-flex justify-content-between">
+              <span>Tổng tiền</span>
+              <b class="text-danger">350.000 Đ</b>
+            </div>
+            <div class="col-12 pt-3">
+              <div class="form-group">
+                <a
+                  href="./create-order.html#step-2"
+                  class="btn btn-block btn-form step-next"
+                  >Thanh toán</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row header--main">
+        <div class="header__left col-12 col-lg-2 col-xl-2">
+          <h1 class="m-0 text-center">
+            <img
+              class="header__logo"
+              src="../dist/images/LogoShipus.png"
+              alt=""
+            />
+          </h1>
+          <div class="header__mobile d-block d-lg-none mr-2">
+            <button class="navbar-toggler" type="button">
+              <i class="las la-headset"></i>
+            </button>
+            <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal-login">
+              <i class="las la-user"></i>
+            </button>
+            <button class="navbar-toggler" type="button" id="btn-cart-mobile">
+              <i class="las la-shopping-cart"></i>
+            </button>
+            <button class="navbar-toggler" type="button" id="btn-menu-mobile">
+              <i class="las la-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="header__center d-none d-lg-flex justify-content-center col-12 col-lg-8 col-xl-8"
+        >
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/"
+                    >Homepage <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/about.html">Về shipus</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="javascript:void(0)"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Hướng dẫn <i class="las la-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/buy-steps.html"
+                      >Quy trình mua hàng hộ</a
+                    >
+                    <a class="dropdown-item" href="/tran-steps.html"
+                      >Quy trình vận chuyển</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/price-list.html"
+                    >bảng giá dịch vụ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="header__right d-none d-lg-flex col-12 col-lg-2 col-xl-2">
+          <ul
+            class="navbar-nav d-flex flex-row align-items-center justify-content-end"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" href="./help-27.html"
+                ><i class="las la-headset"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login"
+                ><i class="las la-user"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:openCart()"
+                ><i class="las la-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+ 
+  <main class="help-page">
+    <div class="w">
+      <div class="container">
+        <h2 class="h2-title">TRỢ GIÚP</h2>
+        <div class="row">
+          <div class="col-md-4 col-lg-3 shadow p-3 mb-5 bg-white rounded">
+            <ul class="help-nav">
+              <li class="parent">TIN TỨC</li>
+              <li class="">
+                <a href="./help-27.html">Khuyến mãi lớn</a>
+              </li>
+              <li class="">
+                <a href="./help-28.html">Thông báo </a>
+              </li>
+            </ul>
+
+            <ul class="help-nav">
+              <li class="parent">TRỢ GIÚP</li>
+              <li class="">
+                <a href="./help-19.html">Quy trình đặt hàng</a>
+              </li>
+              <li class="">
+                <a href="./help-20.html">Chí phí và thời gian giao hàng</a>
+              </li>
+              <li class="">
+                <a href="./help-21.html">Dịch vụ giá trị gia tăng</a>
+              </li>
+              <li class="">
+                <a href="./help-23.html">Các điều khoản và điều kiện</a>
+              </li>
+              <li class="">
+                <a href="./help-24.html">Các điều khoản về lỗi sản phẩm</a>
+              </li>
+              <li class="">
+                <a href="./help-39.html">Các mặt hàng cấm</a>
+              </li>
+            </ul>
+
+            <ul class="help-nav">
+              <li class="parent">CÂU HỎI THƯỜNG GẶP</li>
+              <li class="">
+                <a href="./help-29.html">Câu hỏi tổng quan</a>
+              </li>
+              <li class="">
+                <a href="./help-30.html">Về tài khoản</a>
+              </li>
+              <li class="">
+                <a href="./help-31.html">Về cách thức thanh toán</a>
+              </li>
+              <li class="">
+                <a href="./help-32.html">Về đơn hàng</a>
+              </li>
+              <li class="">
+                <a href="./help-35.html">Khiếu nại và sau bán hàng</a>
+              </li>
+              <li class="">
+                <a href="./help-40.html">Chính sách bảo mật</a>
+              </li>
+              <li class="active">
+                <a href="./help-33.html">Về kho và vận chuyển quốc tê</a>
+              </li>
+              <li class="">
+                <a href="./help-34.html">Về giao hàng tới tay</a>
+              </li>
+              <li class="">
+                <a href="./help-36.html">Về gói lại hàng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8 col-lg-9">
+            <div class="accordion shadow p-3 mb-5 bg-white rounded" id="accordionPayment">
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-584379fb-e012-f34d-938c-1661175d03e9"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-584379fb-e012-f34d-938c-1661175d03e9"
+                    aria-expanded="true"
+                    aria-controls="collapse-584379fb-e012-f34d-938c-1661175d03e9"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-584379fb-e012-f34d-938c-1661175d03e9"
+                      name="headship"
+                      class="custom-control-input"
+                      checked=""
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-584379fb-e012-f34d-938c-1661175d03e9"
+                    >
+                      Phí vận chuyển của Basso có bao gồm thuế phí Hải quan hay
+                      không?
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-584379fb-e012-f34d-938c-1661175d03e9"
+                  class="collapse show"
+                  aria-labelledby="heading-584379fb-e012-f34d-938c-1661175d03e9"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Bắt đầu từ ngày 28/8/2015, đối với Basso.vn, phí vận
+                      chuyển quốc tế đã bao gồm thuế và phí hải quan (áp dụng
+                      đối với 1 số mặt hàng, để được tư vấn chính xác hơn sẽ có
+                      nhân viên CSKH liên hệ tư vấn cụ thể).
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-bca959b0-4f6a-ebae-f382-7bea58663295"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-bca959b0-4f6a-ebae-f382-7bea58663295"
+                    aria-expanded="false"
+                    aria-controls="collapse-bca959b0-4f6a-ebae-f382-7bea58663295"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-bca959b0-4f6a-ebae-f382-7bea58663295"
+                      name="headship"
+                      class="custom-control-input"
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-bca959b0-4f6a-ebae-f382-7bea58663295"
+                    >
+                      Lô hàng của tôi được xử lý trong bao lâu?
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-bca959b0-4f6a-ebae-f382-7bea58663295"
+                  class="collapse"
+                  aria-labelledby="heading-bca959b0-4f6a-ebae-f382-7bea58663295"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p dir="ltr">
+                      Thời gian xử lý lô hàng phụ thuộc vào việc Khách hàng chọn
+                      phương thức Gom hàng của các kiện hàng riêng lẻ. Chúng tôi
+                      cung cấp 3 lựa chọn Gom hàng và vận chuyển hàng thuận tiện
+                      dành cho Khách hàng:
+                    </p>
+
+                    <ul dir="ltr">
+                      <li>
+                        <strong
+                          >Tự động tập hợp và vận chuyển hàng cùng nhau</strong
+                        >: Chúng tôi mang lại sự thuận tiện cho các Khách hàng
+                        của chúng tôi, những người không có thời gian để ghé
+                        thăm trang web để cập nhật trạng thái đơn hàng. Khách
+                        hàng có thể lựa chọn phương thức Tự động tập hợp tất cả
+                        các đơn hàng và vận chuyển cùng nhau khi chúng đến cùng
+                        một địa chỉ Kho.
+                      </li>
+                      <li>
+                        <strong
+                          >Tập hợp hàng và vận chuyển tất cả các đơn hàng đã đến
+                          kho BẤT CỨ KHI NÀO Khách hàng yêu cầu</strong
+                        >: Một cách khác, Khách hàng có thể vận chuyển tất cả
+                        các đơn hàng đã về kho bất cứ khi nào Khách hàng muốn.
+                        Chi phí vận chuyển của các đơn hàng đã đến kho phản ánh
+                        sự kiếm soát tốt hơn trong việc tiết kiệm chi phí.
+                      </li>
+                      <li>
+                        <strong
+                          >Không tập kết hàng, vận chuyển ngay lập tức khi mỗi
+                          đơn hàng đến kho:</strong
+                        >&nbsp;Khi Người mua thanh toán một giỏ hàng với nhiều
+                        Sản phẩm khác nhau, Người mua có thể lựa chọn giải pháp
+                        này để đảm bảo có thể nhận được các mặt hàng nhanh nhất
+                        có thể.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-8765e636-db90-cc9b-3d5a-7dd1fca218d8"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-8765e636-db90-cc9b-3d5a-7dd1fca218d8"
+                    aria-expanded="false"
+                    aria-controls="collapse-8765e636-db90-cc9b-3d5a-7dd1fca218d8"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-8765e636-db90-cc9b-3d5a-7dd1fca218d8"
+                      name="headship"
+                      class="custom-control-input"
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-8765e636-db90-cc9b-3d5a-7dd1fca218d8"
+                    >
+                      Liệu hàng có về trước hoặc sau ngày hàng về dự kiến?
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-8765e636-db90-cc9b-3d5a-7dd1fca218d8"
+                  class="collapse"
+                  aria-labelledby="heading-8765e636-db90-cc9b-3d5a-7dd1fca218d8"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Điều này hoàn toàn có thể xảy ra. Ngày hàng về dự kiến là
+                      một sự ước tính, thống kê của chúng tôi cho thấy có 95%
+                      kiện hàng sẽ về đúng hoặc trước ngày hàng về dự kiến. Tuy
+                      nhiên, hàng cũng có thể về sau khoảng thời gian đó trong
+                      một số trường hợp không thể kiểm soát như là kiểm tra hải
+                      quan, chậm trễ thông quan hay thời tiết xấu có thể xảy ra.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-b890781a-5080-8639-7e9d-9f2e0e1e9432"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-b890781a-5080-8639-7e9d-9f2e0e1e9432"
+                    aria-expanded="false"
+                    aria-controls="collapse-b890781a-5080-8639-7e9d-9f2e0e1e9432"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-b890781a-5080-8639-7e9d-9f2e0e1e9432"
+                      name="headship"
+                      class="custom-control-input"
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-b890781a-5080-8639-7e9d-9f2e0e1e9432"
+                    >
+                      Tôi có thể hủy kiện hàng của mình được không?
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-b890781a-5080-8639-7e9d-9f2e0e1e9432"
+                  class="collapse"
+                  aria-labelledby="heading-b890781a-5080-8639-7e9d-9f2e0e1e9432"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Không, một khi kiện hàng đã được tạo để vận chuyển, chúng
+                      tôi không thể hủy đơn hàng của Khách hàng vì bất cứ lý do
+                      gì. Đơn hàng có thể đã được đóng gói và xử lý tới công ty
+                      Vận chuyển thậm chí ngay cả khi trạng thái đơn hàng chưa
+                      được cập nhật.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-a9b4fa6a-b6d5-6712-2e98-54b6ee574b11"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-a9b4fa6a-b6d5-6712-2e98-54b6ee574b11"
+                    aria-expanded="false"
+                    aria-controls="collapse-a9b4fa6a-b6d5-6712-2e98-54b6ee574b11"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-a9b4fa6a-b6d5-6712-2e98-54b6ee574b11"
+                      name="headship"
+                      class="custom-control-input"
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-a9b4fa6a-b6d5-6712-2e98-54b6ee574b11"
+                    >
+                      Basso có thể gom các đơn hàng vào một kiện hàng được
+                      không?
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-a9b4fa6a-b6d5-6712-2e98-54b6ee574b11"
+                  class="collapse"
+                  aria-labelledby="heading-a9b4fa6a-b6d5-6712-2e98-54b6ee574b11"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Nếu bạn lựa chọn gom hàng, các đơn hàng của bạn sẽ được
+                      lưu tại Kho Basso&nbsp;và được gom vào một lượng gói hàng
+                      ít nhất có thể, dựa trên trọng lượng vận chuyển của các
+                      đơn hàng trong cùng một lô hàng.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-078b7539-a689-7e21-871b-a3d270392320"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-078b7539-a689-7e21-871b-a3d270392320"
+                    aria-expanded="false"
+                    aria-controls="collapse-078b7539-a689-7e21-871b-a3d270392320"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-078b7539-a689-7e21-871b-a3d270392320"
+                      name="headship"
+                      class="custom-control-input"
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-078b7539-a689-7e21-871b-a3d270392320"
+                    >
+                      Tôi có thể gom các đơn hàng của tôi từ các kho hàng khác
+                      nhau không?
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-078b7539-a689-7e21-871b-a3d270392320"
+                  class="collapse"
+                  aria-labelledby="heading-078b7539-a689-7e21-871b-a3d270392320"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Không, chỉ những đơn hàng từ cùng một kho hàng mới có thể
+                      gom để vận chuyển cùng nhau.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-a80db64e-06ac-6f02-aa78-8582200c2afa"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-a80db64e-06ac-6f02-aa78-8582200c2afa"
+                    aria-expanded="false"
+                    aria-controls="collapse-a80db64e-06ac-6f02-aa78-8582200c2afa"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-a80db64e-06ac-6f02-aa78-8582200c2afa"
+                      name="headship"
+                      class="custom-control-input"
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-a80db64e-06ac-6f02-aa78-8582200c2afa"
+                    >
+                      Điều gì xảy ra nếu đơn hàng của tôi là dạng gói quà?
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-a80db64e-06ac-6f02-aa78-8582200c2afa"
+                  class="collapse"
+                  aria-labelledby="heading-a80db64e-06ac-6f02-aa78-8582200c2afa"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Nếu đơn hàng của Khách hàng là dạng gói quà, chúng tôi sẽ
+                      không đóng gói lại Sản phẩm.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__bottom">
+      <div class="overlay"></div>
+      <div class="contact">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-md-4 overlay-content footer__logo mb-5 mb-md-0"
+            >
+              <img
+                src="../dist/images/LogoShipus_footer.png"
+                alt=""
+                style="width: 35%"
+              />
+              <div
+                class="fb-page"
+                data-href="https://www.facebook.com/shipus19"
+                data-tabs=""
+                data-width=""
+                data-height=""
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="true"
+              >
+                <blockquote
+                  cite="https://www.facebook.com/shipus19"
+                  class="fb-xfbml-parse-ignore"
+                >
+                  <a href="https://www.facebook.com/shipus19"
+                    >Shipus - Mua hàng Mỹ</a
+                  >
+                </blockquote>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 overlay-content">
+              <div class="footer__title">Hỗ trợ</div>
+
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="javascript:void(0)">Về SHIPUS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"
+                    >Quy trình đặt hàng</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"
+                    >Các điều khoản và điều kiện</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"
+                    >Chính sách bảo hành, hỗ trợ bảo hành</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"
+                    >Các mặt hàng cấm</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"
+                    >Chính sách bảo mật</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 overlay-content">
+              <div class="footer__title">Liên hệ</div>
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link d-flex" href="javascript:void(0)">
+                    <i class="las la-map-marker"></i>
+
+                    <p>
+                      <b>Văn Phòng Hà Nội</b>
+                      <br />
+                      493 Nguyễn Văn Cừ, Long Biên, Hà Nội
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link d-flex" href="javascript:void(0)">
+                    <i class="las la-map-marker"></i>
+                    <p>
+                      <b>Văn Phòng Hồ Chí Minh</b>
+                      <br />
+                      60 Lê Trung Nghĩa, P12, Q Tân Bình, Hồ Chí Minh
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a
+                    class="nav-link d-flex text-blue"
+                    href="javascript:void(0)"
+                  >
+                    <i class="las la-phone"></i>
+                    <span>Hotline: 0965 687 790</span>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a
+                    class="nav-link d-flex text-blue"
+                    href="javascript:void(0)"
+                  >
+                    <i class="las la-envelope"></i>
+                    <span>Email: info@shipus.vn</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <div class="overlay-content p-2 text-center text-white">
+          <p>SHIPUS.VN - một sản phẩm của CÔNG TY TNHH THƯƠNG MẠI HOÀI ĐỨC</p>
+          <p>
+            Giấy chứng nhận Đăng ký doanh nghiệp số 03099136630 được cấp bởi Sở
+            Kế Hoạch và Đầu tư thành phố Hồ Chí Minh
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+  
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-login" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Đăng nhập</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="login-form">
+                  <form method="get" action="" data-bind="submit: login">
+                      <div class="alert alert-danger" data-bind="visible: error_msg() !== undefined, text: error_msg" style="display: none;"></div>
+                      <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Email đăng nhập" data-bind="value: email">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                          </div>
+                      </div>
+                      <div class="input-group">
+                          <input type="password" class="form-control" placeholder="Mật khẩu" data-bind="value: pass">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-key"></i></div>
+                          </div>
+                      </div>
+                      <div class="input-group">
+                          <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="remember">
+                              <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
+                          </div>
+                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                      </div>
+                      <div class="input-group">
+                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                      </div>
+                      <div class="input-group">
+                          Bạn chưa có tài khoản? &nbsp;
+                          <a href="#" class='register' onclick="showModalRegister()">Đăng ký</a>
+                      </div>
+                      
+                  </form>
+              </div>
+      <ul class="social-logins">
+        <li class="social-login-google"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></li>
+        <!--<li class="social-login-zalo"><a href="" class="aforget">Đăng nhập với Zalo</a></li>-->
+      </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="modal" role="dialog" tabindex="-1" id="modal-register" aria-hidden="true" style="display: none;">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">ĐĂNG KÝ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeRegister()">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="p-3">
+              <div style='padding: 0 20px;'>
+<div class="form-group">
+                    <label class="d-block">
+                        Họ tên
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: name" style="display: none;"></span></label>
+                    <input type="text" required="" class="form-control" data-bind="value: name"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Địa chỉ email
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: email" style="display: none;"></span></label>
+                    <input type="email" required="" class="form-control" autocomplete="off" data-bind="value: email"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Điện thoại
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: phone" style="display: none;"></span></label>
+                    <input type="text" required="" class="form-control" data-bind="value: phone" autocomplete="off"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Mật khẩu
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: pass" autocomplete="off" style="display: none;"></span></label>
+                    <input type="password" class="form-control" autocomplete="off" required="" data-bind="value: pass"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Xác nhận mật khẩu
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: re_pass" style="display: none;"></span></label>
+                    <input type="password" class="form-control" autocomplete="off" required="" data-bind="value: re_pass"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <button class="btn button btn-block" id='registerBtn' data-bind="click: $root.register">
+                        Đăng ký
+                    </button>
+                </div>
+                <div class="input-group">
+                    Bạn đã có tài khoản? &nbsp;
+                    <a href="#" onClick='showModalLogin()'>Đăng nhập</a>&nbsp; hoặc
+                </div>
+              </div>
+                
+                <!-- <div class="social-login-google" style="padding-top:5px;"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></div> -->
+                <ul class="social-logins mt-3">
+                    <li class="social-login-google"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src='../dist/js/modal.js'></script>
+  <script src="../dist/js/vendors.js"></script>
+  <script src="../dist/js/scripts.js"></script>
+</html>

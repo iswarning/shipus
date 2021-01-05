@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/* Mixin */
+
+/* Set các giá trị với màn hình tương ứng */
+
+.btn {
+  background: #02A9CE;
+}
+
+.btn--inverse {
+  color: #02A9CE;
+  background: #ffffff;
+}
+
+.text-blue {
+  color: #02A9CE;
+}
+
+.section {
+  padding: 35px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 25px 0;
+  }
+}
+
+.section__title {
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 52px;
+  /* identical to box height, or 153% */
+  text-align: center;
+  text-transform: uppercase;
+  /* Black */
+  color: #151515;
+}
+
+.section__title-border {
+  position: relative;
+}
+
+.section__title-border:after {
+  content: "";
+  border-bottom: 2px solid #02A9CE;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+}
+
+.section--buy article,
+.section--trans article {
+  text-align: center;
+  position: relative;
+  color: #02A9CE;
+}
+
+.section--buy article:hover .step span,
+.section--trans article:hover .step span {
+  background-color: #F4D558;
+}
+
+.section--buy article img,
+.section--trans article img {
+  width: 120px;
+  height: 120px;
+}
+
+.section--buy article p,
+.section--trans article p {
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 22px;
+  /* Black */
+  color: #151515;
+}
+
+@media (max-width: 768px) {
+  .section--buy article,
+  .section--trans article {
+    text-align: left;
+    padding-left: 100px;
+    padding-bottom: 50px;
+  }
+
+  .section--buy article p,
+  .section--trans article p {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+}
+
+.section--buy article .step,
+.section--trans article .step {
+  text-align: center;
+  position: relative;
+  margin: 20px -14px;
+}
+
+.section--buy article .step.first::before,
+.section--trans article .step.first::before {
+  display: none;
+}
+
+.section--buy article .step.last::after,
+.section--trans article .step.last::after {
+  display: none;
+}
+
+.section--buy article .step span,
+.section--trans article .step span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background: #02A9CE;
+  line-height: 40px;
+  border-radius: 50px;
+  box-sizing: content-box;
+  border: 7px solid #ffffff;
+  position: relative;
+  z-index: 2;
+  transition: background-color 0.2s linear;
+}
+
+@media (max-width: 768px) {
+  .section--buy article .step span.active,
+  .section--trans article .step span.active {
+    background: #02A9CE;
+  }
+
+  .section--buy article .step span,
+  .section--trans article .step span {
+    background: #d0d0d0;
+  }
+
+  .section--buy article .step span.scrolled,
+  .section--trans article .step span.scrolled {
+    background: #02A9CE;
+  }
+}
+
+@media (max-width: 768px) {
+  .section--buy article .step,
+  .section--trans article .step {
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 20px;
+  }
+}
+
+.steps-container {
+  position: relative;
+}
+
+.steps-container .steps-process {
+  position: absolute;
+  content: "";
+  left: 12.5%;
+  right: 12.5%;
+  top: 167px;
+  height: 1px;
+  border-bottom: 1px dashed rgba(21, 21, 21, 0.2);
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .steps-container .steps-process {
+    top: 47px;
+    bottom: calc((100% / 4) - (20px + 27px));
+    width: 2px;
+    background: rgba(21, 21, 21, 0.2);
+    height: auto;
+    left: 42px;
+    right: unset;
+  }
+
+  .steps-container .steps-process span {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 0;
+    z-index: 1;
+    background: #02A9CE;
+  }
+}
+

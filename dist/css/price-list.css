@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* Mixin */
+
+/* Set các giá trị với màn hình tương ứng */
+
+.btn {
+  background: #02A9CE;
+}
+
+.btn--inverse {
+  color: #02A9CE;
+  background: #ffffff;
+}
+
+.text-blue {
+  color: #02A9CE;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 153% */
+  text-align: center;
+  text-transform: uppercase;
+  /* Black */
+  color: #151515;
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    font-size: 21px;
+    line-height: 33px;
+  }
+}
+
+.section .price-list {
+  /* White */
+  padding-top: 5px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+.section .price-list-mobile{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .section .price-list{
+    display: none;
+  }
+  .section .price-list-mobile{
+    display: block;
+  }
+}
+
+.section .row {
+  padding: 10px 25px;
+}
+
+@media (max-width: 768px) {
+  .section .row {
+    padding: 10px 0 5px 0;
+  }
+}
+
+.section .row:not(:last-child) {
+  border-bottom: 1px solid rgba(21, 21, 21, 0.2);
+}
+
+.section .row-head h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+  /* identical to box height, or 150% */
+  text-transform: uppercase;
+  /* Black */
+  color: #151515;
+  opacity: 0.7;
+}
+
+.section .row-td h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  /* Black */
+  color: #151515;
+}
+
+.section .row-td img {
+  width: 50px;
+  height: 50px;
+}
+
+.section .table-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.section .table-list li {
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (max-width: 68px) {
+  .section .table-list li {
+    height: 50px;
+    overflow: hidden;
+  }
+}
+
+.section .table-list li h6 {
+  font-size: 14px;
+}
+

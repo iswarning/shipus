@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ship</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./dist/css/vendors.css" />
+        <link rel="stylesheet" href="./dist/css/app.css" />
+        <link rel="stylesheet" href="./dist/css/home.css" />
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=302810217173292&autoLogAppEvents=1"
+            nonce="puQBojSd"
+        ></script>
+        <div class="sidebar__right">
+            <div id="overlay"></div>
+            <div id="menu--mobile">
+                <div class="d-flex justify-content-end">
+                    <button class="navbar-toggler p-3" type="button" id="close-menu-mobile">
+                        <i class="las la-times"></i>
+                    </button>
+                </div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Homepage <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">Về shipus</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link"
+                            data-toggle="collapse"
+                            href="#collapseId"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                        >
+                            Hướng dẫn <i class="las la-angle-down"></i>
+                        </a>
+                        <div class="collapse" id="collapseId" aria-labelledby="navbar1Dropdown">
+                            <a class="dropdown-item" href="/buy-steps.html">Quy trình mua hàng hộ</a>
+                            <a class="dropdown-item" href="/tran-steps.html">Quy trình vận chuyển</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/price-list.html">bảng giá dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="cart--mobile">
+                <div class="float-right">
+                    <button class="navbar-toggler" type="button" id="close-cart-mobile">
+                        <i class="las la-times"></i>
+                    </button>
+                </div>
+                <div class="form--box">
+                    <div class="form__title">GIỎ HÀNG</div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <article class="product">
+                                    <svg
+                                        style="align-self: flex-start"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M10.0015 1.44873H14.0126V2.12366H15.4611V1.35425C15.4613 0.607544 14.8541 0 14.1078 0H9.90625C9.15991 0 8.55273 0.607544 8.55273 1.35425V2.12366H10.0015V1.44873Z"
+                                            fill="#ED1A1F"
+                                        />
+                                        <path
+                                            d="M18.8072 7.86328H5.20835C4.83573 7.86328 4.5424 8.18115 4.57243 8.55267L5.70933 22.6108C5.77269 23.3956 6.42729 24 7.21373 24H16.8017C17.5881 24 18.2427 23.3956 18.3061 22.6106L19.443 8.55267C19.4732 8.18115 19.1799 7.86328 18.8072 7.86328ZM8.50114 22.5005C8.48594 22.5015 8.47074 22.502 8.45573 22.502C8.07597 22.502 7.75718 22.2063 7.73356 21.8221L7.0211 10.2812C6.99656 9.88184 7.30033 9.53815 7.6995 9.51361C8.09739 9.48944 8.44255 9.79248 8.46708 10.192L9.17936 21.733C9.20408 22.1323 8.90031 22.4758 8.50114 22.5005ZM12.7402 21.7776C12.7402 22.1776 12.4159 22.5018 12.0158 22.5018C11.6158 22.5018 11.2915 22.1776 11.2915 21.7776V10.2365C11.2915 9.83643 11.6158 9.51215 12.0158 9.51215C12.4158 9.51215 12.7402 9.83643 12.7402 10.2365V21.7776ZM16.9945 10.2792L16.3142 21.8201C16.2917 22.205 15.9724 22.5018 15.5919 22.5018C15.5776 22.5018 15.5632 22.5015 15.5487 22.5007C15.1493 22.4771 14.8446 22.1343 14.8683 21.735L15.5483 10.1938C15.5718 9.79449 15.9134 9.48981 16.3139 9.51343C16.7132 9.53687 17.0179 9.87982 16.9945 10.2792Z"
+                                            fill="#ED1A1F"
+                                        />
+                                        <path
+                                            d="M21.3116 5.62781L20.8359 4.20178C20.7105 3.82587 20.3586 3.57227 19.9621 3.57227H4.05228C3.65604 3.57227 3.30393 3.82587 3.17869 4.20178L2.70298 5.62781C2.61124 5.90283 2.73063 6.18335 2.95347 6.32324C3.04429 6.38019 3.15177 6.41443 3.26987 6.41443H20.7447C20.8628 6.41443 20.9705 6.38019 21.0611 6.32306C21.284 6.18317 21.4034 5.90265 21.3116 5.62781Z"
+                                            fill="#ED1A1F"
+                                        />
+                                    </svg>
+                                    <div class="product__info">
+                                        <h6>Blazer</h6>
+                                        <div class="product__price">350.000 VND</div>
+                                        <ul class="product__des">
+                                            <li><span>Size : </span><span>M</span></li>
+                                            <li><span>Color :</span><span>Blue</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__size">1</div>
+                                </article>
+                                <article class="product">
+                                    <svg
+                                        style="align-self: flex-start"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M10.0015 1.44873H14.0126V2.12366H15.4611V1.35425C15.4613 0.607544 14.8541 0 14.1078 0H9.90625C9.15991 0 8.55273 0.607544 8.55273 1.35425V2.12366H10.0015V1.44873Z"
+                                            fill="#ED1A1F"
+                                        />
+                                        <path
+                                            d="M18.8072 7.86328H5.20835C4.83573 7.86328 4.5424 8.18115 4.57243 8.55267L5.70933 22.6108C5.77269 23.3956 6.42729 24 7.21373 24H16.8017C17.5881 24 18.2427 23.3956 18.3061 22.6106L19.443 8.55267C19.4732 8.18115 19.1799 7.86328 18.8072 7.86328ZM8.50114 22.5005C8.48594 22.5015 8.47074 22.502 8.45573 22.502C8.07597 22.502 7.75718 22.2063 7.73356 21.8221L7.0211 10.2812C6.99656 9.88184 7.30033 9.53815 7.6995 9.51361C8.09739 9.48944 8.44255 9.79248 8.46708 10.192L9.17936 21.733C9.20408 22.1323 8.90031 22.4758 8.50114 22.5005ZM12.7402 21.7776C12.7402 22.1776 12.4159 22.5018 12.0158 22.5018C11.6158 22.5018 11.2915 22.1776 11.2915 21.7776V10.2365C11.2915 9.83643 11.6158 9.51215 12.0158 9.51215C12.4158 9.51215 12.7402 9.83643 12.7402 10.2365V21.7776ZM16.9945 10.2792L16.3142 21.8201C16.2917 22.205 15.9724 22.5018 15.5919 22.5018C15.5776 22.5018 15.5632 22.5015 15.5487 22.5007C15.1493 22.4771 14.8446 22.1343 14.8683 21.735L15.5483 10.1938C15.5718 9.79449 15.9134 9.48981 16.3139 9.51343C16.7132 9.53687 17.0179 9.87982 16.9945 10.2792Z"
+                                            fill="#ED1A1F"
+                                        />
+                                        <path
+                                            d="M21.3116 5.62781L20.8359 4.20178C20.7105 3.82587 20.3586 3.57227 19.9621 3.57227H4.05228C3.65604 3.57227 3.30393 3.82587 3.17869 4.20178L2.70298 5.62781C2.61124 5.90283 2.73063 6.18335 2.95347 6.32324C3.04429 6.38019 3.15177 6.41443 3.26987 6.41443H20.7447C20.8628 6.41443 20.9705 6.38019 21.0611 6.32306C21.284 6.18317 21.4034 5.90265 21.3116 5.62781Z"
+                                            fill="#ED1A1F"
+                                        />
+                                    </svg>
+                                    <div class="product__info">
+                                        <h6>Blazer</h6>
+                                        <div class="product__price">350.000 VND</div>
+                                        <ul class="product__des">
+                                            <li><span>Size : </span><span>M</span></li>
+                                            <li><span>Color :</span><span>Blue</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__size">1</div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 py-2 d-flex justify-content-between">
+                                <span>Tổng tiền</span>
+                                <b class="text-danger">350.000 Đ</b>
+                            </div>
+                            <div class="col-12 pt-3">
+                                <div class="form-group">
+                                    <a href="./create-order.html#step-2" class="btn btn-block btn-form step-next"
+                                        >Thanh toán</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row header--main">
+                    <div class="header__left col-12 col-lg-2 col-xl-2">
+                        <h1 class="m-0 text-center">
+                            <img class="header__logo" src="./dist/images/LogoShipus.png" alt="" />
+                        </h1>
+                        <div class="header__mobile d-block d-lg-none mr-2">
+                            <button class="navbar-toggler" type="button">
+                                <i class="las la-headset"></i>
+                            </button>
+                            <button class="navbar-toggler" type="button">
+                                <i class="las la-user"></i>
+                            </button>
+                            <button class="navbar-toggler" type="button" id="btn-cart-mobile">
+                                <i class="las la-shopping-cart"></i>
+                            </button>
+                            <button class="navbar-toggler" type="button" id="btn-menu-mobile">
+                                <i class="las la-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header__center d-none d-lg-flex justify-content-center col-12 col-lg-8 col-xl-8">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="/">Homepage <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/about.html">Về shipus</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a
+                                            class="nav-link dropdown-toggle"
+                                            href="javascript:void(0)"
+                                            id="navbarDropdown"
+                                            role="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            Hướng dẫn <i class="las la-angle-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="/buy-steps.html">Quy trình mua hàng hộ</a>
+                                            <a class="dropdown-item" href="/tran-steps.html">Quy trình vận chuyển</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/price-list.html">bảng giá dịch vụ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="header__right d-none d-lg-flex col-12 col-lg-2 col-xl-2">
+                        <ul class="navbar-nav d-flex flex-row align-items-center justify-content-end">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="help/help-27.html"><i class="las la-headset"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)"><i class="las la-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:openCart()"
+                                    ><i class="las la-shopping-cart"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="content--main">
+            <section class="header__banner">
+                <div class="header__banner-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-12 header__banner-content">
+                                <h2 class="header__banner-name animate__animated animate__zoomIn animate__delay-1s">
+                                    ĐẶT HÀNG MỸ GIÁ RẺ - UY TÍN
+                                </h2>
+                                <p class="animate__animated animate__zoomIn animate__delay-1s">
+                                    <i class="las la-phone"></i> Hotline: 0965 687 790
+                                </p>
+                                <p class="animate__animated animate__zoomIn animate__delay-1s">
+                                    <i class="las la-envelope"></i> Email: info@shipus.vn
+                                </p>
+                                <button
+                                    class="btn btn-info btn-lg animate__animated animate__fadeInRight animate__delay-1s"
+                                >
+                                    Bảng giá
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <main>
+                <section class="section section--intro">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <article class="intro">
+                                    <a href="javascript:void(0)">
+                                        <img src="dist/images/intro/intro-1.svg" alt="" />
+                                        <h4>Vận chuyển nhanh</h4>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <article class="intro">
+                                    <a href="javascript:void(0)">
+                                        <img src="./dist/images/intro/intro-2.svg" alt="" />
+                                        <h4>Kho miễn thuế</h4>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <article class="intro">
+                                    <a href="javascript:void(0)">
+                                        <img src="./dist/images/intro/intro-3.svg" alt="" />
+                                        <h4>Miễn phí thu hộ</h4>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <article class="intro">
+                                    <a href="javascript:void(0)">
+                                        <img src="./dist/images/intro/intro-4.svg" alt="" />
+                                        <h4>CSKH 24/7</h4>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section--buy">
+                    <div class="container">
+                        <h1 class="section__title section__title-border">QUY TRÌNH MUA HÀNG HỘ</h1>
+                        <div class="row steps-container">
+                            <div class="steps-process"><span></span></div>
+                            <div class="col-12 col-md-3">
+                                <article class="article--step first">
+                                    <a href="javascript:void(0)">
+                                        <img src="./dist/images/buy/step-1.svg" alt="" />
+                                        <div class="step step-1 first"><span>1</span></div>
+                                        <p>Quý khách nhập link sản phẩm cần mua và nhận báo giá</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <article class="article--step">
+                                    <a href="javascript:void(0)">
+                                        <img src="./dist/images/buy/step-2.svg" alt="" />
+                                        <div class="step step-2"><span>2</span></div>
+                                        <p>
+                                            Thanh toán 50% tiền hàng bằng hình thức chuyển khoản hoặc tiền mặt tại văn
+                                            phòng
+                                        </p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <article class="article--step">
+                                    <a href="javascript:void(0)">
+                                        <img style="width: 140px" src="./dist/images/buy/step-3.svg" alt="" />
+                                        <div class="step step-3">
+                                            <span>3</span>
+                                        </div>
+                                        <p>ShipUs mua hàng và vận chuyển về Việt Nam cho quý khách</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <article class="article--step last">
+                                    <a href="javascript:void(0)">
+                                        <img style="width: 140px" src="./dist/images/buy/step-4.svg" alt="" />
+                                        <div class="step step-4 last">
+                                            <span>4</span>
+                                        </div>
+                                        <p>
+                                            Sau 2-3 tuần quý khách nhận hàng và thanh toán nốt tiền vận chuyển quốc tế
+                                        </p>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section--buy">
+                    <div class="container">
+                        <h1 class="section__title section__title-border">QUY TRÌNH VẬN CHUYỂN</h1>
+                        <div class="row steps-container">
+                            <div class="steps-process"><span></span></div>
+                            <div class="col-12 col-md-3">
+                                <article class="article--step first">
+                                    <a href="javascript:void(0)">
+                                        <img src="./dist/images/tran/step-1.svg" alt="" />
+                                        <div class="step step-1 first"><span>1</span></div>
+                                        <p>Quý khách đăng ký tài khoản ShipUS để được nhận địa chỉ kho hàng ShipUS</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <article class="article--step">
+                                    <a href="javascript:void(0)">
+                                        <img src="./dist/images/tran/step-2.svg" alt="" />
+                                        <div class="step step-2"><span>2</span></div>
+                                        <p>
+                                            Quý khách tự thanh toán trên website Mỹ và ship hàng đến địa chỉ kho ShipUS
+                                        </p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <article class="article--step">
+                                    <a href="javascript:void(0)">
+                                        <img src="./dist/images/tran/step-3.svg" alt="" />
+                                        <div class="step step-3">
+                                            <span>3</span>
+                                        </div>
+                                        <p>Hàng được vận chuyển về Việt Nam từ 7 -10 ngày</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <article class="article--step last">
+                                    <a href="javascript:void(0)">
+                                        <img src="./dist/images/tran/step-4.svg" alt="" />
+                                        <div class="step step-4 last">
+                                            <span>4</span>
+                                        </div>
+                                        <p>Quý khách nhận hàng và thanh toán phí vận chuyển quốc tế</p>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section--box">
+                    <div class="container">
+                        <div class="box">
+                            <h1 class="section__title mb-0">CÔNG CỤ TÍNH GIÁ</h1>
+                            <p class="box__des">
+                                Chi phí vận chuyển phụ thuộc vào các yếu tố như: Quốc gia, giá, cân nặng và danh mục sản
+                                phẩm
+                            </p>
+                            <div class="d-flex justify-content-center flex-wrap box__check my-2">
+                                <div class="d-flex flex-wrap box__check-container">
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            <img src="./dist/images/flag/united-states-of-america-flag.svg" alt="" />
+                                            <span>Mỹ</span>
+                                        </label>
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="region"
+                                            id="exampleRadios1"
+                                            value="Mỹ"
+                                            checked
+                                        />
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="exampleRadios5">
+                                            <img src="./dist/images/flag/flag-5.svg" alt="" />
+                                            <span>Anh</span>
+                                        </label>
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="region"
+                                            id="exampleRadios5"
+                                            value="Anh"
+                                        />
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="exampleRadios4">
+                                            <img src="./dist/images/flag/flag-4.svg" alt="" />
+                                            <span>Nhật</span>
+                                        </label>
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="region"
+                                            id="exampleRadios4"
+                                            value="Nhật"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box__form">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label>Giá sản phẩm <span class="text-danger">(*)</span></label>
+                                            <input
+                                                class="form-control"
+                                                aria-label=""
+                                                type="text"
+                                                placeholder="Nhập giá sản phẩm"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label>Danh mục sản phẩm <span class="text-danger">(*)</span></label>
+                                            <select class="form-control" name="" id="" aria-label="">
+                                                <option value="Chọn danh mục"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label>Cân nặng dự kiến (kg)</label>
+                                            <input
+                                                class="form-control"
+                                                aria-label=""
+                                                type="text"
+                                                placeholder="Nhập giá sản phẩm"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                            <div class="price-tag">
+                                                    GIÁ VỀ VIỆT NAM
+                                                    <span class="price-value">
+                                                        100.000 VNĐ
+                                                    </span>
+                                            </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="" style="visibility: hidden">order</label>
+                                            <button class="btn btn-info btn-block text-uppercase">ĐẶT HÀNG NGAY</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section--des">
+                    <div class="container">
+                        <h1 class="section__title section__title-border">VÌ SAO CHỌN SHIPUS</h1>
+                        <div class="row des-section">
+                            <div class="col-12 col-md-5">
+                                <div class="des-img">
+                                    <img src="./dist/images/des/des-1.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7 d-flex align-items-center">
+                                <div class="des-content">
+                                    <h1>Tất Cả Khách Hàng Đều Là Khách Vip</h1>
+                                    <p>
+                                        Tư vấn hỗ trợ nhiệt tình bất kể ngày nghỉ lễ, hỗ trợ giải quyết khi hàng hoá có
+                                        vấn đề với bên bán
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row des-section">
+                            <div class="col-12 col-md-5">
+                                <div class="des-img">
+                                    <img src="./dist/images/des/des-2.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7 d-flex align-items-center">
+                                <div class="des-content">
+                                    <h1>Vận Chuyển Nhanh - Không Phụ Thu</h1>
+                                    <p>
+                                        ShipUS mang tới mức giá vận chuyển tốt nhất cho khách hàng, hạn chế phụ thu 80%
+                                        các mặt hàng
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row des-section">
+                            <div class="col-12 col-md-5">
+                                <div class="des-img">
+                                    <img src="./dist/images/des/des-3.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7 d-flex align-items-center">
+                                <div class="des-content">
+                                    <h1>Hệ Thống Quản Lý - Báo Giá Tự Động</h1>
+                                    <p>Hệ thống quản lý chuyên nghiệp, rõ ràng. Không phải chờ báo giá</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row des-section">
+                            <div class="col-12 col-md-5">
+                                <div class="des-img">
+                                    <img src="./dist/images/des/des-4.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7 d-flex align-items-center">
+                                <div class="des-content">
+                                    <h1>Miễn Phí Mua hàng hộ</h1>
+                                    <p>
+                                        0& phí dịch vụ mua hộ, tỉ giá VCB, đặc biệt chiết khấu 5-10% cho Amazon, Ebay,
+                                        Sephora, Jomashop, Macys...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section--brand" style="margin-bottom: 20px">
+                    <div class="container">
+                        <h1 class="section__title">CÁC THươNG HIỆU <br class="d-block d-sm-none" />NỔI BẬT</h1>
+                        <div class="background">
+                            <div class="row first">
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/1200px-Adidas_Logo%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/1280px-H&M-Logo%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/1024px-Zara_Logo%201.svg" alt="" />
+                                    </article>
+                                </div>
+
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/e02ab5d11d92bfcd971a0bb45d2df90c.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/585991924f6ae202fedf28d7%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/b75b94b51a1e2da66312bd5950f919a1.svg" alt="" />
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/58429fc2a6515b1e0ad75af0%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/walmart-logo.png" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/1068547%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/ebay-logo-lippincott-0%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/unnamed%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img
+                                            src="./dist/images/brand/723615_git6bkyk4oyigbj6hrzu8xnqt%201.svg"
+                                            alt=""
+                                        />
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <button
+                                        class="btn btn-info btn-lg animate__animated animate__fadeInLeft animate__delay-10s btn_join_animation"
+                                        style="margin-top: 40px; font-size: 14px"
+                                    >
+                                        THAM GIA CỘNG ĐỒNG SĂN SALE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="background-mobile">
+                            <div class="row first">
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/1200px-Adidas_Logo%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/1280px-H&M-Logo%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/1024px-Zara_Logo%201.svg" alt="" />
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/e02ab5d11d92bfcd971a0bb45d2df90c.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/585991924f6ae202fedf28d7%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/b75b94b51a1e2da66312bd5950f919a1.svg" alt="" />
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/58429fc2a6515b1e0ad75af0%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/walmart-logo.png" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/1068547%201.svg" alt="" />
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/ebay-logo-lippincott-0%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img src="./dist/images/brand/unnamed%201.svg" alt="" />
+                                    </article>
+                                </div>
+                                <div class="col-4 col-md-2 brand">
+                                    <article>
+                                        <img
+                                            src="./dist/images/brand/723615_git6bkyk4oyigbj6hrzu8xnqt%201.svg"
+                                            alt=""
+                                        />
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <button
+                                        class="btn btn-info btn-lg animate__animated animate__fadeInLeft animate__delay-5s btn_join_animation"
+                                        style="margin-top: 40px; font-size: 14px"
+                                    >
+                                        THAM GIA CỘNG ĐỒNG SĂN SALE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section--feedback" style="margin-top: 10px">
+                    <div class="container">
+                        <h1 class="section__title section__title-border">KHÁCH HÀNG NÓI GÌ VỀ ShipUS</h1>
+                        <div class="row">
+                            <div class="col-12" style="margin-top: -30px">
+                                <div class="slide-feedback row">
+                                    <article>
+                                        <div>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                        </div>
+                                        <p class="content">
+                                            Anh đã từng sử dụng dụng dịch vụ order của rất nhiều bên rồi nhưng chưa thấy
+                                            bên nào ok hơn ShipUS. Tỷ giá rẻ mà nhân viên tư vấn nhiệt tình. Hàng về
+                                            cũng nhanh nữa. Nói chung là rất hài lòng.
+                                        </p>
+                                        <!-- <p class="author">Victoria Nguyen</p>
+                                        <p class="location">USA</p>
+                                        <time>Nov 22, 2020</time> -->
+                                    </article>
+                                    <article>
+                                        <div>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="lar la-star"></i>
+                                        </div>
+                                        <p class="content">
+                                            ShipUS mới nâng cấp giao diện đẹp và dễ dàng sử dụng quá. Giờ có thể tự
+                                            check giá và đặt hàng trên web được rồi. Sẽ sử dụng dịch vụ của ShipUS lâu
+                                            dài.
+                                        </p>
+                                    </article>
+                                    <article>
+                                        <div>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="lar la-star"></i>
+                                            <i class="lar la-star"></i>
+                                        </div>
+                                        <p class="content">
+                                            Đặt hàng lần nào cũng về sớm hơn dự kiến. Có lần mình bị web ship sai hàng,
+                                            mấy bạn hỗ trợ xử lý rất nhanh. Giá vận chuyển rẻ, ít mặt hàng bị phụ thu.
+                                        </p>
+                                    </article>
+                                    <article>
+                                        <div>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="lar la-star"></i>
+                                            <i class="lar la-star"></i>
+                                        </div>
+                                        <p class="content">
+                                            Chị thấy xử lý vấn đề nhanh và hỗ trợ khách hàng nhiệt tình. Mua hàng nhanh,
+                                            từ ngày order bên này không bị hụt mất sản phẩm sale nào cả.
+                                        </p>
+                                    </article>
+                                    <article>
+                                        <div>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                        </div>
+                                        <p class="content">
+                                            Chị thích group Shipus, llúc nào cũng cập nhật các chương trình sale, từ
+                                            ngày vào group chị mua được rất nhiều sản phẩm hàng hiệu sale rẻ.
+                                        </p>
+                                    </article>
+                                    <article>
+                                        <div>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                        </div>
+                                        <p class="content">
+                                            Rất thích đặt hàng ở đây vì nhân viên làm việc chuyên nghiệp, có trách
+                                            nhiệm. Mấy bạn còn luôn cảnh báo khách hàng nếu trang web k uy tín. Rất tin
+                                            tưởng ShipUS.
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="text-center">
+                    <img src="./dist/images/brand-item.svg" alt="" style="margin-bottom: 30px; margin-top: -80px" />
+                </div>
+
+                <section class="section section--detail">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-6 mb-4 mb-md-0 detail">
+                                <div class="row detail--img">
+                                    <img src="./dist/images/about/detail-1.svg" alt="" />
+                                </div>
+                                <div class="row detail__content d-flex justify-content-center">
+                                    <div class="col-12 detail--counter">1,097,269</div>
+                                    <div class="col-12 detail--desc text-uppercase">Kiện hàng đã được giao</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-4 mb-md-0 detail">
+                                <div class="row detail--img">
+                                    <img src="./dist/images/about/detail-2.svg" alt="" />
+                                </div>
+                                <div class="row detail__content d-flex justify-content-center">
+                                    <div class="col-12 detail--counter">1,097,269</div>
+                                    <div class="col-12 detail--desc text-uppercase">Đơn hàng</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-4 mb-md-0 detail">
+                                <div class="row detail--img">
+                                    <img src="./dist/images/about/detail-3.svg" alt="" />
+                                </div>
+                                <div class="row detail__content d-flex justify-content-center">
+                                    <div class="col-12 detail--counter">1,097,269</div>
+                                    <div class="col-12 detail--desc text-uppercase">Khách hàng</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-4 mb-md-0 detail">
+                                <div class="row detail--img">
+                                    <img src="./dist/images/about/detail-4.svg" alt="" />
+                                </div>
+                                <div class="row detail__content d-flex justify-content-center">
+                                    <div class="col-12 detail--counter">1,097,269</div>
+                                    <div class="col-12 detail--desc text-uppercase">Đối tác doanh nghiệp</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__bottom">
+                    <div class="overlay"></div>
+                    <div class="contact">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-4 overlay-content footer__logo mb-5 mb-md-0">
+                                    <img src="./dist/images/LogoShipus_footer.png" alt="" style="width: 35%" />
+                                    <div
+                                        class="fb-page"
+                                        data-href="https://www.facebook.com/shipus19"
+                                        data-tabs=""
+                                        data-width=""
+                                        data-height=""
+                                        data-small-header="false"
+                                        data-adapt-container-width="true"
+                                        data-hide-cover="false"
+                                        data-show-facepile="true"
+                                    >
+                                        <blockquote
+                                            cite="https://www.facebook.com/shipus19"
+                                            class="fb-xfbml-parse-ignore"
+                                        >
+                                            <a href="https://www.facebook.com/shipus19">Shipus - Mua hàng Mỹ</a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 overlay-content">
+                                    <div class="footer__title">Hỗ trợ</div>
+
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="javascript:void(0)">Về SHIPUS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)">Quy trình đặt hàng</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)"
+                                                >Các điều khoản và điều kiện</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)"
+                                                >Chính sách bảo hành, hỗ trợ bảo hành</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)">Các mặt hàng cấm</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0)">Chính sách bảo mật</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-4 overlay-content">
+                                    <div class="footer__title">Liên hệ</div>
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item active">
+                                            <a class="nav-link d-flex" href="javascript:void(0)">
+                                                <i class="las la-map-marker"></i>
+
+                                                <p>
+                                                    <b>Văn Phòng Hà Nội</b>
+                                                    <br />
+                                                    493 Nguyễn Văn Cừ, Long Biên, Hà Nội
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link d-flex" href="javascript:void(0)">
+                                                <i class="las la-map-marker"></i>
+                                                <p>
+                                                    <b>Văn Phòng Hồ Chí Minh</b>
+                                                    <br />
+                                                    60 Lê Trung Nghĩa, P12, Q Tân Bình, Hồ Chí Minh
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link d-flex text-blue" href="javascript:void(0)">
+                                                <i class="las la-phone"></i>
+                                                <span>Hotline: 0965 687 790</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link d-flex text-blue" href="javascript:void(0)">
+                                                <i class="las la-envelope"></i>
+                                                <span>Email: info@shipus.vn</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copy-right">
+                        <div class="overlay-content p-2 text-center text-white">
+                            <p>SHIPUS.VN - một sản phẩm của CÔNG TY TNHH THƯƠNG MẠI HOÀI ĐỨC</p>
+                            <p>
+                                Giấy chứng nhận Đăng ký doanh nghiệp số 03099136630 được cấp bởi Sở Kế Hoạch và Đầu tư
+                                thành phố Hồ Chí Minh
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="dist/js/vendors.js"></script>
+        <script src="dist/js/home.js"></script>
+        <script src="dist/js/scripts.js"></script>
+    </body>
+</html>

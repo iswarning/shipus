@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html
+  lang="vi-VN"
+  class="js_active vc_desktop vc_transform vc_transform js rgba backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csstransitions fontface"
+  style="--scroll-y: 0px"
+>
+  <head>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' />
+
+  <link
+    rel="stylesheet"
+    href="https://basso.vn/theme/basso/statics/libraries/g5plus/css/style.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://basso.vn/theme/basso/statics/css/style.min.css?v=1609743493"
+  />
+  <link
+    rel="stylesheet"
+    href="https://basso.vn/theme/basso/statics/css/responsive.min.css?v=1609743493"
+  />
+  <link rel='stylesheet' href='./help.css' />
+  <link rel='stylesheet' href='../dist//css/modal.css' />
+  <link rel="stylesheet" href="../dist/css/vendors.css" />
+  <link rel="stylesheet" href="../dist/css/app.css" />
+  <link rel="stylesheet" href="../dist/css/about.css" />
+
+
+</head>
+
+<body>
+<div class="sidebar__right">
+      <div id="overlay"></div>
+      <div id="menu--mobile">
+        <div class="d-flex justify-content-end">
+          <button
+            class="navbar-toggler p-3"
+            type="button"
+            id="close-menu-mobile"
+          >
+            <i class="las la-times"></i>
+          </button>
+        </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/"
+              >Homepage <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/about.html">Về shipus</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#collapseId"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Hướng dẫn <i class="las la-angle-down"></i>
+            </a>
+            <div
+              class="collapse"
+              id="collapseId"
+              aria-labelledby="navbar1Dropdown"
+            >
+              <a class="dropdown-item" href="/buy-steps.html"
+                >Quy trình mua hàng hộ</a
+              >
+              <a class="dropdown-item" href="/tran-steps.html"
+                >Quy trình vận chuyển</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/price-list.html">bảng giá dịch vụ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+      <div id="cart--mobile">
+        <div class="float-right">
+          <button class="navbar-toggler" type="button" id="close-cart-mobile">
+            <i class="las la-times"></i>
+          </button>
+        </div>
+        <div class="form--box">
+          <div class="form__title">GIỎ HÀNG</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <article class="product">
+                  <svg
+                    style="align-self: flex-start"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0015 1.44873H14.0126V2.12366H15.4611V1.35425C15.4613 0.607544 14.8541 0 14.1078 0H9.90625C9.15991 0 8.55273 0.607544 8.55273 1.35425V2.12366H10.0015V1.44873Z"
+                      fill="#ED1A1F"
+                    />
+                    <path
+                      d="M18.8072 7.86328H5.20835C4.83573 7.86328 4.5424 8.18115 4.57243 8.55267L5.70933 22.6108C5.77269 23.3956 6.42729 24 7.21373 24H16.8017C17.5881 24 18.2427 23.3956 18.3061 22.6106L19.443 8.55267C19.4732 8.18115 19.1799 7.86328 18.8072 7.86328ZM8.50114 22.5005C8.48594 22.5015 8.47074 22.502 8.45573 22.502C8.07597 22.502 7.75718 22.2063 7.73356 21.8221L7.0211 10.2812C6.99656 9.88184 7.30033 9.53815 7.6995 9.51361C8.09739 9.48944 8.44255 9.79248 8.46708 10.192L9.17936 21.733C9.20408 22.1323 8.90031 22.4758 8.50114 22.5005ZM12.7402 21.7776C12.7402 22.1776 12.4159 22.5018 12.0158 22.5018C11.6158 22.5018 11.2915 22.1776 11.2915 21.7776V10.2365C11.2915 9.83643 11.6158 9.51215 12.0158 9.51215C12.4158 9.51215 12.7402 9.83643 12.7402 10.2365V21.7776ZM16.9945 10.2792L16.3142 21.8201C16.2917 22.205 15.9724 22.5018 15.5919 22.5018C15.5776 22.5018 15.5632 22.5015 15.5487 22.5007C15.1493 22.4771 14.8446 22.1343 14.8683 21.735L15.5483 10.1938C15.5718 9.79449 15.9134 9.48981 16.3139 9.51343C16.7132 9.53687 17.0179 9.87982 16.9945 10.2792Z"
+                      fill="#ED1A1F"
+                    />
+                    <path
+                      d="M21.3116 5.62781L20.8359 4.20178C20.7105 3.82587 20.3586 3.57227 19.9621 3.57227H4.05228C3.65604 3.57227 3.30393 3.82587 3.17869 4.20178L2.70298 5.62781C2.61124 5.90283 2.73063 6.18335 2.95347 6.32324C3.04429 6.38019 3.15177 6.41443 3.26987 6.41443H20.7447C20.8628 6.41443 20.9705 6.38019 21.0611 6.32306C21.284 6.18317 21.4034 5.90265 21.3116 5.62781Z"
+                      fill="#ED1A1F"
+                    />
+                  </svg>
+                  <div class="product__info">
+                    <h6>Blazer</h6>
+                    <div class="product__price">350.000 VND</div>
+                    <ul class="product__des">
+                      <li><span>Size : </span><span>M</span></li>
+                      <li><span>Color :</span><span>Blue</span></li>
+                    </ul>
+                  </div>
+                  <div class="product__size">1</div>
+                </article>
+                <article class="product">
+                  <svg
+                    style="align-self: flex-start"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0015 1.44873H14.0126V2.12366H15.4611V1.35425C15.4613 0.607544 14.8541 0 14.1078 0H9.90625C9.15991 0 8.55273 0.607544 8.55273 1.35425V2.12366H10.0015V1.44873Z"
+                      fill="#ED1A1F"
+                    />
+                    <path
+                      d="M18.8072 7.86328H5.20835C4.83573 7.86328 4.5424 8.18115 4.57243 8.55267L5.70933 22.6108C5.77269 23.3956 6.42729 24 7.21373 24H16.8017C17.5881 24 18.2427 23.3956 18.3061 22.6106L19.443 8.55267C19.4732 8.18115 19.1799 7.86328 18.8072 7.86328ZM8.50114 22.5005C8.48594 22.5015 8.47074 22.502 8.45573 22.502C8.07597 22.502 7.75718 22.2063 7.73356 21.8221L7.0211 10.2812C6.99656 9.88184 7.30033 9.53815 7.6995 9.51361C8.09739 9.48944 8.44255 9.79248 8.46708 10.192L9.17936 21.733C9.20408 22.1323 8.90031 22.4758 8.50114 22.5005ZM12.7402 21.7776C12.7402 22.1776 12.4159 22.5018 12.0158 22.5018C11.6158 22.5018 11.2915 22.1776 11.2915 21.7776V10.2365C11.2915 9.83643 11.6158 9.51215 12.0158 9.51215C12.4158 9.51215 12.7402 9.83643 12.7402 10.2365V21.7776ZM16.9945 10.2792L16.3142 21.8201C16.2917 22.205 15.9724 22.5018 15.5919 22.5018C15.5776 22.5018 15.5632 22.5015 15.5487 22.5007C15.1493 22.4771 14.8446 22.1343 14.8683 21.735L15.5483 10.1938C15.5718 9.79449 15.9134 9.48981 16.3139 9.51343C16.7132 9.53687 17.0179 9.87982 16.9945 10.2792Z"
+                      fill="#ED1A1F"
+                    />
+                    <path
+                      d="M21.3116 5.62781L20.8359 4.20178C20.7105 3.82587 20.3586 3.57227 19.9621 3.57227H4.05228C3.65604 3.57227 3.30393 3.82587 3.17869 4.20178L2.70298 5.62781C2.61124 5.90283 2.73063 6.18335 2.95347 6.32324C3.04429 6.38019 3.15177 6.41443 3.26987 6.41443H20.7447C20.8628 6.41443 20.9705 6.38019 21.0611 6.32306C21.284 6.18317 21.4034 5.90265 21.3116 5.62781Z"
+                      fill="#ED1A1F"
+                    />
+                  </svg>
+                  <div class="product__info">
+                    <h6>Blazer</h6>
+                    <div class="product__price">350.000 VND</div>
+                    <ul class="product__des">
+                      <li><span>Size : </span><span>M</span></li>
+                      <li><span>Color :</span><span>Blue</span></li>
+                    </ul>
+                  </div>
+                  <div class="product__size">1</div>
+                </article>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 py-2 d-flex justify-content-between">
+                <span>Tổng tiền</span>
+                <b class="text-danger">350.000 Đ</b>
+              </div>
+              <div class="col-12 pt-3">
+                <div class="form-group">
+                  <a
+                    href="./create-order.html#step-2"
+                    class="btn btn-block btn-form step-next"
+                    >Thanh toán</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row header--main">
+          <div class="header__left col-12 col-lg-2 col-xl-2">
+            <h1 class="m-0 text-center">
+              <img
+                class="header__logo"
+                src="../dist/images/LogoShipus.png"
+                alt=""
+              />
+            </h1>
+            <div class="header__mobile d-block d-lg-none mr-2">
+              <button class="navbar-toggler" type="button">
+                <i class="las la-headset"></i>
+              </button>
+              <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal-login">
+                <i class="las la-user"></i>
+              </button>
+              <button class="navbar-toggler" type="button" id="btn-cart-mobile">
+                <i class="las la-shopping-cart"></i>
+              </button>
+              <button class="navbar-toggler" type="button" id="btn-menu-mobile">
+                <i class="las la-bars"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="header__center d-none d-lg-flex justify-content-center col-12 col-lg-8 col-xl-8"
+          >
+            <nav class="navbar navbar-expand-lg">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/"
+                      >Homepage <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/about.html">Về shipus</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="javascript:void(0)"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Hướng dẫn <i class="las la-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/buy-steps.html"
+                        >Quy trình mua hàng hộ</a
+                      >
+                      <a class="dropdown-item" href="/tran-steps.html"
+                        >Quy trình vận chuyển</a
+                      >
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/price-list.html"
+                      >bảng giá dịch vụ</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/create-order.html"
+                      >Mua hàng hộ</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="header__right d-none d-lg-flex col-12 col-lg-2 col-xl-2">
+            <ul
+              class="navbar-nav d-flex flex-row align-items-center justify-content-end"
+            >
+              <li class="nav-item active">
+                <a class="nav-link" href="./help-27.html"
+                  ><i class="las la-headset"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login"
+                  ><i class="las la-user"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:openCart()"
+                  ><i class="las la-shopping-cart"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <main class="help-page">
+      <div class="w">
+        <div class="container">
+          <h2 class="h2-title">TRỢ GIÚP</h2>
+          <div class="row">
+            <div class="col-md-4 col-lg-3 shadow p-3 mb-5 bg-white rounded">
+                <ul class="help-nav">
+                  <li class="parent">TIN TỨC</li>
+                  <li class="">
+                    <a href="./help-27.html">Khuyến mãi lớn</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-28.html">Thông báo </a>
+                  </li>
+                </ul>
+  
+                <ul class="help-nav">
+                  <li class="parent">TRỢ GIÚP</li>
+                  <li class="">
+                    <a href="./help-19.html">Quy trình đặt hàng</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-20.html">Chí phí và thời gian giao hàng</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-21.html">Dịch vụ giá trị gia tăng</a>
+                  </li>
+                  <li class="active">
+                    <a href="./help-23.html">Các điều khoản và điều kiện</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-24.html">Các điều khoản về lỗi sản phẩm</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-39.html">Các mặt hàng cấm</a>
+                  </li>
+                </ul>
+  
+                <ul class="help-nav">
+                  <li class="parent">CÂU HỎI THƯỜNG GẶP</li>
+                  <li class="">
+                    <a href="./help-29.html">Câu hỏi tổng quan</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-30.html">Về tài khoản</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-31.html">Về cách thức thanh toán</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-32.html">Về đơn hàng</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-35.html">Khiếu nại và sau bán hàng</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-40.html">Chính sách bảo mật</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-33.html">Về kho và vận chuyển quốc tê</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-34.html">Về giao hàng tới tay</a>
+                  </li>
+                  <li class="">
+                    <a href="./help-36.html">Về gói lại hàng</a>
+                  </li>
+                </ul>
+              </div>
+            <div class="col-md-8 col-lg-9">
+                <div class="accordion shadow p-3 mb-5 bg-white rounded" id="accordionPayment">
+                    <div class="card">
+<div class="card-header p-0" id="heading-d7bef4c9-6fad-7f30-e6e3-4d9d205c5a49">
+<div class="custom-control custom-radio custom-control-inline d-block p-0" data-toggle="collapse" data-target="#collapse-d7bef4c9-6fad-7f30-e6e3-4d9d205c5a49" aria-expanded="true" aria-controls="collapse-d7bef4c9-6fad-7f30-e6e3-4d9d205c5a49">
+<input type="radio" id="headship-d7bef4c9-6fad-7f30-e6e3-4d9d205c5a49" name="headship" class="custom-control-input" checked="">
+<label class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4" for="headship-d7bef4c9-6fad-7f30-e6e3-4d9d205c5a49">
+Các điều khoản và điệu kiện                                                    </label>
+</div>
+</div>
+
+<div id="collapse-d7bef4c9-6fad-7f30-e6e3-4d9d205c5a49" class="collapse show" aria-labelledby="heading-d7bef4c9-6fad-7f30-e6e3-4d9d205c5a49" data-parent="#accordionPayment">
+<div class="card-body">
+<p>Điều khoản sử dụng Dịch vụ</p>
+
+<p>Áp dụng đối với website Basso và tài khoản Basso của Khách hàng</p>
+
+<p>1. Các khái niệm “Khách hàng”, “Của Khách hàng”, “Chúng tôi”, “Của chúng tôi” và “Basso”: Trong Điều khoản sử dụng Dịch vụ này, các khái niệm “Khách hàng” và “của Khách hàng” đề cập đến riêng Khách hàng (nếu Khách hàng là một cá nhân) hoặc thực thể mà Khách hàng đại diện (nếu Khách hàng thay mặt công ty đăng ký tài khoản) và các khái niệm ‘chúng tôi”, “của chúng tôi” và “Basso” đề cập đến Basso và các công ty liên quan và/hoặc các nhà cung cấp bên thứ 3.</p>
+
+<p>2. Chấp thuận: Khách hàng đồng ý rằng việc nhấp chuột vào nút “Tôi đồng ý” trước khi đăng ký một tài khoản Basso đồng nghĩa với việc ký kết một thỏa thuận cam kết giữa Khách hàng và Basso. Nếu Khách hàng từ chối các điều khoản này, Khách hàng sẽ không thể mở một tài khoản để sử dụng dịch vụ của Basso.</p>
+
+<p>3. Tạo tài khoản: Để tạo tài khoản sử dụng các dịch vụ của Basso, Khách hàng cần phải cung cấp cho Basso địa chỉ email, địa chỉ nhà và số điện thoại liên lạc có giá trị. Khách hàng xác thực rằng các thông tin mà Khách hàng cung cấp là chính xác, và sẽ cập nhật lại thông tin một cách nhanh chóng nếu có bất cứ sự thay đổi nào. Chúng tôi có quyền hủy bất cứ tài khoản nào mà không được xác nhận, không hoạt động trong một thời gian dài theo quy định của Basso, nghi ngờ bị giả mạo hoặc sử dụng cho các mục đích lừa đảo, hoặc nếu chúng tôi phát hiện ra thông tin mà Khách hàng cung cấp là không chính xác. Khách hàng không thể mở thêm tài khoản Basso nào nữa.</p>
+
+<p>4. Không chuyển nhượng tài khoản: Khách hàng không thể chuyển nhượng tài khoản Basso hoặc tên đăng nhập/mật khẩu tài khoản của Khách hàng cho bất cứ người nào khác.</p>
+
+<p>5. Các quốc gia theo quy định: Khách hàng chỉ có thể tạo tài khoản Basso và sử dụng các Dịch vụ của Basso nếu Khách hàng cư trú ở một trong các quốc gia được liệt kê trong Danh sách phía dưới của website Basso.</p>
+
+<p>6. Bảo mật: Khách hàng cam kết giữ tài khoản/mật khẩu Basso của Khách hàng một cách bảo mật dưới mọi hình thức. Khách hàng có trách nhiệm đối với mọi hoạt đông trên Basso được thực hiện bởi tài khoản của Khách hàng. Nếu Khách hàng nhận thấy hoặc nghi ngờ bất cứ việc sử dụng tài khoản là trái phép, thông tin tài khoản bị tiết lộ hoặc bị trộm hoặc có bất cứ vi phạm bảo mật nào, Khách hàng cần nhanh chóng thông báo cho Basso. Chúng tôi sẽ ngay lập tức khóa tài khoản của Khách hàng, và tùy vào từng trường hợp vi phạm, chúng tôi có thể cho phép Khách hàng mở một tài khoản mới.</p>
+
+<p>7. Bảo đảm và Tuyên bố của Khách hàng: Khách hàng bảo đảm và tuyên bố rằng:</p>
+
+<ul>
+<li>Khách hàng đã đủ 18 tuổi hoặc có sự giám sát của Người giám hộ</li>
+<li>Khách hàng được cho phép để truy cập và thực hiện thỏa thuận này, và</li>
+<li>Khách hàng chỉ sử dụng dịch vụ của Basso cho các mục đích hợp pháp và phù hợp với các điều khoản này.</li>
+</ul>
+
+<p>8. Bảo vệ dữ liệu cá nhân: Để cung cấp các dịch vụ chất lượng tốt tới Khách hàng, chúng tôi thu thập các thông tin cá nhân nhất định của Khách hàng, bao gồm nhưng không giới hạn tên, địa chỉ, địa chỉ email và các số điện thoại. Website của chúng tôi cũng sử dụng cookies và các công nghệ tự động tương tự để thu thập thông tin với mục đích mở rộng và cá biệt hóa trải nghiệm của Khách hàng. Các hoạt động thông tin của chúng tôi tuân thủ theo Chính sách Bảo mật của Basso. Khách hàng chấp nhận rằng các thông tin Khách hàng cung cấp khi mở một tài khoản Basso và khi thực hiện giao dịch trên website Basso.com.vn có thể được di chuyển, lưu trữ và/hoặc xử lý tại các quốc gia khác mà việc đó là cần thiết để Basso cung cấp dịch vụ đến Khách hàng. Nếu Khách hàng từ chối việc di chuyển, lưu trữ và/hoặc xử lý thông tin theo cách này, từ chối sử dụng cookies hoặc không đồng ý với Chính sách Bảo mật của chúng tôi, vui lòng không sử dụng Dịch vụ của Basso.</p>
+
+<p>9. Việc sử dụng Website của Khách hàng: Khách hàng không thể sử dụng website và các dịch vụ của Basso cho bất cứ mục đích bất hợp pháp nào. Chúng tôi có quyền đình chỉ, hạn chế quyền truy cập vào tài khoản Basso cũng như việc sử dụng các dịch vụ Basso, nếu theo ý kiến của chúng tôi, việc sử dụng của Khách hàng có thể đang vi phạm pháp luật, xâm phạm quyền lợi của những người khác hoặc vi phạm các điều khoản của thỏa thuận này.</p>
+
+<ul>
+<li>Khách hàng chỉ sử dụng Website và các dịch vụ của Basso cho mục đích cá nhân (bao gồm bạn bè và người thân – xem phần 24) hoặc sử dụng bởi thực thể kinh doanh mà Khách hàng đại diện. Nếu Khách hàng sử dụng Dịch vụ của Basso để nhập các sản phẩm với mục đích bán lại, Khách hàng đồng ý tuân thủ các điều khoản, quy định của luật pháp và các hạn chế của Người bán áp dụng cho hàng nhập khẩu để bán lại.</li>
+<li>Khách hàng không được rao bán, bán lại, phân phối, tạo dữ liệu hoặc khai thác thương mại nội dung trên website hoặc thông tin được tạo ra bằng cách sử dụng website dưới bất kỳ hình thức nào.</li>
+</ul>
+
+<p>10. Công cụ tính toán phí vận chuyển: Khi Khách hàng sử dụng công cụ tính toán phí vận chuyển của Basso nhằm xác định trước các chi phí kết hợp của thuế phí và phí vận chuyển quốc tế, kết quả được tính ra chỉ là một giá trị ước tính, dựa trên thông tin mà Khách hàng cung cấp. Chi phí thực tế có thể khác biệt so với số ước tính do nhiều yếu tố khác nhau, bao gồm nhưng không giới hạn: thay đổi về cước phí hoặc phụ phí nhiên liệu không tránh khỏi mà công ty vận chuyển của chúng tôi có thể áp dụng (chúng tôi sẽ tính cho Khách hàng mà không thêm chi phí khác), thay đổi về tỷ giá, khác biệt về trọng lượng gói hàng ước tính và thực tế, khác biệt về phân loại hay giá trị của gói hàng giữa ước tính và thực tế; sai khác tính toán trọng lượng thể tích cho hàng cồng kềnh, hàng trọng lượng nhẹ, và/hoặc phí vận chuyển nội địa thu thêm nếu địa chỉ giao hàng của Khách hàng là ở khu vực vùng xa. Đặc biệt lưu ý: Một số quốc gia cho phép chính phủ áp dụng các chi phí giải phóng hàng ngoài thuế phí. Phụ thuộc vào bản chất của các loại phí này, chúng có thể bao gồm trong ước tính chi phí vận chuyển hay không; nhưng chúng sẽ bao gồm trong các chi phí được giám định khi giao hàng.</p>
+
+<p>11. Nội dung độc hại: Chúng tôi thực hiện mọi nỗ lực hợp lý để loại bỏ virus và các nội dung độc hại khác từ các trang web, nhưng không bảo đảm hoàn toàn về việc này. Hãy sử dụng các biện pháp bảo vệ thích hợp trước khi tải thông tin từ trang web Basso.</p>
+
+<p>12. Sở hữu trí tuệ: Trang web Basso, giao diện người dùng, nội dung, Công cụ tính phí vận chuyển và tất cả các phần mềm, bí quyết, phương pháp và quy trình liên quan là tài sản độc quyền của Basso hoặc các nhà cung cấp bên thứ 3, được bảo vệ bởi Luật bản quyền, thương hiệu, bí mật thương mại và các luật về Sở hữu trí tuệ khác. Phần mềm, dữ liệu được hình thành từ tất cả phần mềm và tài liệu hiện hữu trên website được Basso cấp phép sử dụng trên cơ sở không độc quyền và có hạn chế.</p>
+
+<p>12.1. Khách hàng không được sao chép, biên dịch ngược hoặc tạo ra các Sản phẩm phái sinh từ website Basso.</p>
+
+<p>12.2. Khách hàng không được sử dụng các thẻ meta/“văn bản ẩn” &nbsp;kết hợp tên hoặc nhãn hiệu của Basso, trừ khi chúng tôi đồng ý trước bằng văn bản.</p>
+
+<p>12.3. Khi sử dụng website, Khách hàng có thể in, lưu trữ điện tử một phần hoặc tất cả trang web, màn hình, nhưng chỉ cho mục đích sử dụng cá nhân.</p>
+
+<p>12.4. Khách hàng không được hiển thị các thông tin từ Basso.com.vn để sử dụng trên các website hoặc dịch vụ khác mà không có sự cho phép trước bằng văn bản của chúng tôi.</p>
+
+<p>12.5. Khách hàng không được đặt một siêu liên kết (hyperlink) đến Basso trên trang web của Khách hàng, trừ khi theo cách thức mà chúng tôi chỉ định.</p>
+
+<p>13. Sự vi phạm, hàng giả</p>
+
+<p>13.1. Chúng tôi tôn trọng quyền sở hữu trí tuệ của người khác và nỗ lực để không công bố bất cứ tài liệu nào thuộc bản quyền, nhãn hiệu bên thứ 3 hoặc các bảo vệ pháp lý khác. Nếu Khách hàng tin rằng bất cứ tài liệu nào trên website Basso là vi phạm các quyền sở hữu trí tuệ của Khách hàng, vui lòng thông báo cho chúng tôi bằng cách gửi một đơn Khiếu nại vi phạm.</p>
+
+<p>13.2. Basso coi trọng những vấn đề nghiêm trọng gây ra bởi Quảng cáo và Bán hàng giả (hàng nhái, hàng giả mạo) trên Internet. Hàng giả mạo là những mặt hàng có logo và nhãn hiệu nhái theo các nhãn hiệu nổi tiếng, thường được bán với mức giá thấp hơn so với hàng chính hãng. Các quảng cáo cho những sản phẩm này có thể chỉ ra chúng là hàng nhái hoặc không, và thường là rất khó để phân biệt với Hàng chính hãng khi Khách hàng không có cơ hội để tự kiểm tra các Sản phẩm. Chúng tôi nỗ lực để đảm bảo dịch vụ của chúng tôi không được sử dụng để mua bán hàng giả, bằng cách lựa chọn các Người bán và sản phẩm một cách cẩn trọng khi liên kết với website của Basso. Chúng tôi không thể đảm bảo rằng 100% các sản phẩm được quảng cáo và vận chuyển thông qua dịch vụ của Basso là hàng chính hãng.</p>
+
+<p>13.3. Nếu Khách hàng biết hoặc nghi ngờ các quyền của Khách hàng đang bị vi phạm bởi quảng cáo hàng giả trên bất cứ website Basso và/hoặc hàng giả được vận chuyển thông qua dịch vụ vận chuyển hàng quốc tế, vui lòng thông báo cho chúng tôi bằng cách gửi đơn Khiếu nại vi phạm</p>
+
+<p>13.4. Sau khi nhận được đơn khiếu nại của Khách hàng, chúng tôi sẽ tiến hành điều tra. Nếu hàng hóa giả mạo xâm phạm các quyền của Khách hàng đang được quảng cáo và/hoặc phân phối thông qua Basso, chúng tôi sẽ có những hành động thích hợp như: gỡbỏ các quảng cáo về các mặt hàng giả mạo, cấm người bán hàng giả được quảng cáo trên Basso, vô hiệu hóa các tài khoản nếu khách hàng cố ý sử dụng dịch vụ của Basso để nhập các hàng hóa giả mạo, thông báo đến các cơ quan chức năng về vấn đề này.</p>
+
+<p>14. Thương hiệu: “Basso” là một thương hiệu đã được đăng ký ở nhiều quốc gia. Việc sử dụng website không có nghĩa rằng Khách hàng được cấp quyền sử dụng thương hiệu của Basso. Khách hàng không được sao chép, tải về, sử dụng, chỉnh sửa hoặc phân phối (ngoại trừ quy định trong mục 12.3 ở trên) dưới bất cứ hình thức nào mà không có sự cho phép từ trước của chúng tôi bằng văn bản. Tất cả các thương hiệu hoặc nhãn hiệu khác hiển thị hoặc được nêu trên website của chúng tôi là tài sản của các chủ sở hữu tương ứng.</p>
+
+<p>15. Các website khác: Basso không chịu trách nhiệm về nội dung và độ chính xác của các thông tin từ bất cứ website bên thứ 3 nào (không phải Basso) mà liên kết đến website của Basso.</p>
+
+<p>16. Từ chối bảo đảm: Khách hàng chấp nhận rủi ro khi sử dụng website và thừa nhận rằng các dịch vụ trên website Basso là được cung cấp trên nên tảng “có sẵn”. Chúng tôi cố gắng cung cấp thông tin chính xác và cập nhật thông qua website Basso. Basso không chịu trách nhiệm về việc chậm trễ, gián đoạn hoặc không thể truy cập tài khoản và thực hiện giao dịch của Khách hàng do nhà cung cấp dịch vụ Internet/mạng thông tin viễn thông &nbsp;không đáng tin cậy, phầm mềm, thiết bị Khách hàng sử dụng cho việc truy cập không tương thích hoặc bị hỏng hóc, hoặc các nguyên nhân khác ngoài tầm kiểm soát của Basso.</p>
+
+<p>17. Giới hạn trách nhiệm: Trong mọi trường hợp, Basso không chịu trách nhiệm cho bất kỳ thiệt hại gián tiếp, đặc biệt, ngẫu nhiên, có tính chất trừng phạt hay cảnh cáo (bao gồm nhưng không giới hạn tổn thất kinh doanh, giảm doanh thu hay lợi nhuận, mất uy tín, cơ hội, gián đoạn kinh doanh hoặc mất thông tin) phát sinh từ việc sử dụng hoặc không thể sử dụng tài khoản hay website Basso của Khách hàng, thậm chí nếu ngay cả khi chúng tôi nhận được thông báo về khả năng xảy ra những thiệt hại đó. Ngoại trừ những mất mát hoặc tổn thất đối xảy ra trong quá trình vận chuyển hàng quốc tế, trách nhiệm tối đa của Basso theo thỏa thuận này giới hạn ở mức 2.000.000VNĐ cho mỗi sự cố.</p>
+
+<p>18. Thông báo: Các thông báo gửi đến email Khách hàng cung cấp khi mở tài khoản (hoặc được cập nhật sau đó), tin tức và/hoặc thông tin được đăng tải trên website là phương thức chính mà chúng tôi dùng để thông tin đến Khách hàng. Khách hàng cũng có thể gửi thông báo hoặc thông tin khác tới Basso thông qua email, livechat hoặc Gọi điện thông qua thông tin ở phần Liên hệ.</p>
+
+<p>19. Sửa đổi các điều khoản dịch vụ của Basso: Chúng tôi có thể sửa đổi các điều khoản dịch vụ này vào bất cứ lúc nào mà không cần thông báo. Việc Khách hàng tiếp tục sử dụng tài khoản Basso sau những điều chỉnh đó xuất hiện sẽ được xem như Khách hàng đã đồng ý với những điều khoản đã được sửa đổi.</p>
+
+<p>Đặt mua các Sản phẩm từ Người bán</p>
+
+<p>20. Đặt hàng: Khách hàng đặt hàng trực tiếp từ website của Người bán, thanh toán trực tiếp cho Người bán giá hàng hóa và phí vận chuyển nội địa (nếu có) để giao hàng đến địa chỉ kho Basso. Khách hàng đồng ý tuân thủ bất cứ điều kiện và hạn chế cũng như các lưu ý được quy định trên website của Người bán trong quá trình mua hàng. Ngoài ra Khách hàng cũng có thể sử dụng Dịch vụ Mua hàng giúp tôi để mua sắm từ các website quốc tế.</p>
+
+<p>21. Sửa địa chỉ (Dịch vụ Chuyển hàng giúp tôi): Khách hàng sẽ thực hiện các biện pháp hợp lý để đảm bảo Sản phẩm Khách hàng đặt hàng được giao đúng đến địa chỉ Basso của Khách hàng, bao gồm tên và chính xác số mã kho của Khách hàng (Your suite number).</p>
+
+<p>22. Giao dịch mua hàng chỉ giữa Khách hàng và Người bán (dịch vụ Mua hàng giúp tôi): Basso cung cấp các dịch vụ cho phép Khách hàng mua sắm online từ các website Người bán từ quốc gia khác và các Sản phẩm được giao đến tận tay Khách hàng. Tuy nhiên, Basso không bán Sản phẩm cho Khách hàng. Khách hàng là người duy nhất chịu trách nhiệm chọn và đặt mua sản phẩm từ người bán, việc mua 1 sản phẩm của Khách hàng là 1 giao dịch riêng giữa Khách hàng và người bán.</p>
+
+<ul>
+<li>Basso không đại diện, bảo đảm hay bảo hành liên quan đến chất lượng và sự phù hợp của các sản phẩm Khách hàng đặt hàng.</li>
+<li>Chúng tôi không chịu trách nhiệm đối với bất cứ lỗi lầm của người bán khi vận chuyển hàng đến địa chỉ Basso của Khách hàng hoặc thực hiện đơn hàng của Khách hàng, hoặc bất cứ khiếm khuyết của bất cứ sản phẩm Khách hàng đặt mua, hoặc bất cứ thương tật hay hư hỏng mà bất cứ sản phẩm có thể gây ra, hoặc với bất cứ lỗi sản phẩm không đáp ứng kỳ vọng của Khách hàng.</li>
+<li>Chúng tôi không xử lý việc liên hệ với người bán liên quan để đổi trả Sản phẩm. Đây là trách nhiệm của Khách hàng. Theo yêu cầu của Khách hàng, chúng tôi sẽ hỗ trợ để hoàn trả sản phẩm Khách hàng đặt hàng về cho Người bán nếu Sản phẩm đang ở địa chỉ Basso của Khách hàng. Phí chuyển trả hàng sẽ được áp dụng.</li>
+<li>Nếu sau khi giao hàng cho Khách hàng, Khách hàngxác định hàng bị lỗi hoặc không đáp ứng kỳ vọng của Khách hàng, Khách hàng đồng ý rằng Basso sẽ không chịu trách nhiệm và chỉ yêu cầu được bồi thường từ phía người bán. Xem phần 41 để thêm thông tin về quy trình trả hàng.</li>
+</ul>
+
+<p>23. Dịch vụ Mua hàng giúp tôi: Nếu người bán không chấp nhận phương thức thanh toán quốc tế của Khách hàng, Khách hàng có thể sử dụng dịch vụ Mua hàng giúp tôi với một khoản phí dịch vụ cho Basso. Chúng tôi sẽ đặt hàng cho Khách hàng theo các chỉ dẫn Khách hàng cung cấp, và thanh toán đơn hàng giúp Khách hàng. Để biết thêm thông tin chi tiết, vui lòng xem phần Các câu hỏi thường gặp. Các điều kiện dưới đây áp dụng cho tất cả các đơn hàng Mua hàng giúp tôi:</p>
+
+<ul>
+<li>Các chỉ dẫn Khách hàng cung cấp cho chúng tôi trong đơn hàng phải chỉ rõ chính xác mô tả sản phẩm (bao gồm giá, số lượng, màu sắc, kích thước, mã tham chiếu của người bán,…) và bất cứ mã giảm giá nào mà Khách hàng tin là có thể áp dụng.</li>
+<li>Một đơn hàng Mua hàng giúp tôi là không thể thay đổi hoặc hủy một khi nó đã được xử lý.</li>
+<li>Chúng tôi sẽ không đặt hàng (hoặc sẽ hủy đơn hàng) nếu Khách hàng không cung cấp đủ thông tin hoặc nếu nó chứa bất cứ sản phẩm bị cấm nào.</li>
+<li>Theo quy định của dịch vụ Basso, việc mua hàng của Khách hàng thông qua dịch vụ Mua hàng giúp tôi là một giao dịch chỉ giữa Khách hàng và người bán, cho dù vậy, chúng tôi hỗ trợ Khách hàng đặt hàng với người bán, và thanh toán giúp Khách hàng. Chúng tôi không đại diện, bảo đảm hay bảo hành liên quan đến chất lượng và sự phù hợp của các sản phẩm Khách hàng đặt thông qua dịch vụ Mua hàng giúp tôi. Chúng tôi không chịu trách nhiệm nếu người bán không thể thực hiện đơn hàng, vận chuyển sai sản phẩm, không áp dụng mã giảm giá mà Khách hàng chỉ định hoặc bất cứ lỗi sản phẩm mà không đạt kỳ vọng của Khách hàng và Khách hàng đồng ý rằng Basso không chịu trách nhiệm về vấn đề này.</li>
+</ul>
+
+<p>Nhận hàng tại địa chỉ Basso của bạn</p>
+
+<p>24. Quy trình nhận hàng của chúng tôi: Chúng tôi luôn có thiện ý nhận những gói hàng được giao đến địa chỉ kho của Khách hàng. Khi nhận hàng, chúng tôi sẽ thông báo chi phí thực tế của các loại thuế phí, phí vận chuyển, phí xử lý hàng quốc tế và nhận các chỉ dẫn của Khách hàng cho việc vận chuyển hoặc lưu kho hàng hóa. Chúng tôi không đồng ý nhận các kiện hàng được giao theo hình thức COD (Thu tiền khi giao hàng), Khách hàng là người duy nhất có trách nhiệm thanh toán và tiến hành vận chuyển hàng. Việc thanh toán phải thông qua 1 thẻ tín dụng hoặc phương thức thanh toán được phát hành ở cùng quốc gia mà Khách hàng sinh sống.</p>
+
+<p>25. Hàng hóa bị mất hoặc hư hỏng khi vận chuyển đến kho hàng quốc tế của chúng tôi: Basso sẽ không chịu trách nhiệm đối với hàng hóa bị mất hoặc hư hỏng khi di chuyển từ Người bán đến kho hàng Basso. Chúng tôi có quyền từ chối việc nhận hàng tại kho hàng nếu kiểm tra bên ngoài gói hàng, rõ ràng thấy gói hàng bị hư hỏng hoặc không hoàn thiện, sau đó thông báo đến Khách hàng.</p>
+
+<p>26. Kiểm tra gói hàng</p>
+
+<ul>
+<li>Basso có quyền (khi nhận hàng, trong quá trình lưu kho, và khi chuẩn bị để xuất kiện hàng) mở hàng và kiểm tra bất cứ gói hàng, hoặc một phần kiện hàng cho mục đích an toàn, xác nhận việc tuân thủ với điều luật xuất nhập khẩu, xác nhận mô tả sản phẩm và các thông tin khác mà Khách hàng cung cấp mà không cần thông báo. Tuy nhiên chúng tôi không có trách nhiệm kiểm tra các gói hàng mà không có dấu hiệu vỡ hỏng rõ ràng và không chịu trách nhiệm về độ chính xác của mô tả sản phẩm và các thông tin khác mà Khách hàng cung cấp.</li>
+<li>Nếu chúng tôi phát hiện ra mô tả của các nội dung bên trong gói hàng hoặc các thông tin khác mà Khách hàng cung cấp không chính xác, tùy thuộc vào từng trường hợp cụ thể, chúng tôi có thể yêu cầu Khách hàng cung cấp thêm các giấy tờ bổ sung, hoặc từ chối vận chuyển gói hàng cho Khách hàng (Chúng tôi sẽ gửi thông báo tới Khách hàng), hoặc tự động sửa lại thông tin.</li>
+<li>Chúng tôi có thể đóng gói lại sản phẩm để giảm kích thước hoặc trọng lượng của gói hàng, nhưng sẽ không mở bất cứ gói hàng nào được dán nhãn niêm phong, đóng gói kín hoặc dán nhãn thiết kế. Xem thêm phần câu hỏi về Gói lại hàng của chúng tôi.</li>
+</ul>
+
+<p>27. Hàng cấm</p>
+
+<ul>
+<li>Basso sẽ “giữ” các sản phẩm bị hạn chế hoặc cấm xuất khẩu hoặc nhập khẩu vào Việt Nam. Ngoài ra, bất cứ sản phẩm nào được xem là không an toàn đối với vận chuyển quốc tế sẽ bị cấm vận chuyển và được giữ tại kho. Xem phần 36 và 37 phía dưới và Danh sách Hàng cấm. Sau khi Khách hàng được thông báo về tình trạng giữ hàng, chúng tôi sẽ, theo yêu cầu của Khách hàng, sắp xếp hoàn trả hàng</li>
+<li>cho Người bán, hoặc vận chuyển hàng đến một địa chỉ thay thế (nếu có), hoặc thanh lý hàng, với một mức phí chuyển trả hàng được áp dụng. Khách hàng có 14 ngày để thông báo về việc xử lý sản phẩm. Nếu chúng tôi không nhận được phản hồi của Khách hàng sau 14 ngày, sản phẩm sẽ bị hủy.</li>
+<li>Các sản phẩm mà không được bán hợp pháp (ví dụ các loại thuốc bất hợp pháp) thì không thể hoàn trả cho người bán hoặc vận chuyển đến địa chỉ thay thế khác. Chúng sẽ bị tịch thu bởi các cơ quan thực thi luật pháp để tiến hành điều tra sâu hơn.</li>
+<li>Để xác định một sản phẩm cụ thể có bị hạn chế xuất khẩu hay không, Basso có thể nộp các sản phẩm như vậy đến các cơ quan chính phủ chịu trách nhiệm về tuân thủ xuất khẩu kiểm tra, phê duyệt.</li>
+</ul>
+
+<p>28. Không chấp nhận gửi thư</p>
+
+<ul>
+<li>Basso chỉ xử lý các kiện hàng và phong bì có chứa các sản phẩm mà Khách hàng đặt mua. Chúng tôi không phải đại lý chuyển phát thư tín, và không nhận vận chuyển các tài liệu cho Khách hàng. Bất cứ thư hay kiện hàng gửi đến cho Khách hàng mà không chứa mặt hàng có giá trị sẽ bị hủy.</li>
+<li>Khách hàng không thể sử dụng địa chỉ Basso của Khách hàng cho bất cứ mục đích nào khác ngoài nhận các kiện hàng có chứa các sản phẩm Khách hàng đặt mua từ Người bán.</li>
+</ul>
+
+<p>29. Lưu kho hàng hóa, phí lưu kho sau 14 ngày:</p>
+
+<ul>
+<li>Khi các sản phẩm được chuyển về đến Việt Nam, Khách hàng sẽ có 14 ngày lưu kho miễn phí. Các đơn hàng không được giao đi sẽ bị tính phí 20.000VNĐ mỗi ngày cho mỗi 10 kg.Đối với các Sản phẩm hoặc kiện hàng không được giao đi trong hơn 30 ngày, chúng được xem như là các Sản phẩm bị từ bỏ, và Basso có quyền xử lý chúng mà không cần thông báo thêm.</li>
+<li>Nếu Khách hàng xác nhận không có nhu cầu vận chuyển sản phẩm đang được lưu kho trong kho hàng, với bất cứ lý do gì, Khách hàng đều có quyền yêu cầu hủy sản phẩm. Nếu sản phẩm có thể hoàn trả cho Người bán, Basso sẽ tiến hành trả hàng dưới chi phí của Khách hàng. Mọi sự liên lạc với Người bán đều do Khách hàng thực hiện. Nếu sản phẩm không thể trả về cho Người bán, Basso sẽ tiến hành hủy Sản phẩm. Các chi phí lưu kho vẫn được tính vào khoản phải trả của Khách hàng.</li>
+</ul>
+
+<p>30. Các đơn hàng không xác định: Thỉnh thoảng, chúng tôi nhận được các gói hàng mà không thể xác định được người nhận (tên Khách hàng, Mã kho của Khách hàng bị thiếu, hoặc thông tin sai). Nếu Khách hàng đã đặt một đơn hàng nhưng không thấy có thông báo từ Basso về việc vận chuyển hàng, Khách hàng nên liên hệ đến bộ phận Chăm sóc Khách hàng, mô tả Sản phẩm mà Khách hàng đang chờ. Gói hàng của Khách hàng có thể nằm trong Hàng không xác định và được tìm thấy sau khi chúng tôi kiểm tra. Hàng không xác định sẽ được lưu kho trong 90 ngày. Sau thời gian đó, Basso &nbsp;có quyền hủy hàng theo bất cứ cách thức nào mà được luật pháp cho phép.</p>
+
+<p>Vận chuyển và giao hàng quốc tế</p>
+
+<p>31. Vận chuyển các kiện hàng: Khi Khách hàng yêu cầu vận chuyển hàng và thanh toán toàn bộ các chi phí được quy định trong Hóa đơn thanh toán – bao gồm tất cả thuế, phí, phí vận chuyển và phụ phí khác nếu có (có thể khác với chi phí ước tính qua công cụ tính toán phí vận chuyển – xem phần 10) – Basso sẽ tiến hành vận chuyển hàng quốc tế và giao hàng đến địa chỉ giao hàng mà Khách hàng yêu cầu.</p>
+
+<p>32. Chỉ định Basso như Đại lý: Khách hàng chỉ định Basso như là đại lý của Khách hàng để xử lý tất cả các thủ tục Hải quan xuất nhập khẩu, đảm bảo các chi phí thuế phí Hải quan đã được đóng đầy đủ cho các cơ quan có thẩm quyền. Basso thực hiện chức năng này dựa trên thông tin Khách hàng cung cấp, và theo đó, Basso không chịu trách nhiệm cho bất cứ khoản thuế phí nào phát sinh do thông tin Khách hàng cung cấp không đầy đủ hoặc chính xác.</p>
+
+<p>33. Kê khai nội dung và giá trị hàng hóa chính xác. Thanh toán thuế phí: Để giảm nguy cơ mắc lỗi khi khai báo Hải quan, chúng tôi thường yêu cầu hóa đơn, xác nhận đặt hàng của Người bán hình thành giá thanh toán c sản phẩm của Khách hàng. Tuy nhiên, chỉ Khách hàng có trách nhiệm đối với tính chuẩn xác của tất cả các thông tin Khách hàng cung cấp cho Basso liên quan đến nội dung và giá trị kiện hàng. Khách hàng đồng ý bồi thường và giữ Basso tránh khỏi bất cứ trách nhiệm do việc kê khai dưới giá trị hoặc xuyên tạc mà Khách hàng có thể gây ra. Khách hàng cũng công nhận rằng:</p>
+
+<ul>
+<li>Các gói hàng có thể bị kiểm tra bất cứ thời điểm nào bởi các cơ quan xuất nhập khẩu có thẩm quyền. Các gói hàng có mô tả sản phẩm không chính xác hoặc kê khai dưới giá trị có thể bị chậm trễ vận chuyển do các cơ quan Hải quan có thẩm quyền có thể điều tra và chỉnh sửa giá trị. Khi đó, Khách hàng có thể phải thanh toán thêm thuế phí hoặc tiền phạt.</li>
+<li>Giả định Khách hàng cung cấp thông tin chính xác khi khai báo Hải quan và cơ quan Hải quan không khiếu nại giá trị, số tiền thuế phí thực sự thanh toán cho cơ quan Hải quan có thể khác với số tiền mà Khách hàng thanh toán cho chúng tôi. Lý do là:</li>
+</ul>
+
+<p>o Thuế và phí được tính dựa trên “giá trị tính thuế” của hàng hóa. Chúng tôi tính thuế phí chính xác nhất có thể, sau khi kiện hàng của Khách hàng được kiểm tra, cân nặng và đo lường và sẵn sàng vận chuyển từ kho xuất hàng của chúng tôi. Khách hàng thanh toán cho chúng tôi số tiền thuế phí được tính cùng với phí vận chuyển, khi giải phóng lô hàng của Khách hàng. Hóa đơn Basso của Khách hàng đã bao gồm phí vận chuyển và thuế phí lô hàng.</p>
+
+<p>o Chúng tôi thay mặt Khách hàng tiến hành thanh toán thuế phí cho cơ quan Hải quan địa phương và số tiền thanh toán thực tế có thể cao hơn hoặc thấp hơn số tiền mà chúng tôi tính toán, vì một số lý do. Ví dụ, cơ quan Hải quan áp dụng một mã số Hải quan cho hàng hóa của Khách hàng khác với mã số mà chúng tôi áp dụng, hoặc cơ quan Hải quan có thể (vì bất cứ lý do gì) sử dụng một công thức khác để tính phí, hoặc việc tính toán có thể bị ảnh hưởng bởi thay đổi tỷ giá giữa thời gian chúng tôi tính toán và thời gian mà khoản thuế phí thực tế phải trả. Trong trường hợp như v?</p>
+</div>
+</div>
+
+</div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__bottom">
+          <div class="overlay"></div>
+          <div class="contact">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-12 col-md-4 overlay-content footer__logo mb-5 mb-md-0"
+                >
+                  <img
+                    src="../dist/images/LogoShipus_footer.png"
+                    alt=""
+                    style="width: 35%"
+                  />
+                  <div
+                    class="fb-page"
+                    data-href="https://www.facebook.com/shipus19"
+                    data-tabs=""
+                    data-width=""
+                    data-height=""
+                    data-small-header="false"
+                    data-adapt-container-width="true"
+                    data-hide-cover="false"
+                    data-show-facepile="true"
+                  >
+                    <blockquote
+                      cite="https://www.facebook.com/shipus19"
+                      class="fb-xfbml-parse-ignore"
+                    >
+                      <a href="https://www.facebook.com/shipus19"
+                        >Shipus - Mua hàng Mỹ</a
+                      >
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 overlay-content">
+                  <div class="footer__title">Hỗ trợ</div>
+  
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="javascript:void(0)">Về SHIPUS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0)"
+                        >Quy trình đặt hàng</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0)"
+                        >Các điều khoản và điều kiện</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0)"
+                        >Chính sách bảo hành, hỗ trợ bảo hành</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0)"
+                        >Các mặt hàng cấm</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0)"
+                        >Chính sách bảo mật</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 overlay-content">
+                  <div class="footer__title">Liên hệ</div>
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link d-flex" href="javascript:void(0)">
+                        <i class="las la-map-marker"></i>
+  
+                        <p>
+                          <b>Văn Phòng Hà Nội</b>
+                          <br />
+                          493 Nguyễn Văn Cừ, Long Biên, Hà Nội
+                        </p>
+                      </a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link d-flex" href="javascript:void(0)">
+                        <i class="las la-map-marker"></i>
+                        <p>
+                          <b>Văn Phòng Hồ Chí Minh</b>
+                          <br />
+                          60 Lê Trung Nghĩa, P12, Q Tân Bình, Hồ Chí Minh
+                        </p>
+                      </a>
+                    </li>
+                    <li class="nav-item active">
+                      <a
+                        class="nav-link d-flex text-blue"
+                        href="javascript:void(0)"
+                      >
+                        <i class="las la-phone"></i>
+                        <span>Hotline: 0965 687 790</span>
+                      </a>
+                    </li>
+                    <li class="nav-item active">
+                      <a
+                        class="nav-link d-flex text-blue"
+                        href="javascript:void(0)"
+                      >
+                        <i class="las la-envelope"></i>
+                        <span>Email: info@shipus.vn</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copy-right">
+            <div class="overlay-content p-2 text-center text-white">
+              <p>SHIPUS.VN - một sản phẩm của CÔNG TY TNHH THƯƠNG MẠI HOÀI ĐỨC</p>
+              <p>
+                Giấy chứng nhận Đăng ký doanh nghiệp số 03099136630 được cấp bởi
+                Sở Kế Hoạch và Đầu tư thành phố Hồ Chí Minh
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-login" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Đăng nhập</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="login-form">
+                  <form method="get" action="" data-bind="submit: login">
+                      <div class="alert alert-danger" data-bind="visible: error_msg() !== undefined, text: error_msg" style="display: none;"></div>
+                      <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Email đăng nhập" data-bind="value: email">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                          </div>
+                      </div>
+                      <div class="input-group">
+                          <input type="password" class="form-control" placeholder="Mật khẩu" data-bind="value: pass">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-key"></i></div>
+                          </div>
+                      </div>
+                      <div class="input-group">
+                          <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="remember">
+                              <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
+                          </div>
+                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                      </div>
+                      <div class="input-group">
+                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                      </div>
+                      <div class="input-group">
+                          Bạn chưa có tài khoản? &nbsp;
+                          <a href="#" class='register' onclick="showModalRegister()">Đăng ký</a>
+                      </div>
+                      
+                  </form>
+              </div>
+      <ul class="social-logins">
+        <li class="social-login-google"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></li>
+        <!--<li class="social-login-zalo"><a href="" class="aforget">Đăng nhập với Zalo</a></li>-->
+      </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="modal" role="dialog" tabindex="-1" id="modal-register" aria-hidden="true" style="display: none;">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">ĐĂNG KÝ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeRegister()">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="p-3">
+              <div style='padding: 0 20px;'>
+<div class="form-group">
+                    <label class="d-block">
+                        Họ tên
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: name" style="display: none;"></span></label>
+                    <input type="text" required="" class="form-control" data-bind="value: name"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Địa chỉ email
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: email" style="display: none;"></span></label>
+                    <input type="email" required="" class="form-control" autocomplete="off" data-bind="value: email"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Điện thoại
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: phone" style="display: none;"></span></label>
+                    <input type="text" required="" class="form-control" data-bind="value: phone" autocomplete="off"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Mật khẩu
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: pass" autocomplete="off" style="display: none;"></span></label>
+                    <input type="password" class="form-control" autocomplete="off" required="" data-bind="value: pass"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Xác nhận mật khẩu
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: re_pass" style="display: none;"></span></label>
+                    <input type="password" class="form-control" autocomplete="off" required="" data-bind="value: re_pass"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <button class="btn button btn-block" id='registerBtn' data-bind="click: $root.register">
+                        Đăng ký
+                    </button>
+                </div>
+                <div class="input-group">
+                    Bạn đã có tài khoản? &nbsp;
+                    <a href="#" onClick='showModalLogin()'>Đăng nhập</a>&nbsp; hoặc
+                </div>
+              </div>
+                
+                <!-- <div class="social-login-google" style="padding-top:5px;"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></div> -->
+                <ul class="social-logins mt-3">
+                    <li class="social-login-google"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src='../dist/js/modal.js'></script>
+  
+      <script src="../dist/js/vendors.js"></script>
+      <script src="../dist/js/scripts.js"></script>
+</html>

@@ -1,0 +1,17 @@
+{
+    "/css/app.css": "/css/app.css",
+    "/css/home.css": "/css/home.css",
+    "/css/about.css": "/css/about.css",
+    "/css/price-list.css": "/css/price-list.css",
+    "/css/create-order.css": "/css/create-order.css",
+    "/css/step.css": "/css/step.css",
+    "/css/vendors.css": "/css/vendors.css",
+    "/dist/js/vendors.js": "/dist/js/vendors.js",
+    "/dist/js/home.js": "/dist/js/home.js",
+    "/build/index.html": "/build/index.html",
+    "/build/about.html": "/build/about.html",
+    "/build/create-order.html": "/build/create-order.html",
+    "/build/price-list.html": "/build/price-list.html",
+    "/build/buy-steps.html": "/build/buy-steps.html",
+    "/build/tran-steps.html": "/build/tran-steps.html"
+}

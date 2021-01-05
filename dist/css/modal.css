@@ -1,0 +1,109 @@
+.modal-content{
+    height: 409px;
+    width: 498px;
+  }
+  #btn-login {
+    color: white;
+    width: 100%;
+  }
+  #btn-login:hover {
+      background-color: #4b9eb0;
+  }
+  .register {
+    color: black;
+  }
+
+  .register:hover {
+    color: orange;
+    text-decoration: none;
+  }
+  .social-login-google:hover {
+    background: #184cbb;
+    
+  }
+  .social-login-google{
+    width: 100%;
+  }
+
+  .social-login-google a:hover{
+    color: white;
+    text-decoration: none;
+  }
+  .aforget {
+    color: black;
+  }
+  .aforget:hover {
+    color: orange;
+    text-decoration: none;
+  }
+  #modal-register, #modal-login {
+    font-size: 14px;
+  }
+
+  #modal-login .modal-content {
+      width: 498px;
+      height: 409px;
+  }
+
+  #modal-register .modal-content {
+    width: 498px;
+    height: 656px;
+  }
+  #modal-login,#modal-register .modal-dialog {
+    height: 640px;
+  }
+  #registerBtn{
+    color: white;
+    width: 100%;
+  }
+  #registerBtn:hover{
+    background-color: #4b9eb0;
+  }
+
+  #modal-register div.input-group a {
+    color: black;
+  }
+  #modal-register div.input-group a:hover {
+    text-decoration: none;
+    color: orange;
+  }
+
+  .h2-title::after {
+    background: #02a9ce;
+  }
+
+  label.custom-control-label::before {
+    border-color: #02a9ce !important;
+    border-radius: 100%;
+  }
+  label.custom-control-label::after {
+    border-color: #02a9ce !important;
+    border-radius: 100%;
+  }
+  .custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: #02a9ce !important;
+    background-image: none !important;
+  }
+
+  .order-tabs a:hover {
+    text-decoration: none !important;
+    color: #02A9CE !important; 
+  }
+
+  .order-tabs a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .order-tabs a.active{
+    color: #02A9CE; 
+    border-bottom: 3px solid #02A9CE !important;
+  }
+
+  .order-tabcontent span.price {
+    color: #02A9CE;
+  }
+
+  .account-order-table .detail {
+    background: #02A9CE !important;
+  }

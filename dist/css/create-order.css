@@ -1,0 +1,487 @@
+@charset "UTF-8";
+
+/* Mixin */
+
+/* Set các giá trị với màn hình tương ứng */
+
+.btn {
+    background: #02a9ce;
+}
+
+.btn--inverse {
+    color: #02a9ce;
+    background: #ffffff;
+}
+
+.text-blue {
+    color: #02a9ce;
+}
+
+.steps {
+    margin: 50px auto 85px;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+@media (max-width: 991px) {
+    .steps {
+        margin: 35px 0;
+    }
+}
+
+.steps .step {
+    display: inline-flex;
+    align-items: center;
+}
+
+.steps .step:first-child .step-line {
+    width: 0;
+    margin: 0;
+    visibility: hidden;
+}
+
+.steps .step .step-line {
+    width: 293px;
+    height: 2px;
+    margin: 0 15px 0 10px;
+    background: #dddddd;
+}
+
+.steps .step .step-content {
+    cursor: pointer;
+}
+
+.steps .step .step-content .step-circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 2px solid #dddddd;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.steps .step .step-content .step-circle .step-icon {
+    background: #dddddd;
+    color: #151515;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps .step .step-content .step-text {
+    position: absolute;
+    min-width: 150px;
+    bottom: -40px;
+    font-size: 14px;
+    color: #151515;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .steps {
+      margin: 30px 0 60px 0;
+    }
+
+    .steps .step .step-line {
+        width: 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+  .steps {
+    margin: 30px 0 60px 0;
+  }
+
+  .steps .step .step-line {
+      width: 2rem;
+  }
+
+  .steps .step .step-content .step-text {
+    font-size: 10px;
+    min-width: 50px;
+}
+}
+
+.steps .step .step-line {
+    background: #02a9ce;
+}
+
+.steps .step .step-content .step-circle {
+    border-color: #02a9ce;
+}
+
+.steps .step .step-content .step-circle .step-icon {
+    background: #02a9ce;
+}
+
+.steps .step .step-content .step-circle .step-icon svg path {
+    fill: #ffffff;
+}
+
+.steps .step .step-content .step-circle .step-text {
+    color: #02a9ce;
+}
+
+.steps .step.active ~ .step .step-line {
+    background: #dddddd;
+}
+
+.steps .step.active ~ .step .step-text {
+    color: #151515;
+}
+
+.steps .step.active ~ .step .step-content .step-circle {
+    border-color: #dddddd;
+}
+
+.steps .step.active ~ .step .step-content .step-icon {
+    background: #dddddd;
+}
+
+.steps .step.active ~ .step .step-content .step-icon svg path {
+    fill: #151515;
+}
+
+.steps .step.active .step-text {
+    color: #02a9ce;
+}
+
+.steps .step.active .step-line {
+    background: #02a9ce;
+}
+
+.steps .step.active .step-content .step-circle {
+    border: 2px solid #02a9ce;
+}
+
+.steps .step.active .step-content .step-icon {
+    background: #02a9ce;
+}
+
+.steps .step.active .step-content .step-icon svg path {
+    fill: #ffffff;
+}
+
+.section {
+    margin: 35px 0;
+}
+
+.section__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 7px 0;
+    /* identical to box height, or 153% */
+    text-align: center;
+    text-transform: uppercase;
+    /* Black */
+    color: #151515;
+}
+
+@media (max-width: 768px) {
+    .section__title {
+        font-size: 21px;
+        line-height: 33px;
+    }
+}
+
+.section__title-border {
+    position: relative;
+}
+
+.section__title-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    left: 50%;
+    height: 2px;
+    background: #02a9ce;
+    transform: translateX(-50%);
+}
+
+.section .form--box {
+    background: #ffffff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.section .form__title {
+    color: #151515;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 15px;
+    border-bottom: 1px solid #02a9ce;
+}
+
+.section .form label {
+    font-size: 14px;
+    line-height: 22px;
+    color: #151515;
+    margin-bottom: 4px;
+}
+
+.section .btn-form {
+    border: 1px solid #02a9ce;
+    background: #02a9ce;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+}
+
+.section .btn-form:hover {
+    border: 1px solid #138496;
+    background: #138496;
+    color: #ffffff;
+}
+
+.section .btn-form i {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.section .btn-form--outline {
+    border: 1px solid #02a9ce;
+    background: #ffffff;
+    color: #02a9ce;
+}
+
+.section .btn-form--outline:hover {
+    border: 1px solid #02a9ce;
+    background: #02a9ce;
+    color: #ffffff;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.2);
+    padding: 15px 0;
+}
+
+.product__remove {
+    align-self: flex-start;
+    font-size: 40px;
+    color: #ed1a1f;
+}
+
+.product__remove i {
+    vertical-align: super;
+}
+
+.product__info {
+    padding: 0 10px;
+    flex-grow: 1;
+}
+
+.product__price {
+    font-size: 15px;
+}
+
+.product__des {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.product__des li {
+    display: inline-block;
+    padding-right: 7px;
+    color: #888888;
+    font-size: 14px;
+    position: relative;
+}
+
+.product__des li:last-child::after {
+    display: none;
+}
+
+.product__des li::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-7px);
+    width: 1px;
+    height: 12px;
+    right: 0;
+    background: rgba(21, 21, 21, 0.2);
+}
+
+.pretty input:checked ~ .state.p-primary-o label:before,
+.pretty.p-toggle .state.p-primary-o label:before {
+    border-color: #02a9ce;
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
+    background-color: #02a9ce !important;
+}
+
+.pretty .state svg {
+    top: 1px !important;
+}
+
+.pretty .state label {
+    line-height: initial;
+    margin: 0;
+    padding-left: 5px;
+    white-space: initial !important;
+}
+
+.pretty .state label::after,
+.pretty .state label::before {
+    top: 1px;
+}
+
+@media (max-width: 992px) {
+    #step-1 .cart {
+      display: none !important;
+    }
+}
+
+#step-2 {
+    font-size: 14px;
+}
+
+#step-2 .form--voucher input {
+    height: 40px;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+#step-2 .form--voucher button {
+    flex: 1 1 150px;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border: none;
+}
+
+#step-2 p {
+    font-size: 14px;
+}
+
+#step-2 .text-blue a {
+    font-size: 14px;
+    color: inherit;
+}
+
+#step-2 .product-table table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#step-2 .product-table table .product-card {
+    padding: 4px;
+    width: 240px;
+    border: none;
+}
+
+#step-2 .product-table table .product-card .card-body {
+    padding: 3px 8px;
+}
+
+#step-2 .product-table table .product-card h6 {
+    font-size: 15px;
+    margin: 3px;
+}
+
+#step-2 .product-table table .product-card img {
+    width: 80px;
+    height: 80px;
+}
+
+#step-2 .product-table table caption {
+    font-size: 1.5em;
+    margin: 0.5em 0 0.75em;
+}
+
+#step-2 .product-table table tr {
+    border: 1px solid #ddd;
+    padding: 0.35em;
+}
+
+#step-2 .product-table table th,
+#step-2 .product-table table td {
+    padding: 0.625em;
+    text-align: center;
+}
+
+#step-2 .product-table table th {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+        sans-serif;
+    background-color: #e8e8e8;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#step-2 .product-table table td {
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 1200px) {
+    #step-2 .product-table {
+        overflow-y: scroll;
+    }
+
+    #step-2 .product-table table {
+        table-layout: unset;
+    }
+
+    #step-2 .product-table table tbody {
+        white-space: nowrap;
+    }
+}
+
+#step-3 button {
+    width: 204px;
+    margin-top: 20px;
+}
+
+#step-3 p {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 22px;
+    margin: 30px auto;
+    color: rgba(21, 21, 21, 0.5);
+}
+
+.content-modal{
+    height: 60px;
+    left: 541px;
+    top: 827px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #151515;
+}
+
+.display-inline{
+    display: inline !important;
+}
+
+.btn-modal{
+    width: 204px;
+    border-radius: 4px;
+}
+
+.body-modal{
+    /* height: 240px; */
+    border-radius: 10px;
+    /* width: 415px; */
+}

@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html
+  lang="vi-VN"
+  class="js_active vc_desktop vc_transform vc_transform js rgba backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csstransitions fontface"
+  style="--scroll-y: 0px"
+>
+
+  <head>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' />
+
+  <link
+    rel="stylesheet"
+    href="https://basso.vn/theme/basso/statics/libraries/g5plus/css/style.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://basso.vn/theme/basso/statics/css/style.min.css?v=1609743493"
+  />
+  <link
+    rel="stylesheet"
+    href="https://basso.vn/theme/basso/statics/css/responsive.min.css?v=1609743493"
+  />
+  <link rel='stylesheet' href='./help.css' />
+  <link rel='stylesheet' href='../dist//css/modal.css' />
+  <link rel="stylesheet" href="../dist/css/vendors.css" />
+  <link rel="stylesheet" href="../dist/css/app.css" />
+  <link rel="stylesheet" href="../dist/css/about.css" />
+</head>
+<body>
+  <div class="sidebar__right">
+    <div id="overlay"></div>
+    <div id="menu--mobile">
+      <div class="d-flex justify-content-end">
+        <button class="navbar-toggler p-3" type="button" id="close-menu-mobile">
+          <i class="las la-times"></i>
+        </button>
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            >Homepage <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/about.html">Về shipus</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            data-toggle="collapse"
+            href="#collapseId"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Hướng dẫn <i class="las la-angle-down"></i>
+          </a>
+          <div
+            class="collapse"
+            id="collapseId"
+            aria-labelledby="navbar1Dropdown"
+          >
+            <a class="dropdown-item" href="/buy-steps.html"
+              >Quy trình mua hàng hộ</a
+            >
+            <a class="dropdown-item" href="/tran-steps.html"
+              >Quy trình vận chuyển</a
+            >
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/price-list.html">bảng giá dịch vụ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+        </li>
+      </ul>
+    </div>
+    <div id="cart--mobile">
+      <div class="float-right">
+        <button class="navbar-toggler" type="button" id="close-cart-mobile">
+          <i class="las la-times"></i>
+        </button>
+      </div>
+      <div class="form--box">
+        <div class="form__title">GIỎ HÀNG</div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <article class="product">
+                <svg
+                  style="align-self: flex-start"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0015 1.44873H14.0126V2.12366H15.4611V1.35425C15.4613 0.607544 14.8541 0 14.1078 0H9.90625C9.15991 0 8.55273 0.607544 8.55273 1.35425V2.12366H10.0015V1.44873Z"
+                    fill="#ED1A1F"
+                  />
+                  <path
+                    d="M18.8072 7.86328H5.20835C4.83573 7.86328 4.5424 8.18115 4.57243 8.55267L5.70933 22.6108C5.77269 23.3956 6.42729 24 7.21373 24H16.8017C17.5881 24 18.2427 23.3956 18.3061 22.6106L19.443 8.55267C19.4732 8.18115 19.1799 7.86328 18.8072 7.86328ZM8.50114 22.5005C8.48594 22.5015 8.47074 22.502 8.45573 22.502C8.07597 22.502 7.75718 22.2063 7.73356 21.8221L7.0211 10.2812C6.99656 9.88184 7.30033 9.53815 7.6995 9.51361C8.09739 9.48944 8.44255 9.79248 8.46708 10.192L9.17936 21.733C9.20408 22.1323 8.90031 22.4758 8.50114 22.5005ZM12.7402 21.7776C12.7402 22.1776 12.4159 22.5018 12.0158 22.5018C11.6158 22.5018 11.2915 22.1776 11.2915 21.7776V10.2365C11.2915 9.83643 11.6158 9.51215 12.0158 9.51215C12.4158 9.51215 12.7402 9.83643 12.7402 10.2365V21.7776ZM16.9945 10.2792L16.3142 21.8201C16.2917 22.205 15.9724 22.5018 15.5919 22.5018C15.5776 22.5018 15.5632 22.5015 15.5487 22.5007C15.1493 22.4771 14.8446 22.1343 14.8683 21.735L15.5483 10.1938C15.5718 9.79449 15.9134 9.48981 16.3139 9.51343C16.7132 9.53687 17.0179 9.87982 16.9945 10.2792Z"
+                    fill="#ED1A1F"
+                  />
+                  <path
+                    d="M21.3116 5.62781L20.8359 4.20178C20.7105 3.82587 20.3586 3.57227 19.9621 3.57227H4.05228C3.65604 3.57227 3.30393 3.82587 3.17869 4.20178L2.70298 5.62781C2.61124 5.90283 2.73063 6.18335 2.95347 6.32324C3.04429 6.38019 3.15177 6.41443 3.26987 6.41443H20.7447C20.8628 6.41443 20.9705 6.38019 21.0611 6.32306C21.284 6.18317 21.4034 5.90265 21.3116 5.62781Z"
+                    fill="#ED1A1F"
+                  />
+                </svg>
+                <div class="product__info">
+                  <h6>Blazer</h6>
+                  <div class="product__price">350.000 VND</div>
+                  <ul class="product__des">
+                    <li><span>Size : </span><span>M</span></li>
+                    <li><span>Color :</span><span>Blue</span></li>
+                  </ul>
+                </div>
+                <div class="product__size">1</div>
+              </article>
+              <article class="product">
+                <svg
+                  style="align-self: flex-start"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0015 1.44873H14.0126V2.12366H15.4611V1.35425C15.4613 0.607544 14.8541 0 14.1078 0H9.90625C9.15991 0 8.55273 0.607544 8.55273 1.35425V2.12366H10.0015V1.44873Z"
+                    fill="#ED1A1F"
+                  />
+                  <path
+                    d="M18.8072 7.86328H5.20835C4.83573 7.86328 4.5424 8.18115 4.57243 8.55267L5.70933 22.6108C5.77269 23.3956 6.42729 24 7.21373 24H16.8017C17.5881 24 18.2427 23.3956 18.3061 22.6106L19.443 8.55267C19.4732 8.18115 19.1799 7.86328 18.8072 7.86328ZM8.50114 22.5005C8.48594 22.5015 8.47074 22.502 8.45573 22.502C8.07597 22.502 7.75718 22.2063 7.73356 21.8221L7.0211 10.2812C6.99656 9.88184 7.30033 9.53815 7.6995 9.51361C8.09739 9.48944 8.44255 9.79248 8.46708 10.192L9.17936 21.733C9.20408 22.1323 8.90031 22.4758 8.50114 22.5005ZM12.7402 21.7776C12.7402 22.1776 12.4159 22.5018 12.0158 22.5018C11.6158 22.5018 11.2915 22.1776 11.2915 21.7776V10.2365C11.2915 9.83643 11.6158 9.51215 12.0158 9.51215C12.4158 9.51215 12.7402 9.83643 12.7402 10.2365V21.7776ZM16.9945 10.2792L16.3142 21.8201C16.2917 22.205 15.9724 22.5018 15.5919 22.5018C15.5776 22.5018 15.5632 22.5015 15.5487 22.5007C15.1493 22.4771 14.8446 22.1343 14.8683 21.735L15.5483 10.1938C15.5718 9.79449 15.9134 9.48981 16.3139 9.51343C16.7132 9.53687 17.0179 9.87982 16.9945 10.2792Z"
+                    fill="#ED1A1F"
+                  />
+                  <path
+                    d="M21.3116 5.62781L20.8359 4.20178C20.7105 3.82587 20.3586 3.57227 19.9621 3.57227H4.05228C3.65604 3.57227 3.30393 3.82587 3.17869 4.20178L2.70298 5.62781C2.61124 5.90283 2.73063 6.18335 2.95347 6.32324C3.04429 6.38019 3.15177 6.41443 3.26987 6.41443H20.7447C20.8628 6.41443 20.9705 6.38019 21.0611 6.32306C21.284 6.18317 21.4034 5.90265 21.3116 5.62781Z"
+                    fill="#ED1A1F"
+                  />
+                </svg>
+                <div class="product__info">
+                  <h6>Blazer</h6>
+                  <div class="product__price">350.000 VND</div>
+                  <ul class="product__des">
+                    <li><span>Size : </span><span>M</span></li>
+                    <li><span>Color :</span><span>Blue</span></li>
+                  </ul>
+                </div>
+                <div class="product__size">1</div>
+              </article>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 py-2 d-flex justify-content-between">
+              <span>Tổng tiền</span>
+              <b class="text-danger">350.000 Đ</b>
+            </div>
+            <div class="col-12 pt-3">
+              <div class="form-group">
+                <a
+                  href="./create-order.html#step-2"
+                  class="btn btn-block btn-form step-next"
+                  >Thanh toán</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row header--main">
+        <div class="header__left col-12 col-lg-2 col-xl-2">
+          <h1 class="m-0 text-center">
+            <img
+              class="header__logo"
+              src="../dist/images/LogoShipus.png"
+              alt=""
+            />
+          </h1>
+          <div class="header__mobile d-block d-lg-none mr-2">
+            <button class="navbar-toggler" type="button">
+              <i class="las la-headset"></i>
+            </button>
+            <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal-login">
+              <i class="las la-user"></i>
+            </button>
+            <button class="navbar-toggler" type="button" id="btn-cart-mobile">
+              <i class="las la-shopping-cart"></i>
+            </button>
+            <button class="navbar-toggler" type="button" id="btn-menu-mobile">
+              <i class="las la-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="header__center d-none d-lg-flex justify-content-center col-12 col-lg-8 col-xl-8"
+        >
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/"
+                    >Homepage <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/about.html">Về shipus</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="javascript:void(0)"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Hướng dẫn <i class="las la-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/buy-steps.html"
+                      >Quy trình mua hàng hộ</a
+                    >
+                    <a class="dropdown-item" href="/tran-steps.html"
+                      >Quy trình vận chuyển</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/price-list.html"
+                    >bảng giá dịch vụ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="header__right d-none d-lg-flex col-12 col-lg-2 col-xl-2">
+          <ul
+            class="navbar-nav d-flex flex-row align-items-center justify-content-end"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" href="./help-27.html"
+                ><i class="las la-headset"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login"
+                ><i class="las la-user"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:openCart()"
+                ><i class="las la-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <main class="help-page">
+    <div class="w">
+      <div class="container">
+        <h2 class="h2-title">TRỢ GIÚP</h2>
+        <div class="row">
+          <div class="col-md-4 col-lg-3 shadow p-3 mb-5 bg-white rounded">
+            <ul class="help-nav">
+              <li class="parent">TIN TỨC</li>
+              <li class="">
+                <a href="./help-27.html">Khuyến mãi lớn</a>
+              </li>
+              <li class="">
+                <a href="./help-28.html">Thông báo </a>
+              </li>
+            </ul>
+
+            <ul class="help-nav">
+              <li class="parent">TRỢ GIÚP</li>
+              <li class="">
+                <a href="./help-19.html">Quy trình đặt hàng</a>
+              </li>
+              <li class="">
+                <a href="./help-20.html">Chí phí và thời gian giao hàng</a>
+              </li>
+              <li class="active">
+                <a href="./help-21.html">Dịch vụ giá trị gia tăng</a>
+              </li>
+              <li class="">
+                <a href="./help-23.html">Các điều khoản và điều kiện</a>
+              </li>
+              <li class="">
+                <a href="./help-24.html">Các điều khoản về lỗi sản phẩm</a>
+              </li>
+              <li class="">
+                <a href="./help-39.html">Các mặt hàng cấm</a>
+              </li>
+            </ul>
+
+            <ul class="help-nav">
+              <li class="parent">CÂU HỎI THƯỜNG GẶP</li>
+              <li class="">
+                <a href="./help-29.html">Câu hỏi tổng quan</a>
+              </li>
+              <li class="">
+                <a href="./help-30.html">Về tài khoản</a>
+              </li>
+              <li class="">
+                <a href="./help-31.html">Về cách thức thanh toán</a>
+              </li>
+              <li class="">
+                <a href="./help-32.html">Về đơn hàng</a>
+              </li>
+              <li class="">
+                <a href="./help-35.html">Khiếu nại và sau bán hàng</a>
+              </li>
+              <li class="">
+                <a href="./help-40.html">Chính sách bảo mật</a>
+              </li>
+              <li class="">
+                <a href="./help-33.html">Về kho và vận chuyển quốc tê</a>
+              </li>
+              <li class="">
+                <a href="./help-34.html">Về giao hàng tới tay</a>
+              </li>
+              <li class="">
+                <a href="./help-36.html">Về gói lại hàng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8 col-lg-9">
+            <div class="accordion shadow p-3 mb-5 bg-white rounded" id="accordionPayment">
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-80f16036-9995-1786-4787-4f1ae9504c79"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-80f16036-9995-1786-4787-4f1ae9504c79"
+                    aria-expanded="true"
+                    aria-controls="collapse-80f16036-9995-1786-4787-4f1ae9504c79"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-80f16036-9995-1786-4787-4f1ae9504c79"
+                      name="headship"
+                      class="custom-control-input"
+                      checked=""
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-80f16036-9995-1786-4787-4f1ae9504c79"
+                    >
+                      Miễn phí Gói lại hàng
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-80f16036-9995-1786-4787-4f1ae9504c79"
+                  class="collapse show"
+                  aria-labelledby="heading-80f16036-9995-1786-4787-4f1ae9504c79"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Nếu kiện hàng không được đóng gói đầy đủ, chúng tôi sẽ tự
+                      động đóng gói lại cho Khách hàng để tăng cường sự bảo vệ
+                      và an toàn. Nếu Khách hàng không muốn lô hàng của mình
+                      được đóng gói lại, Khách hàng&nbsp;có thể thiết lập ưu
+                      tiên này trong Tài khoản, tuy nhiên không có bất cứ đảm
+                      bảo về mặt bảo hiểm cho thiết lập này.
+                    </p>
+
+                    <p>
+                      Nếu kiện hàng của Khách hàng bao gồm cả các đơn hàng có
+                      kích thước nhỏ và các đơn hàng có kích thước lớn, chúng
+                      tôi sẽ đóng gói lại các sản phẩm nhỏ vào trong Sản phẩm có
+                      kích thước lớn hơn, chẳng hạn như túi hành lý, miễn là có
+                      chỗ để lưu trữ hàng để giảm chi phí vận chuyển và giúp
+                      Khách hàng tiết kiệm lên đến 30% đối với trọng lượng tính
+                      phí.
+                    </p>
+
+                    <p>
+                      Dịch vụ gói lại hàng sẽ được cung cấp nếu chúng tôi có thể
+                      đảm bảo rằng sau khi đóng gói lại, trọng lượng thực thế
+                      hoặc trọng lượng theo kích thước sẽ được giảm xuống, và sẽ
+                      không làm giảm tính bảo đảm an toàn của kiện hàng. Các
+                      kiện hàng trong điều kiện được bảo vệ tốt sẽ không cần
+                      phải đóng gói lại do chúng đã được sắp xếp dựa trên những
+                      hiểu biết tốt nhất của Người bán để chịu được các điều
+                      kiện vận chuyển, tuy nhiên, chúng tôi sẽ không chịu trách
+                      nhiệm cho bất cứ hư hỏng nào do việc đóng gói của Người
+                      bán gây ra.
+                    </p>
+
+                    <p>
+                      Vui lòng lưu ý rằng: Không giống như việc đóng gói lại
+                      hàng của Dịch vụ Mua hàng giúp tôi, việc đóng gói lại của
+                      Dịch vụ Chuyển hàng giúp tôi sẽ không làm tăng tính bảo vệ
+                      kiện hàng của Khách hàng trong suốt quá trình vận chuyển,
+                      mà chỉ làm giảm trọng lượng / kích thước gói hàng để tiết
+                      kiệm chi phí vận chuyển quốc tế. Điều đó có nghĩa rằng,
+                      đối với việc đóng gói lại hàng hóa của Dịch vụ Mua hàng
+                      giúp tôi, chúng tôi có thể thêm bọc bong bóng, giấy độn bổ
+                      sung… để bảo vệ gói hàng, trong khi chúng tôi không làm
+                      điều đó với đơn hàng Chuyển hàng giúp tôi, cho dù:
+                    </p>
+
+                    <ul>
+                      <li>
+                        Các đơn hàng Chuyển hàng giúp tôi vẫn thuộc chính sách
+                        bảo hiểm miễn phí lên đến 1.000.000VNĐ
+                      </li>
+                      <li>
+                        Khách hàng có thể yêu cầu các vật liệu đóng gói hàng bổ
+                        sung với chi phí 100.000VNĐ
+                      </li>
+                    </ul>
+
+                    <p><strong>Các điều kiện đóng gói lại hàng hóa:</strong></p>
+
+                    <ul>
+                      <li>
+                        Chúng tôi không mở bất kỳ gói hàng nào được niêm phong
+                        bên trong hoặc được bọc sát Sản phẩm.
+                      </li>
+                      <li>
+                        Chúng tôi không đóng gói lại các gói hàng có bao bì nhãn
+                        hiệu chuyên biệt của Người bán, ví dụ như các Hộp “thiết
+                        kế” hoặc đóng gói Giày, bốt, quần áo và các phụ kiện
+                        thời trang.
+                      </li>
+                      <li>
+                        Nếu một Sản phẩm được đóng gói dạng gói quà, chúng tôi
+                        sẽ không đóng gói lại.
+                      </li>
+                      <li>
+                        Chúng tôi khuyến nghị Khách hàng không nên đặt mua những
+                        Sản phẩm dễ vỡ hoặc cần sự Cẩn trọng đặc biệt. Tuy
+                        nhiên, nếu Khách hàng cần vận chuyển những Sản phẩm đó,
+                        vui lòng đảm bảo sự đóng gói phù hợp từ phía Người bán.
+                        Chúng tôi đóng gói lại các sản phẩm dễ vỡ và Dán nhãn
+                        hàng Dễ vỡ trên gói hàng&nbsp;<u>có tính phí</u
+                        >&nbsp;theo yêu cầu của Khách hàng, tuy nhiên không có
+                        bất cứ bảo đảm bảo hiểm nào cho các mặt hàng này.
+                      </li>
+                      <li>
+                        Nếu một lô hàng để giao cho Khách hàng có chứa các sản
+                        phẩm mà không thể vận chuyển hợp pháp hoặc an toàn,
+                        chúng tôi không thể tách riêng các sản phẩm này khỏi các
+                        sản phẩm được chấp nhận khác trong cùng một lô hàng. Lưu
+                        ý rằng, nếu một kiện hàng chứa những sản phẩm như vậy,
+                        Khách hàng có trách nhiệm sắp xếp việc hoàn trả hàng cho
+                        Người bán, hoặc cung cấp một địa chỉ giao hàng nội địa
+                        thay thế, hoặc cho chúng tôi chỉ dẫn để xử lý đơn hàng.
+                      </li>
+                      <li>
+                        Chúng tôi không thể làm giảm kích thước của các Hộp giày
+                        do rủi ro làm hư hỏng hàng hóa có thể phát sinh trong
+                        quá trình vận chuyển.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-f937e8af-6a99-8055-a518-395943093812"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-f937e8af-6a99-8055-a518-395943093812"
+                    aria-expanded="false"
+                    aria-controls="collapse-f937e8af-6a99-8055-a518-395943093812"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-f937e8af-6a99-8055-a518-395943093812"
+                      name="headship"
+                      class="custom-control-input"
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-f937e8af-6a99-8055-a518-395943093812"
+                    >
+                      Miễn phí lưu kho (tới 60 ngày)
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-f937e8af-6a99-8055-a518-395943093812"
+                  class="collapse"
+                  aria-labelledby="heading-f937e8af-6a99-8055-a518-395943093812"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Phụ thuộc vào Xếp hạng thành viên của Khách
+                      hàng,&nbsp;Khách hàng sẽ có từ 20 đến 60 ngày miễn phí Lưu
+                      kho hàng hóa trong khi chờ các đơn hàng khác của mình đến
+                      kho để gom hàng.
+                    </p>
+
+                    <table border="1" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p>&nbsp;</p>
+                          </td>
+                          <td>
+                            <p><strong>&nbsp;Cơ bản&nbsp;</strong></p>
+                          </td>
+                          <td>
+                            <p><strong>&nbsp; Vàng</strong></p>
+                          </td>
+                          <td>
+                            <p><strong>&nbsp;Kim cương&nbsp;</strong></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="4">
+                            <p><strong>Miễn phí Lưu kho</strong></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>Tại kho nước&nbsp;ngoài&nbsp;</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;20 ngày</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;40 ngày&nbsp;</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;60 ngày</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>Tại kho Việt Nam</p>
+                          </td>
+                          <td colspan="3">
+                            <p>&nbsp;14 ngày</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="4">
+                            <p>
+                              <strong>Sau khoảng thời gian miễn phí</strong>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>Phí tại kho nước ngoài&nbsp;</p>
+                          </td>
+                          <td colspan="3">
+                            <p>&nbsp;20.000VNĐ mỗi kiện hàng</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>Phí tại kho Việt Nam</p>
+                          </td>
+                          <td colspan="3">
+                            <p>&nbsp;20.000VNĐ&nbsp;mỗi 10 kg</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <p>
+                      Nếu đơn hàng đầu tiên của Khách hàng đến kho hàng
+                      nước&nbsp;ngoài 20 ngày trước đó, tất cả các đơn hàng đến
+                      kho trong vòng 20 ngày sẽ được vận chuyển đi trước, các
+                      đơn hàng mới của Khách hàng sau đó có thể được gom vào một
+                      kiện hàng khác trong vòng 20 ngày. Sau 20 ngày đầu tiên,
+                      phí là 20.000VNĐ cho mỗi kiện hàng mỗi ngày.<strong
+                        >Ví dụ</strong
+                      >: Nếu Tài khoản của Khách hàng là Hạng cơ bản:
+                    </p>
+
+                    <ul>
+                      <li>
+                        Khi các sản phẩm được chuyển về đến Việt Nam, Khách hàng
+                        sẽ có 14 ngày lưu kho miễn phí. Các đơn hàng không được
+                        giao đi sẽ bị tính phí 20.000VNĐ mỗi ngày cho mỗi 10 kg.
+                      </li>
+                    </ul>
+
+                    <p>
+                      Đối với các Sản phẩm hoặc kiện hàng không được giao đi
+                      trong hơn 3 tháng, chúng được xem như là các Sản phẩm bị
+                      từ bỏ, và Basso&nbsp;có quyền xử lý chúng mà không cần
+                      thông báo thêm.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-b9598e3a-cf20-7a92-d953-93773a8070d1"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-b9598e3a-cf20-7a92-d953-93773a8070d1"
+                    aria-expanded="false"
+                    aria-controls="collapse-b9598e3a-cf20-7a92-d953-93773a8070d1"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-b9598e3a-cf20-7a92-d953-93773a8070d1"
+                      name="headship"
+                      class="custom-control-input"
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-b9598e3a-cf20-7a92-d953-93773a8070d1"
+                    >
+                      Miễn phí kiểm đếm hàng cơ bản
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-b9598e3a-cf20-7a92-d953-93773a8070d1"
+                  class="collapse"
+                  aria-labelledby="heading-b9598e3a-cf20-7a92-d953-93773a8070d1"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Nhiều người bán trên Amazon, Ebay là các cá nhân, và một
+                      số Người bán là những người không chuyên nghiệp. Thỉnh
+                      thoảng, Người bán có thể có những sai sót như gửi sai số
+                      lượng, kích thước hoặc thiết kế. Việc kiểm tra trực quan
+                      cơ bản bao gồm số lượng, màu sắc, kích cỡ, thiết kế và các
+                      khiếm khuyết trực quan rõ ràng (tham khảo Các Ngoại trừ và
+                      Giới hạn bên dưới). Chúng tôi không chịu trách nhiệm đối
+                      với các vấn đề như chất lượng sản phẩm (do tay nghề, chất
+                      liệu,…), các vấn đề liên quan đến tính chính hãng và chức
+                      năng. Việc mua bảo hiểm không làm tăng hoặc mở rộng phạm
+                      vi bảo hiểm.
+                    </p>
+
+                    <p>
+                      <strong
+                        >Các Ngoại trừ đối với kiểm đếm hàng cơ bản</strong
+                      >
+                    </p>
+
+                    <ul>
+                      <li>
+                        Các Sản phẩm trong gói hàng sử dụng vật liệu hoặc hộp
+                        đóng gói bên ngoài đã được niêm phong.
+                      </li>
+                      <li>Quà miễn phí (số lượng và chất lượng)</li>
+                      <li>Các sản phẩm nhỏ hơn 2,5cm</li>
+                      <li>
+                        Các sản phẩm tự lắp ráp (ví dụ như nội thất, các bộ
+                        phận)
+                      </li>
+                      <li>
+                        Các phụ kiện đi kèm Sản phẩm (ví dụ: ruy băng, ren, séc
+                        kéo, các nút bấm)
+                      </li>
+                      <li>
+                        Các Sản phẩm phi vật chất (ví dụ: các văn bản điện tử,
+                        mật khẩu CD,…)
+                      </li>
+                    </ul>
+
+                    <p>
+                      <strong>Các giới hạn đối với kiểm đếm hàng cơ bản</strong>
+                    </p>
+
+                    <ul>
+                      <li>
+                        <strong>Số lượng</strong>&nbsp;– Chúng tôi sẽ kiểm tra
+                        số lượng hàng nhận theo số lượng hàng Khách hàng đặt.
+                        Đối với đặt hàng số lượng lớn (số lượng từ 100 đơn vị
+                        trở lên đối với mỗi đơn hàng), kiểm tra số lượng chính
+                        xác ở mức 90%.
+                      </li>
+                      <li>
+                        <strong>Màu sắc&nbsp;</strong>– Chúng tôi sẽ kiểm tra
+                        màu sắc tổng quan của Sản phẩm. Các biến thể của cùng
+                        một màu được xem như là giống nhau. Ví dụ: hồng nhạt,
+                        hồng đậm và hồng trẻ em đều được xem là màu hồng.
+                      </li>
+                      <li>
+                        <strong>Kích cỡ –&nbsp;</strong>Chúng tôi sẽ kiểm tra
+                        nhãn trên các Sản phẩm nhận được theo kích cỡ hiển thị
+                        trên Ghi chú đơn hàng của Khách hàng. Nếu không có nhãn
+                        trên Sản phẩm hoặc kích cỡ được đo lường theo một cách
+                        khác, chúng tôi sẽ giả định kích cỡ đó là chính xác.
+                      </li>
+                      <li>
+                        <strong>Thiết kế -</strong>&nbsp;Chúng tôi sẽ kiểm tra
+                        thiết kế theo hình ảnh hiển thị trên website của Người
+                        bán. Tuy nhiên, một số hình ảnh được sử dụng trên
+                        website của Người bán chỉ mang tính chất mình họa. do đó
+                        có thể có một số sai khác nhỏ bao gồm các khác biệt phần
+                        lề, lỗi chính tả, các chi tiết nhỏ không chính
+                        xác.&nbsp;
+                      </li>
+                      <li>
+                        <strong>Các khiếm khuyết rõ ràng –&nbsp;</strong>Các
+                        khiếm khuyết rõ ràng như là các vết nhìn thấy được, vết
+                        trầy xước, vết rách, lỗ, vết lõm và các hư hỏng được
+                        phát hiện và bao gồm trong dịch vụ kiểm hàng cơ bản của
+                        chúng tôi, tuy nhiên không bao gồm&nbsp;những sản phẩm
+                        với chất lượng kém, các khiếm khuyết nhỏ và các khiếm
+                        khuyết không thấy được hoặc ở bên trong.
+                      </li>
+                      <li>
+                        <strong>Bao bì&nbsp;</strong>- Các hư hỏng về bao bì Sản
+                        phẩm không được bảo hiểm trong Chính sách hoàn tiền của
+                        chúng tôi. Nếu mặt hàng được đặt mua với mục đích là quà
+                        tặng hoặc hàng bán lại, Khách hàng có thể yêu cầu tăng
+                        tính bảo vệ cho bao bì gói hàng bằng cách Ghi chú trên
+                        đơn hàng đặt mua. Các bao bì đóng gói nhất định như hộp
+                        giày cũng có thể được yêu cầu bỏ ra trên phần ghi chú
+                        đơn hàng, nếu như bạn muốn tiết kiệm chi phí vận chuyển
+                        quốc tế.
+                      </li>
+                      <li>
+                        <strong>Hàng dễ vỡ</strong>&nbsp;- Rủi ro vỡ hỏng đối
+                        với các mặt hàng này là rất cao, chúng tôi không thể đảm
+                        bảo rằng các mặt hàng sẽ được giao trong tình trạng tốt.
+                        Các đóng gói ban đầu của Người bán sẽ không được gỡ bỏ.
+                        Khách hàng có thể&nbsp;yêu cầu tăng tính bảo vệ cho kiện
+                        hàng (ví dụ như đóng gỗ) với một khoản phụ phí để giảm
+                        rủi ro vỡ hỏng trong quá trình vận chuyển.
+                      </li>
+                    </ul>
+
+                    <p>
+                      Chúng tôi sẽ xem Sản phẩm là có trình trạng tốt nếu như
+                      không có bất cứ khiếu nại nào trong vòng 3 ngày kể từ ngày
+                      giao hàng. Chúng tôi có thể từ chối bất kỳ yêu cầu khiếu
+                      nại nào sau thời gian này.
+                    </p>
+
+                    <p>
+                      Mặc dù Basso&nbsp;tự hào cung cấp quy trình kiểm hàng chặt
+                      chẽ, lỗi của con người là một điều không thể tránh khỏi.
+                      Trách nhiệm của chúng tôi là đảm bảo các nhân sự đã được
+                      đào tạo để thực hiện các nhiệm vụ một cách chuyên nghiệp.
+                      Basso&nbsp;có quyền giải thích các điều khoản chính sách
+                      của chúng tôi theo từng trường hợp cụ thể.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-4cd8b8c5-9bf4-690c-86e6-668d91f8db49"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-4cd8b8c5-9bf4-690c-86e6-668d91f8db49"
+                    aria-expanded="false"
+                    aria-controls="collapse-4cd8b8c5-9bf4-690c-86e6-668d91f8db49"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-4cd8b8c5-9bf4-690c-86e6-668d91f8db49"
+                      name="headship"
+                      class="custom-control-input"
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-4cd8b8c5-9bf4-690c-86e6-668d91f8db49"
+                    >
+                      Hoàn trả hàng cho người bán
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-4cd8b8c5-9bf4-690c-86e6-668d91f8db49"
+                  class="collapse"
+                  aria-labelledby="heading-4cd8b8c5-9bf4-690c-86e6-668d91f8db49"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Basso sẽ chịu trách nhiệm đổi trả hàng hóa trong trường
+                      hợp hàng bị nhầm size, nhầm màu do Basso check out. Trường
+                      hợp lỗi do web (ship sai hàng, sản phẩm bị mất tag, rơi
+                      cúc, lem màu...) Basso sẽ free phí dịch vụ hoặc hỗ trợ đổi
+                      trả.<br />
+                      <br />
+                      Trường hợp web ship thiếu hàng Basso sẽ chịu trách nhiệm
+                      claim với web để web ship thêm hoặc refund lại&nbsp;tiền
+                      sản phẩm thiếu.<br />
+                      <br />
+                      CSKH chỉ có trách nhiệm tư vấn size còn chốt size nào vẫn
+                      thuộc về khách hàng. Hàng thực tế có thể đậm/nhạt hơn so
+                      với ảnh web do ánh sáng và góc chụp. Kính mong quý khách
+                      thông cảm.
+                    </p>
+
+                    <p>
+                      Sản phẩm có hộp như đồng hồ, mắt kính... đôi khi trong quá
+                      trình vận chuyeernm sẽ bị méo, xước, vỡ mong quý khách
+                      thông cảm do quãng đường vận chuyển xa khó có thể đảm bảo
+                      nguyên vẹn.<br />
+                      <br />
+                      Các sản phẩm hỏng trong quá trình vận chuyển Basso sẽ hỗ
+                      trợ 50 - 80% giá trị sản phẩm để chia sẻ thiệt hại với quý
+                      khách hàng. Tuy nhiên, số tiền hỗ trợ sẽ không vượt quá 1
+                      triệu đồng. Với trường hợp hàng có giá trị, quý khách có
+                      thể đóng bảo hiểm 5% để được đền bù 100% giá trị hàng hoá
+                      nếu xảy ra sự cố
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header p-0"
+                  id="heading-a05697f1-8cb6-6213-f500-8a14a5b6a995"
+                >
+                  <div
+                    class="custom-control custom-radio custom-control-inline d-block p-0"
+                    data-toggle="collapse"
+                    data-target="#collapse-a05697f1-8cb6-6213-f500-8a14a5b6a995"
+                    aria-expanded="false"
+                    aria-controls="collapse-a05697f1-8cb6-6213-f500-8a14a5b6a995"
+                  >
+                    <input
+                      type="radio"
+                      id="headship-a05697f1-8cb6-6213-f500-8a14a5b6a995"
+                      name="headship"
+                      class="custom-control-input"
+                    />
+                    <label
+                      class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
+                      for="headship-a05697f1-8cb6-6213-f500-8a14a5b6a995"
+                    >
+                      Các dịch vụ khác (chụp hình, kiểm tra chi tiết hàng, yêu
+                      cầu đặc biệt)
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  id="collapse-a05697f1-8cb6-6213-f500-8a14a5b6a995"
+                  class="collapse"
+                  aria-labelledby="heading-a05697f1-8cb6-6213-f500-8a14a5b6a995"
+                  data-parent="#accordionPayment"
+                >
+                  <div class="card-body">
+                    <p>
+                      Các dịch vụ khác được tổng hợp trong Bảng mô tả dưới đây:
+                    </p>
+
+                    <table border="1" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p><strong>&nbsp;Dịch vụ</strong></p>
+                          </td>
+                          <td>
+                            <p><strong>&nbsp;Giá DV (VNĐ)</strong></p>
+                          </td>
+                          <td>
+                            <p><strong>&nbsp;Loại</strong></p>
+                          </td>
+                          <td>
+                            <p><strong>&nbsp;Mô tả</strong></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">
+                            <p>&nbsp;Yêu cầu gửi ảnh</p>
+
+                            <p>&nbsp;</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;50.000</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Các hình ảnh cơ bản</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Xem các hình ảnh có độ phân giải thấp, được chụp
+                                khi các đơn hàng được giao đến kho Basso&nbsp;để
+                                xác nhận nội dung gói hàng
+                              </li>
+                              <li>
+                                Khách hàng sẽ nhận được các bức hình ngay sau
+                                khi yêu cầu
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>&nbsp;200.000</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Các hình ảnh nâng cao</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu lên đến 20 bức hình có độ phân giải cao
+                                cho nội dung kiện hàng của Khách hàng để xác
+                                nhận màu sắc, tình trạng và chi tiết Sản phẩm.
+                              </li>
+                              <li>
+                                Yêu cầu này sẽ mất thêm thời gian để
+                                Basso&nbsp;xử lý
+                              </li>
+                              <li>
+                                Trong thời gian này, Khách hàng có thể xem lại
+                                kiện hàng của mình trong mục “Đang xử lý”
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>&nbsp;+100.000&nbsp;</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Yêu cầu khẩn cấp</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu của bạn sẽ được xử lý trong 1 – 2 ngày
+                                làm việc
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">
+                            <p>
+                              &nbsp;Kiểm tra chi tiết sản phẩm theo yêu cầu của
+                              khách hàng
+                            </p>
+
+                            <p>&nbsp;</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;150.000</p>
+                          </td>
+                          <td>
+                            <p>
+                              &nbsp;Xác nhận Nhãn vận&nbsp; &nbsp;chuyển, các
+                              nội dung&nbsp; &nbsp;và&nbsp;tình trạng của
+                              kiện&nbsp; &nbsp;hàng
+                            </p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu này sẽ mất thêm thời gian để
+                                Basso&nbsp;xử lý.
+                              </li>
+                              <li>
+                                Trong thời gian này, Khách hàng có thể xem lại
+                                kiện hàng của mình trong mục “Đang xử lý”
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>&nbsp;+100.000</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Yêu cầu khẩn cấp</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu của bạn sẽ được xử lý trong 1 – 2 ngày
+                                làm việc
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">
+                            <p>&nbsp;Từ bỏ Kiện hàng&nbsp;</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Miễn phí</p>
+                          </td>
+                          <td>
+                            <p>
+                              &nbsp;Basso&nbsp;sẽ xử lý kiện&nbsp; &nbsp;hàng và
+                              nội dung bên&nbsp; &nbsp;trong của nó.
+                            </p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Basso&nbsp;tiếp nhận thông tin yêu cầu và xử lý.
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>&nbsp;+100.000</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Yêu cầu khẩn cấp</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu của bạn sẽ được xử lý trong 1 – 2 ngày
+                                làm việc
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">
+                            <p>&nbsp;Dán nhãn hàng&nbsp; &nbsp;dễ&nbsp;vỡ</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;50.000</p>
+                          </td>
+                          <td>
+                            <p>
+                              &nbsp;Các nhãn hàng dễ vỡ&nbsp; &nbsp;sẽ&nbsp;được
+                              sử dụng cho&nbsp; &nbsp;các gói hàng với mỗi&nbsp;
+                              &nbsp;50.000VNĐ/gói hàng
+                            </p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                .Basso&nbsp;tiếp nhận thông tin yêu cầu và xử
+                                lý.
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>+100.000</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Yêu cầu khẩn cấp</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu của bạn sẽ được xử lý trong 1 – 2 ngày
+                                làm việc
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">
+                            <p>
+                              &nbsp;Thêm vật liệu&nbsp; &nbsp;đóng gói
+                              hàng&nbsp; &nbsp;($5)
+                            </p>
+                          </td>
+                          <td>
+                            <p>&nbsp;100.000</p>
+                          </td>
+                          <td>
+                            <p>
+                              &nbsp;Thêm bọc bong bóng,&nbsp; &nbsp;giấy độn để
+                              bảo vệ gói&nbsp; &nbsp;hàng
+                            </p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu này sẽ mất thêm thời gian để
+                                Basso&nbsp;xử lý.
+                              </li>
+                              <li>
+                                Trong thời gian này, Khách hàng có thể xem lại
+                                kiện hàng của mình trong mục “Đang xử lý”
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>&nbsp;+100.000</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Yêu cầu khẩn cấp</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu của bạn sẽ được xử lý trong 1 – 2 ngày
+                                làm việc
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">
+                            <p>&nbsp;Gói quà</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;150.000</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Phí gói quà</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu này sẽ mất thêm thời gian để
+                                Basso&nbsp;xử lý.
+                              </li>
+                              <li>
+                                Trong thời gian này, Khách hàng có thể xem lại
+                                kiện hàng của mình trong mục “Đang xử lý”
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>&nbsp;+100.000</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Yêu cầu khẩn cấp</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu của bạn sẽ được xử lý trong 1 – 2 ngày
+                                làm việc
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">
+                            <p>&nbsp;Gỡ bỏ hóa đơn</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;50.000</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Phí yêu cầu</p>
+
+                            <p>&nbsp;gỡ bỏ hóa đơn</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu này sẽ mất thêm thời gian để
+                                Basso&nbsp;xử lý.
+                              </li>
+                              <li>
+                                Trong thời gian này, Khách hàng có thể xem lại
+                                kiện hàng của mình trong mục “Đang xử lý”
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>&nbsp;+100.000</p>
+                          </td>
+                          <td>
+                            <p>&nbsp;Yêu cầu khẩn cấp</p>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>
+                                Yêu cầu của bạn sẽ được xử lý trong 1 – 2 ngày
+                                làm việc
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__bottom">
+      <div class="overlay"></div>
+      <div class="contact">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-md-4 overlay-content footer__logo mb-5 mb-md-0"
+            >
+              <img
+                src="../dist/images/LogoShipus_footer.png"
+                alt=""
+                style="width: 35%"
+              />
+              <div
+                class="fb-page"
+                data-href="https://www.facebook.com/shipus19"
+                data-tabs=""
+                data-width=""
+                data-height=""
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="true"
+              >
+                <blockquote
+                  cite="https://www.facebook.com/shipus19"
+                  class="fb-xfbml-parse-ignore"
+                >
+                  <a href="https://www.facebook.com/shipus19"
+                    >Shipus - Mua hàng Mỹ</a
+                  >
+                </blockquote>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 overlay-content">
+              <div class="footer__title">Hỗ trợ</div>
+
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="javascript:void(0)">Về SHIPUS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"
+                    >Quy trình đặt hàng</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"
+                    >Các điều khoản và điều kiện</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"
+                    >Chính sách bảo hành, hỗ trợ bảo hành</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"
+                    >Các mặt hàng cấm</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)"
+                    >Chính sách bảo mật</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 overlay-content">
+              <div class="footer__title">Liên hệ</div>
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link d-flex" href="javascript:void(0)">
+                    <i class="las la-map-marker"></i>
+
+                    <p>
+                      <b>Văn Phòng Hà Nội</b>
+                      <br />
+                      493 Nguyễn Văn Cừ, Long Biên, Hà Nội
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link d-flex" href="javascript:void(0)">
+                    <i class="las la-map-marker"></i>
+                    <p>
+                      <b>Văn Phòng Hồ Chí Minh</b>
+                      <br />
+                      60 Lê Trung Nghĩa, P12, Q Tân Bình, Hồ Chí Minh
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a
+                    class="nav-link d-flex text-blue"
+                    href="javascript:void(0)"
+                  >
+                    <i class="las la-phone"></i>
+                    <span>Hotline: 0965 687 790</span>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a
+                    class="nav-link d-flex text-blue"
+                    href="javascript:void(0)"
+                  >
+                    <i class="las la-envelope"></i>
+                    <span>Email: info@shipus.vn</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <div class="overlay-content p-2 text-center text-white">
+          <p>SHIPUS.VN - một sản phẩm của CÔNG TY TNHH THƯƠNG MẠI HOÀI ĐỨC</p>
+          <p>
+            Giấy chứng nhận Đăng ký doanh nghiệp số 03099136630 được cấp bởi Sở
+            Kế Hoạch và Đầu tư thành phố Hồ Chí Minh
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<div class="modal" tabindex="-1" role="dialog" id="modal-login" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Đăng nhập</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="login-form">
+                  <form method="get" action="" data-bind="submit: login">
+                      <div class="alert alert-danger" data-bind="visible: error_msg() !== undefined, text: error_msg" style="display: none;"></div>
+                      <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Email đăng nhập" data-bind="value: email">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                          </div>
+                      </div>
+                      <div class="input-group">
+                          <input type="password" class="form-control" placeholder="Mật khẩu" data-bind="value: pass">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-key"></i></div>
+                          </div>
+                      </div>
+                      <div class="input-group">
+                          <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="remember">
+                              <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
+                          </div>
+                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                      </div>
+                      <div class="input-group">
+                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                      </div>
+                      <div class="input-group">
+                          Bạn chưa có tài khoản? &nbsp;
+                          <a href="#" class='register' onclick="showModalRegister()">Đăng ký</a>
+                      </div>
+                      
+                  </form>
+              </div>
+      <ul class="social-logins">
+        <li class="social-login-google"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></li>
+        <!--<li class="social-login-zalo"><a href="" class="aforget">Đăng nhập với Zalo</a></li>-->
+      </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="modal" role="dialog" tabindex="-1" id="modal-register" aria-hidden="true" style="display: none;">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">ĐĂNG KÝ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeRegister()">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="p-3">
+              <div style='padding: 0 20px;'>
+<div class="form-group">
+                    <label class="d-block">
+                        Họ tên
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: name" style="display: none;"></span></label>
+                    <input type="text" required="" class="form-control" data-bind="value: name"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Địa chỉ email
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: email" style="display: none;"></span></label>
+                    <input type="email" required="" class="form-control" autocomplete="off" data-bind="value: email"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Điện thoại
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: phone" style="display: none;"></span></label>
+                    <input type="text" required="" class="form-control" data-bind="value: phone" autocomplete="off"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Mật khẩu
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: pass" autocomplete="off" style="display: none;"></span></label>
+                    <input type="password" class="form-control" autocomplete="off" required="" data-bind="value: pass"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <label class="d-block">
+                        Xác nhận mật khẩu
+                        <span class="text-danger">*</span>
+                        <span class="validationMessage float-right text-danger font-italic" data-bind="validationMessage: re_pass" style="display: none;"></span></label>
+                    <input type="password" class="form-control" autocomplete="off" required="" data-bind="value: re_pass"><span class="validationMessage" style="display: none;"></span>
+                </div>
+                <div class="form-group">
+                    <button class="btn button btn-block" id='registerBtn' data-bind="click: $root.register">
+                        Đăng ký
+                    </button>
+                </div>
+                <div class="input-group">
+                    Bạn đã có tài khoản? &nbsp;
+                    <a href="#" onClick='showModalLogin()'>Đăng nhập</a>&nbsp; hoặc
+                </div>
+              </div>
+                
+                <!-- <div class="social-login-google" style="padding-top:5px;"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></div> -->
+                <ul class="social-logins mt-3">
+                    <li class="social-login-google"><a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fbasso.vn%2Fauth%2Foauth2callback&amp;client_id=393380712765-3avf8ekkr210jrfnvpoqnlpr7u8r4uo0.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;access_type=online&amp;approval_prompt=auto" class="aforget">Đăng nhập với Google</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src='../dist/js/modal.js'></script>
+
+  <script src="../dist/js/vendors.js"></script>
+  <script src="../dist/js/scripts.js"></script>
+</html>

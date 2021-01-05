@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* Mixin */
+
+/* Set các giá trị với màn hình tương ứng */
+
+.btn {
+  background: #02A9CE;
+}
+
+.btn--inverse {
+  color: #02A9CE;
+  background: #ffffff;
+}
+
+.text-blue {
+  color: #02A9CE;
+}
+
+.section {
+  padding: 35px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 25px 0;
+  }
+}
+
+.section__title {
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 52px;
+  /* identical to box height, or 153% */
+  text-align: center;
+  text-transform: uppercase;
+  /* Black */
+  color: #151515;
+}
+
+.section__title-border {
+  position: relative;
+}
+
+.section__title-border:after {
+  content: "";
+  border-bottom: 2px solid #02A9CE;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+}
+
+.section--about .about {
+  margin-bottom: 24px;
+}
+
+.section--about .about--header {
+  background-color: #EEEDED;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
+  color: #02A9CE;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.section--about .about--header:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 25px solid #EEEDED;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section--about .about--img {
+  background-color: rgba(223, 223, 223, 0.8);
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.section--about .about--img img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.section--about .about--desc {
+  line-height: 22px;
+  list-style-image: url("/dist/images/about/check.svg");
+}
+
+.section--about .about--desc li {
+  margin-bottom: 13px;
+}
+
+.section--mission .mission__list {
+  list-style-image: url("/dist/images/about/check.svg");
+}
+
+.section--mission .mission__list li {
+  margin-bottom: 27px;
+}
+
+.section--mission .mission__list li:last-child {
+  margin-bottom: 0;
+}
+
+.section--detail {
+  background-color: rgba(136, 136, 136, 0.3);
+}
+
+.section--detail .detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section--detail .detail__content {
+  margin-top: auto;
+  text-align: center;
+}
+
+.section--detail .detail--counter {
+  font-size: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 700;
+  color: #02A9CE;
+}
+
+.section--detail .detail--desc {
+  font-size: 14px;
+}
+
