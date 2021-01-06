@@ -41,6 +41,14 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=302810217173292&autoLogAppEvents=1"
+            nonce="puQBojSd"
+        ></script>
 <div class="sidebar__right">
     <div id="overlay"></div>
     <div id="menu--mobile">
@@ -89,7 +97,7 @@
           <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+          <a class="nav-link" href="../contact.html">Liên hệ</a>
         </li>
       </ul>
     </div>
@@ -259,7 +267,7 @@
                   <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                  <a class="nav-link" href="../contact.html">Liên hệ</a>
                 </li>
               </ul>
             </div>
@@ -407,7 +415,7 @@
                       tôi trước khi đặt hàng. Trách nhiệm của Khách hàng là đảm
                       bảo rằng các kiện hàng không chứa Hàng cấm. Nếu chúng tôi
                       nhận được một sản phẩm mà chúng tôi không thể vận chuyển,
-                      Basso&nbsp;có khả năng không thể vận chuyển tới bất cứ địa
+                      ShipUS&nbsp;có khả năng không thể vận chuyển tới bất cứ địa
                       chỉ nào khác, bao gồm trả hàng cho Người bán. Trong một số
                       trường hợp, chúng tôi yêu cầu xử lý Sản phẩm đó tại trung
                       tâm Xử lý hàng ở Mỹ. Vui lòng lưu ý rằng phí xử lý hàng sẽ
@@ -439,7 +447,7 @@
                     <p>
                       <em><strong>Hàng hạn chế nhập:</strong></em
                       >&nbsp;Một số sản phẩm bị hạn chế nhập vẫn có thể vận
-                      chuyển, nhưng chỉ sau khi được Basso&nbsp;xem xét, đánh
+                      chuyển, nhưng chỉ sau khi được ShipUS&nbsp;xem xét, đánh
                       giá để đảm bảo rằng việc vận chuyển sản phẩm này tuân thủ
                       cả luật pháp Mỹ và luật pháp Việt Nam. Việc đánh giá tuân
                       thủ thường mất ít hơn 24 giờ, nhưng cũng có thể mất từ 1 –
@@ -447,7 +455,7 @@
                       sàng để vận chuyển. Nếu Khách hàng có bất kỳ câu hỏi nào
                       về việc vận chuyển hàng bị hạn chế, vui lòng liên hệ trước
                       với chúng tôi trước khi vận chuyển món hàng đến kho hàng
-                      Basso. Dưới đây là danh sách các Hàng hạn chế nhập:
+                      ShipUS. Dưới đây là danh sách các Hàng hạn chế nhập:
                     </p>
 
                     <ul>
@@ -634,10 +642,11 @@
                               <input type="checkbox" class="custom-control-input" id="remember">
                               <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
                           </div>
-                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                          <a href="#" class="aforget">Quên mật khẩu</a>
                       </div>
                       <div class="input-group">
-                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                        <button type="button" class="btn" id='btn-login' type="submit" onClick="parent.location='../profile.html'">Đăng nhập</button>
+
                       </div>
                       <div class="input-group">
                           Bạn chưa có tài khoản? &nbsp;

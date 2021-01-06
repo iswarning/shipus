@@ -752,3 +752,10 @@
     z-index: 2;
     background: #02a9ce;
 }
+
+.help-nav li a:hover, .help-nav li.active a {
+    color: #02a9ce;
+}
+
+
+

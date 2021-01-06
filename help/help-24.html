@@ -43,6 +43,14 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=302810217173292&autoLogAppEvents=1"
+            nonce="puQBojSd"
+        ></script>
   <div class="sidebar__right">
     <div id="overlay"></div>
     <div id="menu--mobile">
@@ -91,7 +99,7 @@
           <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+          <a class="nav-link" href="../contact.html">Liên hệ</a>
         </li>
       </ul>
     </div>
@@ -261,7 +269,7 @@
                   <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                  <a class="nav-link" href="../contact.html">Liên hệ</a>
                 </li>
               </ul>
             </div>
@@ -399,13 +407,13 @@
                 >
                   <div class="card-body">
                     <p>
-                      Basso sẽ chịu trách nhiệm đổi trả hàng hóa trong trường
-                      hợp hàng bị nhầm size, nhầm màu do Basso mua hàng. Trường
+                      ShipUS sẽ chịu trách nhiệm đổi trả hàng hóa trong trường
+                      hợp hàng bị nhầm size, nhầm màu do ShipUS mua hàng. Trường
                       hợp lỗi do web (ship sai hàng, sản phẩm bị mất tag, rơi
-                      cúc, lem màu...) Basso sẽ free phí dịch vụ hoặc hỗ trợ đổi
+                      cúc, lem màu...) ShipUS sẽ free phí dịch vụ hoặc hỗ trợ đổi
                       trả.<br />
                       <br />
-                      Trường hợp web ship thiếu hàng Basso sẽ chịu trách nhiệm
+                      Trường hợp web ship thiếu hàng ShipUS sẽ chịu trách nhiệm
                       claim với web để web ship thêm hoặc refund lại&nbsp;tiền
                       sản phẩm thiếu.<br />
                       <br />
@@ -419,7 +427,7 @@
                       cảm do quãng đường vận chuyển xa khó có thể đảm bảo nguyên
                       vẹn.<br />
                       <br />
-                      Các sản phẩm hỏng trong quá trình vận chuyển Basso sẽ hỗ
+                      Các sản phẩm hỏng trong quá trình vận chuyển ShipUS sẽ hỗ
                       trợ một phần phí vận chuyển để chia sẻ thiệt hại với quý
                       khách hàng. Tuy nhiên, số tiền hỗ trợ sẽ không vượt quá 1
                       triệu đồng. Với trường hợp hàng có giá trị, quý khách có
@@ -594,10 +602,11 @@
                               <input type="checkbox" class="custom-control-input" id="remember">
                               <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
                           </div>
-                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                          <a href="#" class="aforget">Quên mật khẩu</a>
                       </div>
                       <div class="input-group">
-                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                        <button type="button" class="btn" id='btn-login' type="submit" onClick="parent.location='../profile.html'">Đăng nhập</button>
+                          
                       </div>
                       <div class="input-group">
                           Bạn chưa có tài khoản? &nbsp;

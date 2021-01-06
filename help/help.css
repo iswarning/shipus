@@ -2089,3 +2089,9 @@ animation: swal2-animate-error-x-mark 0.5s;
       .help-nav li a:hover {
         text-decoration: none;
       }
+
+      @media(max-width: 1220px){
+        .navbar-expand-lg .navbar-nav .nav-link {
+          font-size: 12px !important;
+        }
+      }

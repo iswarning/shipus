@@ -41,6 +41,14 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=302810217173292&autoLogAppEvents=1"
+            nonce="puQBojSd"
+        ></script>
 <div class="sidebar__right">
     <div id="overlay"></div>
     <div id="menu--mobile">
@@ -89,7 +97,7 @@
           <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+          <a class="nav-link" href="../contact.html">Liên hệ</a>
         </li>
       </ul>
     </div>
@@ -259,7 +267,7 @@
                   <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                  <a class="nav-link" href="../contact.html">Liên hệ</a>
                 </li>
               </ul>
             </div>
@@ -398,7 +406,7 @@
                 >
                   <div class="card-body">
                     <p>
-                      Basso&nbsp;có cung cấp dịch vụ đóng kiện lại như là dịch
+                      ShipUS&nbsp;có cung cấp dịch vụ đóng kiện lại như là dịch
                       vụ giá trị gia tăng. Như bạn đã biết, phí vận chuyển quốc
                       tế phụ thuộc vào trọng lượng và kích thước của kiện hàng.
                       Khi kiện hàng được người bán gửi đến bị quá cân nặng, dịch
@@ -435,7 +443,7 @@
                       class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                       for="headship-1b6897d0-8e23-cfaf-089f-eef4c2098d8f"
                     >
-                      Basso có thể làm giảm kích cỡ của kiện hàng to như là chia
+                      ShipUS có thể làm giảm kích cỡ của kiện hàng to như là chia
                       thành những kiện hàng nhỏ hay không?
                     </label>
                   </div>
@@ -756,10 +764,11 @@
                               <input type="checkbox" class="custom-control-input" id="remember">
                               <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
                           </div>
-                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                          <a href="#" class="aforget">Quên mật khẩu</a>
                       </div>
                       <div class="input-group">
-                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                        <button type="button" class="btn" id='btn-login' type="submit" onClick="parent.location='../profile.html'">Đăng nhập</button>
+
                       </div>
                       <div class="input-group">
                           Bạn chưa có tài khoản? &nbsp;

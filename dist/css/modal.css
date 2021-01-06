@@ -107,3 +107,30 @@
   .account-order-table .detail {
     background: #02A9CE !important;
   }
+
+  .contact-page h2.title::after {
+    background: #02A9CE;
+  }
+
+  .order-menu a:hover{
+    color: #02A9CE !important;
+    text-decoration: none;
+  }
+  .fa-circle{
+    color: #02A9CE !important;
+  }
+  .order-menu .active {
+    border: none !important;
+  }
+  .order-menu .active a {
+    color: #02A9CE;
+  }
+  .account-name{
+    font-size: 16px !important;
+  }
+  #btn-update{
+    color: white;
+  }
+  #btn-update:hover{
+    background-color: #138496;
+  }

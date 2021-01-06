@@ -41,6 +41,14 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=302810217173292&autoLogAppEvents=1"
+            nonce="puQBojSd"
+        ></script>
 <div class="sidebar__right">
     <div id="overlay"></div>
     <div id="menu--mobile">
@@ -89,7 +97,7 @@
           <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+          <a class="nav-link" href="../contact.html">Liên hệ</a>
         </li>
       </ul>
     </div>
@@ -259,7 +267,7 @@
                   <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                  <a class="nav-link" href="../contact.html">Liên hệ</a>
                 </li>
               </ul>
             </div>
@@ -384,7 +392,7 @@
                       class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                       for="headship-5966b164-961b-a0c1-3bed-e3fbee5c5a6a"
                     >
-                      Tôi có thể đặt hàng trực tiếp trên Basso không?
+                      Tôi có thể đặt hàng trực tiếp trên ShipUS không?
                     </label>
                   </div>
                 </div>
@@ -398,7 +406,7 @@
                   <div class="card-body">
                     <p>
                       Có, Khách hàng có thể tìm kiếm sản phẩm từ Ebay, Amazon ..
-                      trực tiếp trên Basso.vn, sau đó đặt hàng và thanh toán với
+                      trực tiếp trên ShipUS.vn, sau đó đặt hàng và thanh toán với
                       nhiều phương thức thanh toán khác nhau.
                     </p>
                   </div>
@@ -448,7 +456,7 @@
                                 ><span
                                   style="font-family: 'Arial', 'sans-serif'"
                                   >Nếu Khách hàng không thể đặt hàng trực tiếp
-                                  từ các trang web của Mỹ, Basso sẽ giúp đặt
+                                  từ các trang web của Mỹ, ShipUS sẽ giúp đặt
                                   hàng và chuyển hàng đến tận tay Khách hàng
                                   trong khoảng thời gian đã cam kết.</span
                                 ></span
@@ -487,7 +495,7 @@
                                   ><span style="font-size: 10.5pt"
                                     ><span
                                       style="font-family: 'Arial', 'sans-serif'"
-                                      >Đăng ký và đăng nhập Basso&nbsp;</span
+                                      >Đăng ký và đăng nhập ShipUS&nbsp;</span
                                     ></span
                                   ></span
                                 ></span
@@ -547,11 +555,11 @@
                                     ><span
                                       style="font-family: 'Arial', 'sans-serif'"
                                       >Trong trường hợp Khách hàng muốn đấu giá.
-                                      Khách hàng có thể tự đấu giá hoặc Basso sẽ
+                                      Khách hàng có thể tự đấu giá hoặc ShipUS sẽ
                                       hỗ trợ. Nếu Khách hàng đấu giá thắng,
                                       chúng tôi sẽ liên hệ và sử dụng tài khoản
                                       khách hàng đã đấu giá rồi thêm thanh toán
-                                      bằng thẻ của Basso,&nbsp;và Khách hàng có
+                                      bằng thẻ của ShipUS,&nbsp;và Khách hàng có
                                       thể thực hiện thanh toán cho sản phẩm đấu
                                       giá như bình thường.</span
                                     ></span
@@ -803,7 +811,7 @@
                 >
                   <div class="card-body">
                     <p>
-                      Khi mua sắm tại Basso, ngoài hai trang web lớn là ebay và
+                      Khi mua sắm tại ShipUS, ngoài hai trang web lớn là ebay và
                       amazon, Khách hàng có thể đặt hàng ở bất cứ trang web nào
                       tại Mỹ và các quốc gia khác trên thế giới.
                     </p>
@@ -847,10 +855,10 @@
                     <p>
                       Có, VAT được tính trên cơ sở các chính sách thuế theo quy
                       định của chính phủ. Tuy nhiên, để thuận tiện cho khách
-                      hàng, Basso&nbsp;sẽ thay mặt Khách hàng trả tiền thuế VAT
+                      hàng, ShipUS&nbsp;sẽ thay mặt Khách hàng trả tiền thuế VAT
                       cho cơ quản hải quan và đưa số tiền đó vào hóa đơn thanh
                       toán. Có nghĩa rằng, Khách hàng chỉ trả tiền cho
-                      Basso&nbsp;và không cần phải làm việc với bất kỳ Bên thứ
+                      ShipUS&nbsp;và không cần phải làm việc với bất kỳ Bên thứ
                       ba nào khác cho việc thanh toán VAT.
                     </p>
                   </div>
@@ -1020,10 +1028,11 @@
                               <input type="checkbox" class="custom-control-input" id="remember">
                               <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
                           </div>
-                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                          <a href="#" class="aforget">Quên mật khẩu</a>
                       </div>
                       <div class="input-group">
-                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                        <button type="button" class="btn" id='btn-login' type="submit" onClick="parent.location='../profile.html'">Đăng nhập</button>
+
                       </div>
                       <div class="input-group">
                           Bạn chưa có tài khoản? &nbsp;

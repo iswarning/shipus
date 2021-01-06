@@ -41,6 +41,14 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=302810217173292&autoLogAppEvents=1"
+            nonce="puQBojSd"
+        ></script>
 <div class="sidebar__right">
     <div id="overlay"></div>
     <div id="menu--mobile">
@@ -89,7 +97,7 @@
           <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+          <a class="nav-link" href="../contact.html">Liên hệ</a>
         </li>
       </ul>
     </div>
@@ -259,7 +267,7 @@
                   <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                  <a class="nav-link" href="../contact.html">Liên hệ</a>
                 </li>
               </ul>
             </div>
@@ -426,7 +434,7 @@
                       class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                       for="headship-d1a02df2-73c2-3dae-fe61-ef269f21c3ca"
                     >
-                      Basso có giao hàng đến văn phòng hoặc địa chỉ thương mại
+                      ShipUS có giao hàng đến văn phòng hoặc địa chỉ thương mại
                       không?
                     </label>
                   </div>
@@ -469,7 +477,7 @@
                       class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                       for="headship-e42a536d-d8c5-2ce1-a4c7-336996416b70"
                     >
-                      Basso có chuyển hàng trong giờ làm việc không?
+                      ShipUS có chuyển hàng trong giờ làm việc không?
                     </label>
                   </div>
                 </div>
@@ -482,9 +490,9 @@
                 >
                   <div class="card-body">
                     <p>
-                      Basso&nbsp;giao hàng trong giờ làm việc (giờ hành chính).
+                      ShipUS&nbsp;giao hàng trong giờ làm việc (giờ hành chính).
                       Tuy nhiên, đối với một số trường hợp đặc biệt, ví dụ hàng
-                      quá cân, hàng cồng kềnh, Basso&nbsp;hỗ trợ giao hàng về
+                      quá cân, hàng cồng kềnh, ShipUS&nbsp;hỗ trợ giao hàng về
                       tận nhà Khách hàng ngoài giờ làm việc, theo yêu cầu cụ thể
                       của Khách hàng.
                     </p>
@@ -608,7 +616,7 @@
                       class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                       for="headship-021d24ca-3090-78cb-4892-a80cc44175aa"
                     >
-                      Basso có gửi thông báo trước khi người giao hàng đến
+                      ShipUS có gửi thông báo trước khi người giao hàng đến
                       không?
                     </label>
                   </div>
@@ -897,10 +905,11 @@
                               <input type="checkbox" class="custom-control-input" id="remember">
                               <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
                           </div>
-                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                          <a href="#" class="aforget">Quên mật khẩu</a>
                       </div>
                       <div class="input-group">
-                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                        <button type="button" class="btn" id='btn-login' type="submit" onClick="parent.location='../profile.html'">Đăng nhập</button>
+
                       </div>
                       <div class="input-group">
                           Bạn chưa có tài khoản? &nbsp;

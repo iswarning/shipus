@@ -31,15 +31,25 @@
   rel="stylesheet"
   href="https://basso.vn/theme/basso/statics/css/responsive.min.css?v=1609743493"
 />
+
 <link rel='stylesheet' href='./help.css' />
 <link rel='stylesheet' href='../dist//css/modal.css' />
-<link rel="stylesheet" href="../dist/css/vendors.css" />
+<link rel="stylesheet" href="../dist//css/vendors.css" />
 <link rel="stylesheet" href="../dist/css/app.css" />
 <link rel="stylesheet" href="../dist/css/about.css" />
 
 
+
 </head>
 <body>
+  <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=302810217173292&autoLogAppEvents=1"
+            nonce="puQBojSd"
+        ></script>
 <div class="sidebar__right">
       <div id="overlay"></div>
       <div id="menu--mobile">
@@ -92,7 +102,7 @@
             <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+            <a class="nav-link" href="../contact.html">Liên hệ</a>
           </li>
         </ul>
       </div>
@@ -192,108 +202,76 @@
         </div>
       </div>
     </div>
-    <header class="header">
+    <header class="header" style="top: -72px;">
       <div class="container-fluid">
-        <div class="row header--main">
-          <div class="header__left col-12 col-lg-2 col-xl-2">
-            <h1 class="m-0 text-center">
-              <img
-                class="header__logo"
-                src="../dist/images/LogoShipus.png"
-                alt=""
-              />
-            </h1>
-            <div class="header__mobile d-block d-lg-none mr-2">
-              <button class="navbar-toggler" type="button">
-                <i class="las la-headset"></i>
-              </button>
-              <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal-login">
-                <i class="las la-user"></i>
-              </button>
-              <button class="navbar-toggler" type="button" id="btn-cart-mobile">
-                <i class="las la-shopping-cart"></i>
-              </button>
-              <button class="navbar-toggler" type="button" id="btn-menu-mobile">
-                <i class="las la-bars"></i>
-              </button>
-            </div>
-          </div>
-          <div
-            class="header__center d-none d-lg-flex justify-content-center col-12 col-lg-8 col-xl-8"
-          >
-            <nav class="navbar navbar-expand-lg">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/"
-                      >Homepage <span class="sr-only">(current)</span></a
-                    >
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/about.html">Về shipus</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="javascript:void(0)"
-                      id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Hướng dẫn <i class="las la-angle-down"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="/buy-steps.html"
-                        >Quy trình mua hàng hộ</a
-                      >
-                      <a class="dropdown-item" href="/tran-steps.html"
-                        >Quy trình vận chuyển</a
-                      >
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/price-list.html"
-                      >bảng giá dịch vụ</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/create-order.html"
-                      >Mua hàng hộ</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
-                  </li>
-                </ul>
+          <div class="row header--main">
+              <div class="header__left col-12 col-lg-2 col-xl-2">
+                  <h1 class="m-0 text-center">
+                      <img class="header__logo" src="./dist/images/LogoShipus.png" alt="">
+                  </h1>
+                  <div class="header__mobile d-block d-lg-none mr-2">
+                      <button class="navbar-toggler" type="button">
+                          <i class="las la-headset"></i>
+                      </button>
+                      <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal-login">
+                          <i class="las la-user"></i>
+                      </button>
+                      <button class="navbar-toggler" type="button" id="btn-cart-mobile">
+                          <i class="las la-shopping-cart"></i>
+                      </button>
+                      <button class="navbar-toggler" type="button" id="btn-menu-mobile">
+                          <i class="las la-bars"></i>
+                      </button>
+                  </div>
               </div>
-            </nav>
+              <div class="header__center d-none d-lg-flex justify-content-center col-12 col-lg-8 col-xl-8">
+                  <nav class="navbar navbar-expand-lg">
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav">
+                              <li class="nav-item">
+                                  <a class="nav-link" href="/">Homepage <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item active">
+                                  <a class="nav-link" href="/about.html">Về shipus</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Hướng dẫn <i class="las la-angle-down"></i>
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="/buy-steps.html">Quy trình mua hàng hộ</a>
+                                      <a class="dropdown-item" href="/tran-steps.html">Quy trình vận chuyển</a>
+                                  </div>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="/price-list.html">bảng giá dịch vụ</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="../contact.html">Liên hệ</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </nav>
+              </div>
+              <div class="header__right d-none d-lg-flex col-12 col-lg-2 col-xl-2">
+                  <ul class="navbar-nav d-flex flex-row align-items-center justify-content-end">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="./help-27.html"><i class="las la-headset"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login"><i class="las la-user"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="javascript:openCart()"><i class="las la-shopping-cart"></i></a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-          <div class="header__right d-none d-lg-flex col-12 col-lg-2 col-xl-2">
-            <ul
-              class="navbar-nav d-flex flex-row align-items-center justify-content-end"
-            >
-              <li class="nav-item active">
-                <a class="nav-link" href="./help-27.html"
-                  ><i class="las la-headset"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login"
-                  ><i class="las la-user"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:openCart()"
-                  ><i class="las la-shopping-cart"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
-    </header>
+  </header>
     <main class="help-page">
       <div class="w">
         <div class="container">
@@ -388,7 +366,7 @@
                         class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                         for="headship-5932444d-2480-2fc1-f26f-a22524988693"
                       >
-                        Mua hàng Amazon, Ebay không thuế tại Basso
+                        Mua hàng Amazon, Ebay không thuế tại ShipUS
                       </label>
                     </div>
                   </div>
@@ -405,7 +383,7 @@
                       <p>
                         <b
                           >Miễn phí 100% thuế nội bang Mỹ khi mua hàng Amazon
-                          tại Basso</b
+                          tại ShipUS</b
                         >
                       </p>
 
@@ -432,10 +410,10 @@
                         />
                       </p>
 
-                      <p><strong>Miễn phí 100% Thuế tại Basso</strong></p>
+                      <p><strong>Miễn phí 100% Thuế tại ShipUS</strong></p>
 
                       <p>
-                        Tại Basso, chúng tôi hân hoan mang đến dịch vụ miễn phí
+                        Tại ShipUS, chúng tôi hân hoan mang đến dịch vụ miễn phí
                         100% thuế bang Mỹ, áp dụng với mọi sản phẩm tại Amazon.
                         Chính sách này là kết quả nỗ lực đến từ toàn đội ngũ
                         nhân viên công ty nhằm mang tới dịch vụ tốt nhất với giá
@@ -447,7 +425,7 @@
                           alt=""
                           src="https://www.facebook.com/images/emoji.php/v9/f51/1/16/2714.png"
                         />&nbsp;Từ 28/8/2015, khi mua bất cứ sản phẩm Amazon,
-                        Ebay trên Basso&nbsp;quý khách sẽ không phải trả thêm
+                        Ebay trên ShipUS&nbsp;quý khách sẽ không phải trả thêm
                         thuế bang nội địa Mỹ. No Tax
                       </p>
 
@@ -457,7 +435,7 @@
                           src="https://www.facebook.com/images/emoji.php/v9/f51/1/16/2714.png"
                         />&nbsp;Sở hữu hàng chính hãng Amazon, Ebay&nbsp;chuẩn
                         USA với GIÁ ĐÃ MỀM NAY CÒN MỀM HƠN. Còn chần chừ gì mà
-                        không nhanh tay đặt hàng với Basso ngay hôm nay.
+                        không nhanh tay đặt hàng với ShipUS ngay hôm nay.
                       </p>
                     </div>
                   </div>
@@ -860,10 +838,11 @@
                               <input type="checkbox" class="custom-control-input" id="remember">
                               <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
                           </div>
-                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                          <a href="#" class="aforget">Quên mật khẩu</a>
                       </div>
                       <div class="input-group">
-                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                        <button type="button" class="btn" id='btn-login' type="submit" onClick="parent.location='../profile.html'">Đăng nhập</button>
+
                       </div>
                       <div class="input-group">
                           Bạn chưa có tài khoản? &nbsp;

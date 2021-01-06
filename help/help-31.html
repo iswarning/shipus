@@ -42,6 +42,14 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=302810217173292&autoLogAppEvents=1"
+            nonce="puQBojSd"
+        ></script>
   <div class="sidebar__right">
     <div id="overlay"></div>
     <div id="menu--mobile">
@@ -90,7 +98,7 @@
           <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+          <a class="nav-link" href="../contact.html">Liên hệ</a>
         </li>
       </ul>
     </div>
@@ -260,7 +268,7 @@
                   <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                  <a class="nav-link" href="../contact.html">Liên hệ</a>
                 </li>
               </ul>
             </div>
@@ -399,7 +407,7 @@
                 >
                   <div class="card-body">
                     <p>
-                      Trước khi đặt hàng, Basso&nbsp;sẽ giúp Khách hàng ước
+                      Trước khi đặt hàng, ShipUS&nbsp;sẽ giúp Khách hàng ước
                       lượng tổng chi phí đơn hàng bao gồm cả chi phí vận chuyển
                       dựa vào giá trị thực tế và cân nặng của sản phẩm. Tuy
                       nhiên, chi phí thực tế có thể cao hơn hoặc thấp hơn chi
@@ -430,7 +438,7 @@
                       class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                       for="headship-0dacddef-680a-1d54-504c-d6b93533368e"
                     >
-                      Tôi thanh toán cho Basso như thế nào?
+                      Tôi thanh toán cho ShipUS như thế nào?
                     </label>
                   </div>
                 </div>
@@ -521,7 +529,7 @@
                       class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                       for="headship-c173b0ba-9b96-cfba-d0b1-2da42113d1e7"
                     >
-                      Basso sẽ gửi hoá đơn yêu cầu thanh toán cho Khách hàng như
+                      ShipUS sẽ gửi hoá đơn yêu cầu thanh toán cho Khách hàng như
                       thế nào?
                     </label>
                   </div>
@@ -535,8 +543,8 @@
                 >
                   <div class="card-body">
                     <p>
-                      Basso sẽ gửi hoá đơn vào email đăng ký tài khoản và thông
-                      báo ở tài khoản Basso. Vui lòng làm theo hướng dẫn ở hoá
+                      ShipUS sẽ gửi hoá đơn vào email đăng ký tài khoản và thông
+                      báo ở tài khoản ShipUS. Vui lòng làm theo hướng dẫn ở hoá
                       đơn để thực hiện thanh toán.
                     </p>
                   </div>
@@ -564,7 +572,7 @@
                       class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                       for="headship-91af97ad-3308-4e11-4202-18bd1d6961ed"
                     >
-                      Các hình thức thanh toán tại Basso?
+                      Các hình thức thanh toán tại ShipUS?
                     </label>
                   </div>
                 </div>
@@ -577,7 +585,7 @@
                 >
                   <div class="card-body">
                     <p dir="ltr">
-                      Basso&nbsp;chấp nhận các hình thức thanh toán sau:
+                      ShipUS&nbsp;chấp nhận các hình thức thanh toán sau:
                     </p>
 
                     <ul dir="ltr">
@@ -603,7 +611,7 @@
                       </li>
                       <li>
                         Thanh toán tiền mặt trực tiếp tại văn phòng của
-                        Basso.vn&nbsp;<strong>(Miễn phí)</strong>
+                        ShipUS.vn&nbsp;<strong>(Miễn phí)</strong>
                       </li>
                     </ul>
 
@@ -653,7 +661,7 @@
                 >
                   <div class="card-body">
                     <p>
-                      Basso&nbsp;đã thiết lập các cơ chế bảo mật đảm bảo an toàn
+                      ShipUS&nbsp;đã thiết lập các cơ chế bảo mật đảm bảo an toàn
                       khi thực hiện các giao dịch thanh toán.
                     </p>
                   </div>
@@ -864,10 +872,11 @@
                               <input type="checkbox" class="custom-control-input" id="remember">
                               <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
                           </div>
-                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                          <a href="#" class="aforget">Quên mật khẩu</a>
                       </div>
                       <div class="input-group">
-                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                        <button type="button" class="btn" id='btn-login' type="submit" onClick="parent.location='../profile.html'">Đăng nhập</button>
+
                       </div>
                       <div class="input-group">
                           Bạn chưa có tài khoản? &nbsp;

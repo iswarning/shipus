@@ -42,6 +42,14 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=302810217173292&autoLogAppEvents=1"
+            nonce="puQBojSd"
+        ></script>
 <div class="sidebar__right">
     <div id="overlay"></div>
     <div id="menu--mobile">
@@ -90,7 +98,7 @@
           <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+          <a class="nav-link" href="../contact.html">Liên hệ</a>
         </li>
       </ul>
     </div>
@@ -260,7 +268,7 @@
                   <a class="nav-link" href="/create-order.html">Mua hàng hộ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                  <a class="nav-link" href="../contact.html">Liên hệ</a>
                 </li>
               </ul>
             </div>
@@ -385,7 +393,7 @@
                       class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                       for="headship-584379fb-e012-f34d-938c-1661175d03e9"
                     >
-                      Phí vận chuyển của Basso có bao gồm thuế phí Hải quan hay
+                      Phí vận chuyển của ShipUS có bao gồm thuế phí Hải quan hay
                       không?
                     </label>
                   </div>
@@ -399,7 +407,7 @@
                 >
                   <div class="card-body">
                     <p>
-                      Bắt đầu từ ngày 28/8/2015, đối với Basso.vn, phí vận
+                      Bắt đầu từ ngày 28/8/2015, đối với ShipUS.vn, phí vận
                       chuyển quốc tế đã bao gồm thuế và phí hải quan (áp dụng
                       đối với 1 số mặt hàng, để được tư vấn chính xác hơn sẽ có
                       nhân viên CSKH liên hệ tư vấn cụ thể).
@@ -592,7 +600,7 @@
                       class="custom-control-label d-block m-0 pt-3 pb-3 pl-4 pr-4"
                       for="headship-a9b4fa6a-b6d5-6712-2e98-54b6ee574b11"
                     >
-                      Basso có thể gom các đơn hàng vào một kiện hàng được
+                      ShipUS có thể gom các đơn hàng vào một kiện hàng được
                       không?
                     </label>
                   </div>
@@ -607,7 +615,7 @@
                   <div class="card-body">
                     <p>
                       Nếu bạn lựa chọn gom hàng, các đơn hàng của bạn sẽ được
-                      lưu tại Kho Basso&nbsp;và được gom vào một lượng gói hàng
+                      lưu tại Kho ShipUS&nbsp;và được gom vào một lượng gói hàng
                       ít nhất có thể, dựa trên trọng lượng vận chuyển của các
                       đơn hàng trong cùng một lô hàng.
                     </p>
@@ -863,10 +871,11 @@
                               <input type="checkbox" class="custom-control-input" id="remember">
                               <label class="custom-control-label mt-0" for="remember">Tự động đăng nhập</label>
                           </div>
-                          <a href="https://basso.vn/quen-mat-khau" class="aforget">Quên mật khẩu</a>
+                          <a href="#" class="aforget">Quên mật khẩu</a>
                       </div>
                       <div class="input-group">
-                          <button type="submit" class="btn" id='btn-login'>Đăng nhập</button>
+                        <button type="button" class="btn" id='btn-login' type="submit" onClick="parent.location='../profile.html'">Đăng nhập</button>
+
                       </div>
                       <div class="input-group">
                           Bạn chưa có tài khoản? &nbsp;
