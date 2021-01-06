@@ -222,7 +222,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <button class="navbar-toggler" type="button">
                   <i class="las la-headset"></i>
                 </button>
-                <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal-login">
+                <button class="navbar-toggler" id='click-user' type="button" data-toggle="modal" data-target="#modal-login">
                   <i class="las la-user"></i>
                 </button>
                 <button class="navbar-toggler" type="button" id="btn-cart-mobile">
@@ -293,7 +293,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login"
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login" id='click-user'
                     ><i class="las la-user"></i
                   ></a>
                 </li>
@@ -308,7 +308,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </header>
     
-      <main class="order-page">
+      <main class="order-page" style='background-color: #f1f1f1;'>
         <div class="container">
            <style>
              .h2-title::after {

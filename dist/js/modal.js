@@ -27,5 +27,8 @@ function showModalRegister() {
     if(el){
       el.classList.remove("modal-backdrop");
       el.classList.remove("show");
+      $("#click-user").click();
+      // $("btn-login").click();
+      // document.getElementById('modal-register').style.overflow = "scroll";
     }
   }

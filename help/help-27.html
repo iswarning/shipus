@@ -207,13 +207,13 @@
           <div class="row header--main">
               <div class="header__left col-12 col-lg-2 col-xl-2">
                   <h1 class="m-0 text-center">
-                      <img class="header__logo" src="./dist/images/LogoShipus.png" alt="">
+                      <img class="header__logo" src="../dist/images/LogoShipus.png" alt="">
                   </h1>
                   <div class="header__mobile d-block d-lg-none mr-2">
                       <button class="navbar-toggler" type="button">
                           <i class="las la-headset"></i>
                       </button>
-                      <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal-login">
+                      <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal-login" id='click-user'>
                           <i class="las la-user"></i>
                       </button>
                       <button class="navbar-toggler" type="button" id="btn-cart-mobile">
@@ -262,7 +262,7 @@
                           <a class="nav-link" href="./help-27.html"><i class="las la-headset"></i></a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-login"><i class="las la-user"></i></a>
+                          <a class="nav-link" id='click-user' href="#" data-toggle="modal" data-target="#modal-login"><i class="las la-user"></i></a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="javascript:openCart()"><i class="las la-shopping-cart"></i></a>
@@ -272,7 +272,7 @@
           </div>
       </div>
   </header>
-    <main class="help-page">
+    <main class="help-page" style='background: #f1f1f1;'>
       <div class="w">
         <div class="container">
           <h2 class="h2-title">TRỢ GIÚP</h2>
