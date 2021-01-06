@@ -72,6 +72,10 @@
     background: #02a9ce;
   }
 
+  .h2-title {
+    font-size: 24px !important;
+  }
+
   label.custom-control-label::before {
     border-color: #02a9ce !important;
     border-radius: 100%;
