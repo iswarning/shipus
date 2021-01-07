@@ -178,10 +178,6 @@
   }
 
   @media(max-width: 375px) {
-    
-    .fb_iframe_widget {
-      margin-left: -100px;
-    }
     .footer__logo {
       margin-bottom: 150px !important;
     }
