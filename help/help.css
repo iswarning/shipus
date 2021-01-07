@@ -2095,3 +2095,16 @@ animation: swal2-animate-error-x-mark 0.5s;
           font-size: 12px !important;
         }
       }
+
+      @media(max-width: 768px){
+        #accordionPayment{
+          width: 540px !important;
+          padding-left: 0;
+        }
+        .help-page #accordionPayment {
+          width: auto !important;
+        }
+        main {
+          padding: 20px 0;
+        }
+      }

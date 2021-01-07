@@ -1,3 +1,17 @@
+// add class container modal login
+jQuery("#modal-login").addClass("container");
+jQuery("#modal-login .modal-dialog")?.addClass("row");
+
+// add class container modal register
+jQuery("#modal-register").addClass("container");
+jQuery("#modal-register .modal-dialog")?.addClass("row");
+
+
+// Remove footer margin bottom
+jQuery(".footer__logo")?.removeClass("mb-5");
+jQuery(".shadow").removeClass("mb-5");
+
+
 function showModalRegister() {
     var register = document.getElementById('modal-register');
     var login = document.getElementById('modal-login');

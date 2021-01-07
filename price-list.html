@@ -168,7 +168,7 @@
                             <img class="header__logo" src="./dist/images/LogoShipus.png" alt="" />
                         </h1>
                         <div class="header__mobile d-block d-lg-none mr-2">
-                            <button class="navbar-toggler" type="button">
+                            <button class="navbar-toggler" type="button" onClick="parent.location='./profile.html'">
                                 <i class="las la-headset"></i>
                             </button>
                             <button class="navbar-toggler" id='click-user' type="button" data-toggle="modal" data-target="#modal-login">
@@ -256,7 +256,7 @@
                             </p>
                             <button
                                 class="btn btn-info btn-lg animate__animated animate__fadeInRight animate__delay-1s"
-                            >
+                                onClick="parent.location='./price-list.html'">
                                 Bảng giá
                             </button>
                         </div>
@@ -1047,7 +1047,7 @@
                           <input type="password" class="form-control" autocomplete="off" required="" data-bind="value: re_pass"><span class="validationMessage" style="display: none;"></span>
                       </div>
                       <div class="form-group">
-                          <button class="btn button btn-block" id='registerBtn' data-bind="click: $root.register">
+                          <button class="btn button btn-info" id='registerBtn' data-bind="click: $root.register">
                               Đăng ký
                           </button>
                       </div>

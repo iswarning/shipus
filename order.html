@@ -214,7 +214,7 @@
               />
             </h1>
             <div class="header__mobile d-block d-lg-none mr-2">
-              <button class="navbar-toggler" type="button">
+              <button class="navbar-toggler" type="button" onClick="parent.location='./profile.html'">
                 <i class="las la-headset"></i>
               </button>
               <button
@@ -318,11 +318,6 @@
 
     <main class="order-page">
       <div class="container">
-        <style>
-          .h2-title::after {
-            background: #02a9ce;
-          }
-        </style>
         <h2 class="h2-title mb-5">TÀI KHOẢN</h2>
         <div class="order-wrapper" style="font-size: 14px">
           <div class="order-menu shadow p-3 mb-5 bg-white rounded">
@@ -352,7 +347,6 @@
           </div>
           <div
             class="order-content shadow p-3 mb-5 bg-white rounded"
-            style="margin-left: 20px; width: 70% !important; border: none"
           >
             <h3 class="name">QUẢN LÝ ĐƠN HÀNG</h3>
 
@@ -842,7 +836,7 @@
                 </div>
                 <div class="form-group">
                   <button
-                    class="btn button btn-block"
+                    class="btn button btn-info"
                     id="registerBtn"
                     data-bind="click: $root.register"
                   >
@@ -870,8 +864,9 @@
         </div>
       </div>
     </div>
-    <script src="dist/js/modal.js"></script>
     <script src="dist/js/vendors.js"></script>
+
+    <script src="dist/js/modal.js"></script>
     <script src="dist/js/scripts.js"></script>
   </body>
 </html>
