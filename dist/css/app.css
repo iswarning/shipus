@@ -223,14 +223,20 @@
 
 .header__banner-name::after {
     content: "";
-    z-index: 1;
+    z-index: -99;
     position: absolute;
     left: 100%;
     top: 0;
     width: 443px;
     height: 166px;
-    /* background: url("/dist/images/maybay.svg") center/contain no-repeat; */
 }
+
+@media(max-width: 768px) {
+    .header__banner-name::after {
+        left: 100% !important;
+    }
+}
+
 
 .header__banner p {
     margin-bottom: 5px;
@@ -650,7 +656,6 @@
 
 .footer__logo img {
     width: 80%;
-    padding-bottom: 20px;
 }
 
 .footer__bottom {
