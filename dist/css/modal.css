@@ -166,6 +166,9 @@
     background: #02a9ce;
   }
 
+  .footer__logo img {
+    margin-bottom: 30px;
+  }
 
   @media(max-width: 768px) {
     .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe {
@@ -174,6 +177,9 @@
     }
     .footer__logo {
       margin-bottom: 150px !important;
+    }
+    .footer__logo img {
+      margin-bottom: 10px;
     }
   }
 
@@ -184,6 +190,9 @@
     .help-page #accordionPayment {
       width: auto;
     }
+    .footer__logo img {
+      margin-bottom: 10px;
+    }
   }
 
   @media(max-width: 992px){
@@ -191,6 +200,10 @@
       width: 100%;
       height: auto;
     }
+  }
+
+  .footer {
+    padding: 0;
   }
 
   .fb_iframe_widget_fluid, .fb_iframe_widget  {
